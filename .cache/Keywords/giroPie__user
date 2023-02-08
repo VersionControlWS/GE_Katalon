@@ -20,7 +20,8 @@
                 "errorOnParsing": false
               }
             }
-          ]
+          ],
+          "javadoc": ""
         },
         {
           "name": "userLogin",
@@ -90,43 +91,53 @@
                 "errorOnParsing": false
               }
             }
-          ]
+          ],
+          "javadoc": ""
         },
         {
           "name": "userLogout",
-          "parameters": []
+          "parameters": [],
+          "javadoc": ""
         },
         {
           "name": "closeBrowser",
-          "parameters": []
+          "parameters": [],
+          "javadoc": ""
         },
         {
           "name": "LoginwithUsernamePwd",
-          "parameters": []
+          "parameters": [],
+          "javadoc": ""
         },
         {
           "name": "ClickonDeleteAndYes",
-          "parameters": []
+          "parameters": [],
+          "javadoc": ""
         },
         {
           "name": "ClickonDeleteAndYesinBankPage",
-          "parameters": []
+          "parameters": [],
+          "javadoc": ""
         },
         {
           "name": "NavigatetoBankPage",
-          "parameters": []
+          "parameters": [],
+          "javadoc": ""
         },
         {
           "name": "NavigatetoCompanyProfilePage",
-          "parameters": []
+          "parameters": [],
+          "javadoc": ""
         },
         {
           "name": "NavigatetoManageSubscriptionPage",
-          "parameters": []
+          "parameters": [],
+          "javadoc": ""
         },
         {
           "name": "ClickOnInviteButtonPresentOnHomePage",
-          "parameters": []
+          "parameters": [],
+          "javadoc": ""
         },
         {
           "name": "EnterBuyerDetails",
@@ -183,19 +194,23 @@
                 "errorOnParsing": false
               }
             }
-          ]
+          ],
+          "javadoc": ""
         },
         {
           "name": "NavigatetoUserManagementPage",
-          "parameters": []
+          "parameters": [],
+          "javadoc": ""
         },
         {
           "name": "ClickOnInviteUserButtonPresentOnUserMgntPage",
-          "parameters": []
+          "parameters": [],
+          "javadoc": ""
         },
         {
           "name": "EnterUserDetails",
-          "parameters": []
+          "parameters": [],
+          "javadoc": ""
         },
         {
           "name": "EnterBuyerDetails",
@@ -239,7 +254,8 @@
                 "errorOnParsing": false
               }
             }
-          ]
+          ],
+          "javadoc": ""
         },
         {
           "name": "EnterBuyerDetails",
@@ -270,7 +286,8 @@
                 "errorOnParsing": false
               }
             }
-          ]
+          ],
+          "javadoc": ""
         },
         {
           "name": "EnterBuyerDetails",
@@ -288,14 +305,16 @@
                 "errorOnParsing": false
               }
             }
-          ]
+          ],
+          "javadoc": ""
         },
         {
           "name": "EnterBuyerDetails",
-          "parameters": []
+          "parameters": [],
+          "javadoc": ""
         }
       ]
     }
   ],
-  "javadocParsed": false
+  "javadocParsed": true
 }
