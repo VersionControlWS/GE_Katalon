@@ -44,8 +44,11 @@ WebUI.setText(findTestObject('Object Repository/Company_Invite_Seller/Page_GIROP
 WebUI.click(findTestObject('Object Repository/Company_Invite_Seller/Page_GIROPie/button_Invite_1'))
 
 WebUI.waitForElementVisible(findTestObject('Object Repository/Company_Invite_Seller/Page_GIROPie/Page_GIROPie/img_Invite_MuiAvatar-img css-1hy9t21'), 5)
+
 WebUI.click(findTestObject('Object Repository/Company_Invite_Seller/Page_GIROPie/Page_GIROPie/img_Invite_MuiAvatar-img css-1hy9t21'))
+
 WebUI.waitForElementVisible(findTestObject('Object Repository/InviteSeller/li_User Management'), 2)
+
 WebUI.click(findTestObject('Object Repository/InviteSeller/li_User Management'))
 
 WebUI.verifyElementText(findTestObject('Object Repository/Company_Invite_Seller/Page_GIROPie/button_Company Invites'), 'Company Invites')
