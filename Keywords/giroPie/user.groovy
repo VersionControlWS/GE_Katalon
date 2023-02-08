@@ -79,7 +79,7 @@ public class user {
 
 	@Keyword
 	def NavigatetoBankPage() {
-		WebUI.click(findTestObject('Object Repository/Bank/svg_UTH_MuiSvgIcon-root MuiSvgIcon-fontSize_e12007'))
+		WebUI.click(findTestObject('Object Repository/Bank/dashboardPage_companySetting_dropdown'))
 		WebUI.click(findTestObject('Object Repository/Bank/li_Bank Profile'))
 	}
 
