@@ -17,14 +17,26 @@ import com.kms.katalon.core.windows.keyword.WindowsBuiltinKeywords as Windows
 import internal.GlobalVariable as GlobalVariable
 import org.openqa.selenium.Keys as Keys
 
-username_obj = 'Object Repository/Page_NachPay/input_Sign Up_r0'
-password_obj = 'Object Repository/Page_NachPay/input__MuiInputBase-input MuiOutlinedInput-_047092'
-submit_btn_obj = 'Object Repository/Page_NachPay/div_Continue'
+WebUI.openBrowser('')
 
-String url = "https://staging.peppertree.ai/"
-String username = "ajay@uth-uk.com"
-String password = "Tree@2023"
+WebUI.navigateToUrl('https://staging.peppertree.ai/login')
 
-CustomKeywords.'giroPie.user.lauchBrowser'(url)
+WebUI.verifyElementVisible(findTestObject('Object Repository/Login_Module/GTPT_LoginInvalid_TC_0007/Page_GIROPie/img'))
 
-CustomKeywords.'giroPie.user.userLogin'(username_obj, username, password_obj, password, submit_btn_obj)
+WebUI.setText(findTestObject('Object Repository/Login_Module/GTPT_LoginInvalid_TC_0007/Page_GIROPie/input_Sign Up_r0'), 
+    'ajayp')
+
+WebUI.setEncryptedText(findTestObject('Object Repository/Login_Module/GTPT_LoginInvalid_TC_0007/Page_GIROPie/input__MuiInputBase-input MuiOutlinedInput-_047092'), 
+    'UaShBAleBmb3njxR2P8LuQ==')
+
+WebUI.click(findTestObject('Object Repository/Login_Module/GTPT_LoginInvalid_TC_0007/Page_GIROPie/div_Continue'))
+
+WebUI.delay(1)
+
+WebUI.verifyElementText(findTestObject('Object Repository/Login_Module/GTPT_LoginInvalid_TC_0007/Popup_Text/Page_GIROPie/div_Please enter a valid email address'), 
+    ('Please Enter A Valid Email Address'))
+
+WebUI.takeElementScreenshot(findTestObject('Object Repository/Login_Module/GTPT_LoginInvalid_TC_0007/Popup_Text/Page_GIROPie/div_Please enter a valid email address'))
+
+WebUI.closeBrowser()
+

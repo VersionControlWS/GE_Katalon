@@ -1,5 +1,5 @@
 {
-  "keywordFileContentHash": "189722DDFEF1CCE17E52AF306DD38CBA",
+  "keywordFileContentHash": "251F5970188309823398166203921428",
   "keywordClasses": [
     {
       "name": "clear.AndSendText",
@@ -33,7 +33,8 @@
                 "errorOnParsing": false
               }
             }
-          ]
+          ],
+          "javadoc": ""
         },
         {
           "name": "clearAndSendKeyEnter",
@@ -64,10 +65,11 @@
                 "errorOnParsing": false
               }
             }
-          ]
+          ],
+          "javadoc": ""
         }
       ]
     }
   ],
-  "javadocParsed": false
+  "javadocParsed": true
 }

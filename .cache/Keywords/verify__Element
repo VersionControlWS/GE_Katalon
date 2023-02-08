@@ -1,5 +1,5 @@
 {
-  "keywordFileContentHash": "F7BF4DB0018C1ECFA7402EB2C8B6B2CC",
+  "keywordFileContentHash": "EBE7B57A19F7040CC2C046C8C3CC60F3",
   "keywordClasses": [
     {
       "name": "verify.Element",
@@ -33,7 +33,8 @@
                 "errorOnParsing": false
               }
             }
-          ]
+          ],
+          "javadoc": ""
         },
         {
           "name": "toastElement",
@@ -51,7 +52,8 @@
                 "errorOnParsing": false
               }
             }
-          ]
+          ],
+          "javadoc": ""
         },
         {
           "name": "elementPresent",
@@ -69,10 +71,11 @@
                 "errorOnParsing": false
               }
             }
-          ]
+          ],
+          "javadoc": ""
         }
       ]
     }
   ],
-  "javadocParsed": false
+  "javadocParsed": true
 }

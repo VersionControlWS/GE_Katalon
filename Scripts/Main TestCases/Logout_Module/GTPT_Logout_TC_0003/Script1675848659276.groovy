@@ -17,14 +17,20 @@ import com.kms.katalon.core.windows.keyword.WindowsBuiltinKeywords as Windows
 import internal.GlobalVariable as GlobalVariable
 import org.openqa.selenium.Keys as Keys
 
-username_obj = 'Object Repository/Page_NachPay/input_Sign Up_r0'
-password_obj = 'Object Repository/Page_NachPay/input__MuiInputBase-input MuiOutlinedInput-_047092'
-submit_btn_obj = 'Object Repository/Page_NachPay/div_Continue'
+WebUI.callTestCase(findTestCase('Common_TestCases/TC0001_GP_PT_Login'), [('url') : '', ('username') : '', ('password') : ''], 
+    FailureHandling.STOP_ON_FAILURE)
 
-String url = "https://staging.peppertree.ai/"
-String username = "ajay@uth-uk.com"
-String password = "Tree@2023"
+WebUI.verifyElementText(findTestObject('Object Repository/Logout_Module/Page_GIROPie/span_Dashboard'), 'Dashboard')
 
-CustomKeywords.'giroPie.user.lauchBrowser'(url)
+WebUI.click(findTestObject('Object Repository/Logout_Module/Page_GIROPie/img_Invite_MuiAvatar-img css-1hy9t21'))
 
-CustomKeywords.'giroPie.user.userLogin'(username_obj, username, password_obj, password, submit_btn_obj)
+WebUI.click(findTestObject('Object Repository/Logout_Module/Page_GIROPie/p_Sign Out'))
+
+WebUI.verifyElementText(findTestObject('Object Repository/Logout_Module/Page_GIROPie/p_Confirm To End Your Session'), 'Confirm To End Your Session?')
+
+WebUI.click(findTestObject('Object Repository/Logout_Module/Page_GIROPie/button_Yes'))
+
+WebUI.verifyElementText(findTestObject('Object Repository/Logout_Module/Page_GIROPie/img'), '')
+
+WebUI.closeBrowser()
+

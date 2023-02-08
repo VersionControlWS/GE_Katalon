@@ -17,3 +17,11 @@ import com.kms.katalon.core.windows.keyword.WindowsBuiltinKeywords as Windows
 import internal.GlobalVariable as GlobalVariable
 import org.openqa.selenium.Keys as Keys
 
+//WebUI.callTestCase(findTestCase('Common_TestCases/TC0001_GP_PT_Login'), [('url') : '', ('username') : '', ('password') : ''], 
+//    FailureHandling.STOP_ON_FAILURE)
+
+CustomKeywords.'giroPie.user.LoginwithUsernamePwd'()
+
+System.out.print(WebUI.verifyElementText(findTestObject('Object Repository/Login_Module/Page_GIROPie/span_Dashboard'), 'Dashboard'))
+
+WebUI.closeBrowser()
