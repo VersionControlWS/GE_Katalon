@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<WebElementEntity>
+   <description></description>
+   <name>div_Company Name Sender Branch GSTIN PAN Re_207067</name>
+   <tag></tag>
+   <elementGuidId>9dbf6780-7f4e-4fb3-a821-454c5b5a1cb4</elementGuidId>
+   <selectorCollection>
+      <entry>
+         <key>XPATH</key>
+         <value>//div[@id='simple-tabpanel-1']/div/p/div/div/div/div</value>
+      </entry>
+      <entry>
+         <key>CSS</key>
+         <value>div.MuiTableContainer-root.css-17ca4z6</value>
+      </entry>
+   </selectorCollection>
+   <selectorMethod>XPATH</selectorMethod>
+   <useRalativeImagePath>true</useRalativeImagePath>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>tag</name>
+      <type>Main</type>
+      <value>div</value>
+      <webElementGuid>edcf5327-5acc-4fe3-9b1b-67f4c658a407</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>class</name>
+      <type>Main</type>
+      <value>MuiTableContainer-root css-17ca4z6</value>
+      <webElementGuid>0eedefad-f51f-4626-af18-9231156be0d0</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>true</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>text</name>
+      <type>Main</type>
+      <value> Company Name Sender Branch GSTIN PAN Receiver Email Receiver Branch Receiver Contact Number Buyer Seller  darshanMain BranchCCRPA0112Xdarshan@uth-uk.com-8197390625-Yes-</value>
+      <webElementGuid>3b5153a8-b071-43aa-8798-17670b387bb5</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath</name>
+      <type>Main</type>
+      <value>id(&quot;root&quot;)/div[@class=&quot;App&quot;]/div[@class=&quot;MuiBox-root css-hboir5&quot;]/div[@class=&quot;MuiBox-root css-1stk98t&quot;]/div[@class=&quot;MuiBox-root css-nwok3i&quot;]/div[@class=&quot;tab-container-Box MuiBox-root css-ajghaq&quot;]/div[@class=&quot;profile MuiBox-root css-1v8x7dw&quot;]/div[@id=&quot;simple-tabpanel-0&quot;]/div[@class=&quot;MuiBox-root css-mez6zq&quot;]/p[@class=&quot;MuiTypography-root MuiTypography-body1 css-ahj2mt-MuiTypography-root&quot;]/div[@class=&quot;MuiBox-root css-0&quot;]/div[@class=&quot;automated&quot;]/div[@id=&quot;simple-tabpanel-1&quot;]/div[@class=&quot;MuiBox-root css-0&quot;]/p[@class=&quot;MuiTypography-root MuiTypography-body1 css-ahj2mt-MuiTypography-root&quot;]/div[@class=&quot;MuiBox-root css-0&quot;]/div[@class=&quot;custom-table MuiBox-root css-8atqhb&quot;]/div[@class=&quot;MuiPaper-root MuiPaper-elevation MuiPaper-rounded MuiPaper-elevation1 css-1pty0ct&quot;]/div[@class=&quot;MuiTableContainer-root css-17ca4z6&quot;]</value>
+      <webElementGuid>b34bd421-7623-42dc-b034-230247fa47e6</webElementGuid>
+   </webElementProperties>
+   <webElementXpaths>
+      <isSelected>true</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:idRelative</name>
+      <type>Main</type>
+      <value>//div[@id='simple-tabpanel-1']/div/p/div/div/div/div</value>
+      <webElementGuid>838c5ddf-11b9-4491-9fb9-d4f4f5886379</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:neighbor</name>
+      <type>Main</type>
+      <value>(.//*[normalize-space(text()) and normalize-space(.)='Sent'])[1]/following::div[6]</value>
+      <webElementGuid>b9e24925-dbf6-4cfb-b63c-e9f6fb5120bd</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:neighbor</name>
+      <type>Main</type>
+      <value>(.//*[normalize-space(text()) and normalize-space(.)='Received'])[1]/following::div[6]</value>
+      <webElementGuid>0f03cf11-3562-4173-89fc-c230d8cc6f7f</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:position</name>
+      <type>Main</type>
+      <value>//p/div/div/div[2]/div/p/div/div/div/div</value>
+      <webElementGuid>ac33fcc2-8655-4935-a24a-e02d21268d4d</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:customAttributes</name>
+      <type>Main</type>
+      <value>//div[(text() = ' Company Name Sender Branch GSTIN PAN Receiver Email Receiver Branch Receiver Contact Number Buyer Seller  darshanMain BranchCCRPA0112Xdarshan@uth-uk.com-8197390625-Yes-' or . = ' Company Name Sender Branch GSTIN PAN Receiver Email Receiver Branch Receiver Contact Number Buyer Seller  darshanMain BranchCCRPA0112Xdarshan@uth-uk.com-8197390625-Yes-')]</value>
+      <webElementGuid>86020c8b-040f-4668-88ec-a250fd95f886</webElementGuid>
+   </webElementXpaths>
+</WebElementEntity>

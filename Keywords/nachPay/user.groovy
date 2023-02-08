@@ -119,14 +119,14 @@ public class user {
 		WebUI.click(findTestObject('Object Repository/InviteUser/img_Invite_MuiAvatar-img css-1hy9t21'))
 		WebUI.click(findTestObject('Object Repository/InviteUser/li_User Management'))
 	}
-	
+
 	@Keyword
 	def ClickOnInviteUserButtonPresentOnUserMgntPage() {
 		WebUI.click(findTestObject('Object Repository/InviteUser/button_Invite User'))
 		'Verfiy the text "Invite Individuals" below here which is not working as of now'
 		//WebUI.verifyElementPresent(findTestObject('Object Repository/InviteUser/button_Invite User_1'))
 	}
-	
+
 	@Keyword
 	def EnterUserDetails() {
 		WebUI.setText(findTestObject('Object Repository/InviteUser/input_Invite User Bulk_MuiInputBase-input M_bcd2f6'), 'Ztest@gmail.com')
