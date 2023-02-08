@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <TestSuiteEntity>
    <description></description>
-   <name>Kata</name>
+   <name>InValidLogin_Module</name>
    <tag></tag>
    <isRerun>false</isRerun>
    <mailRecipient></mailRecipient>
@@ -10,12 +10,12 @@
    <pageLoadTimeoutDefault>true</pageLoadTimeoutDefault>
    <rerunFailedTestCasesOnly>false</rerunFailedTestCasesOnly>
    <rerunImmediately>false</rerunImmediately>
-   <testSuiteGuid>f56b9a93-6226-4688-a229-1ea00df7562b</testSuiteGuid>
+   <testSuiteGuid>fe1a26f4-106a-4cf0-9348-d0830d0b9906</testSuiteGuid>
    <testCaseLink>
-      <guid>4fbdcd29-e939-4bee-bec7-d4a0bf43b9c4</guid>
+      <guid>fc694aab-b5e0-4298-815a-52d42fd94ad6</guid>
       <isReuseDriver>false</isReuseDriver>
       <isRun>true</isRun>
-      <testCaseId>Test Cases/Main TestCases/Login_Module/GTPT_Login_TC_0013</testCaseId>
+      <testCaseId>Test Cases/Main TestCases/Login_Module/GTPT_LoginWithMail_TC_00001</testCaseId>
       <usingDataBindingAtTestSuiteLevel>true</usingDataBindingAtTestSuiteLevel>
    </testCaseLink>
 </TestSuiteEntity>

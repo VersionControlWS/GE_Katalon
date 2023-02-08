@@ -1,4 +1,4 @@
-package clear
+package clearAndSendText
 import static com.kms.katalon.core.checkpoint.CheckpointFactory.findCheckpoint
 import static com.kms.katalon.core.testcase.TestCaseFactory.findTestCase
 import static com.kms.katalon.core.testdata.TestDataFactory.findTestData
@@ -37,7 +37,7 @@ import com.kms.katalon.core.util.KeywordUtil
 
 import com.kms.katalon.core.webui.exception.WebElementNotFoundException
 
-
+import org.openqa.selenium.Keys as Keys
 
 class AndSendText {
 	@Keyword

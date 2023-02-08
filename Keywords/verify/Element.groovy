@@ -52,6 +52,7 @@ import org.openqa.selenium.Keys as Keys
 
 
 class Element {
+
 	@Keyword
 	def stringElementPresent (TestObject to,String Heading) {
 		try {
@@ -70,25 +71,28 @@ class Element {
 			KeywordUtil.markFailed("Fail to verify an element")
 		}
 	}
-	// @Keyword
-	// def stringToastElementPresent (TestObject to) {
-	// try {
-	// WebElement  element = WebUiBuiltInKeywords.findWebElement(to).getAttribute('textContent');
-	// if(element.isDisplayed()) {
-	// System.out.println('')
-	// System.out.println(element + " is displayed")
-	// System.out.println('')
-	// }else (!element.isDisplayed()) {
-	// System.out.println('')
-	// System.out.println(element + " is not displayed")
-	// System.out.println('')
-	// }
-	// }catch (Exception e) {
-	// KeywordUtil.markFailed('ERROR: Toast object not found!')
-	// }
-	// }
+
 	@Keyword
-	def toastElement (TestObject to) {
+	def stringToastElementPresent (TestObject to) {
+		try {
+			String  elemental = WebUiBuiltInKeywords.findWebElement(to).getAttribute('textContent');
+			WebElement  element = WebUiBuiltInKeywords.findWebElement(to);
+			if(element.isDisplayed()) {
+				System.out.println('')
+				System.out.println(elemental + " is displayed")
+				System.out.println('')
+			}else {
+				System.out.println('')
+				System.out.println(elemental + " is not displayed")
+				System.out.println('')
+			}
+		}catch (Exception e) {
+			KeywordUtil.markFailed('ERROR: Toast object not found!')
+		}
+	}
+
+	@Keyword
+	def toastElementPresent (TestObject to) {
 		WebElement toast;
 		toast = WebUiBuiltInKeywords.findWebElement(to)
 		// if (toast == null) {
