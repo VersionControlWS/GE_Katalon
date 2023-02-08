@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description>Send seller Invite individual to users Existing in GiroPie</description>
+   <name>GTPT_InviteExisitngSeller_TC_0001</name>
+   <tag>Invite Buyer|Seller</tag>
+   <comment></comment>
+   <testCaseGuid>41de5e01-d1d6-4716-b16e-50ae0968a942</testCaseGuid>
+</TestCaseEntity>
