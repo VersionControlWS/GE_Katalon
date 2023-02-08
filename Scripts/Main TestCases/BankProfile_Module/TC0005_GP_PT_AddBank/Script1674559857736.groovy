@@ -27,14 +27,19 @@ WebUI.click(findTestObject('Object Repository/Bank/p_Add Bank'))
 WebUI.click(findTestObject('Object Repository/Bank/body_Dashboard Working Capital ReceivablesP_1b8e67'))
 
 WebUI.click(findTestObject('Object Repository/Bank/li_Main Branch'))
+//WebUI.waitForElementVisible(findTestObject('Object Repository/Bank/svg_Add as Beneficiary_MuiSvgIcon-root MuiS_73e4e0'), 2)
 
-WebUI.click(findTestObject('Object Repository/Bank/svg_Add as Beneficiary_MuiSvgIcon-root MuiS_73e4e0'))
+//WebUI.click(findTestObject('Object Repository/Bank/svg_Add as Beneficiary_MuiSvgIcon-root MuiS_73e4e0'))
+WebUI.waitForElementVisible(findTestObject('Object Repository/Bank/Page_GIROPie/path'), 2)
 
-WebUI.click(findTestObject('Object Repository/Bank/li_YES BANK'))
+WebUI.click(findTestObject('Object Repository/Bank/Page_GIROPie/path'))
 
-WebUI.setText(findTestObject('Object Repository/Bank/input__branchName'), 'Test')
+WebUI.waitForElementVisible(findTestObject('Object Repository/Bank/Page_GIROPie/li_YES BANK'), 2)
+WebUI.click(findTestObject('Object Repository/Bank/Page_GIROPie/li_YES BANK'))
 
-WebUI.setText(findTestObject('Object Repository/Bank/input__accountNumber'), '28451236')
+WebUI.setText(findTestObject('Object Repository/Bank/Page_GIROPie/input__branchName'), 'Tester')
+
+WebUI.setText(findTestObject('Object Repository/Bank/Page_GIROPie/input__accountNumber'), '284512386')
 
 WebUI.click(findTestObject('Object Repository/Bank/input__ifsc'))
 
@@ -44,11 +49,12 @@ WebUI.click(findTestObject('Object Repository/Bank/input__ro'))
 
 WebUI.click(findTestObject('Object Repository/Bank/li_Savings account'))
 
-WebUI.setText(findTestObject('Object Repository/Bank/input__micr'), '560532002')
+WebUI.setText(findTestObject('Object Repository/Bank/Page_GIROPie/input__micr'), '560532002')
 
-WebUI.setText(findTestObject('Object Repository/Bank/input__accountHolderName'), 'ATB')
+WebUI.setText(findTestObject('Object Repository/Bank/Page_GIROPie/input__accountHolderName'), 'pTB')
+WebUI.delay(5)
 
-WebUI.click(findTestObject('Object Repository/Bank/button_Submit'))
+WebUI.click(findTestObject('Object Repository/Bank/Page_GIROPie/button_Submit'))
 
 WebUI.click(findTestObject('Object Repository/Bank/div_Account Number already exists'))
 }finally {

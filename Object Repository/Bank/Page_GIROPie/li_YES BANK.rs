@@ -3,18 +3,15 @@
    <description></description>
    <name>li_YES BANK</name>
    <tag></tag>
-   <elementGuidId>50b844d7-0b24-4d0d-be73-22eee0c58a9e</elementGuidId>
+   <elementGuidId>b20c7abc-b87d-4ed5-986a-5634173f4c6b</elementGuidId>
    <selectorCollection>
       <entry>
-         <key>BASIC</key>
-         <value>//*[@id = ':rj:-option-0' and (text() = 'YES BANK' or . = 'YES BANK')]</value>
-      </entry>
-      <entry>
          <key>XPATH</key>
-         <value>//*[@id=&quot;root&quot;]/div/div/div[2]/div[2]/div/div[2]/div/div[1]/div[3]/div/form/div/div[3]/div/div/div/div/div/button</value>
+         <value>//li[@id=':rj:-option-0']</value>
       </entry>
       <entry>
          <key>CSS</key>
+         <value></value>
       </entry>
    </selectorCollection>
    <selectorMethod>XPATH</selectorMethod>
@@ -25,7 +22,7 @@
       <name>tag</name>
       <type>Main</type>
       <value>li</value>
-      <webElementGuid>22c5b9be-95f5-4f05-afbe-d2e47dbaff48</webElementGuid>
+      <webElementGuid>58d6719b-c511-413e-8cf2-97ffd616a9c7</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>false</isSelected>
@@ -33,7 +30,7 @@
       <name>tabindex</name>
       <type>Main</type>
       <value>-1</value>
-      <webElementGuid>58258426-c816-4fb8-97d7-efcdd286d963</webElementGuid>
+      <webElementGuid>8e7fd78a-ddd2-491c-8b77-2bf8ad1274f1</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>false</isSelected>
@@ -41,7 +38,7 @@
       <name>role</name>
       <type>Main</type>
       <value>option</value>
-      <webElementGuid>3fef2439-5c18-4f17-9f08-a7ec96f34dc7</webElementGuid>
+      <webElementGuid>2adf0453-a2bf-4a33-82a1-c4fac78310e4</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>true</isSelected>
@@ -49,7 +46,7 @@
       <name>id</name>
       <type>Main</type>
       <value>:rj:-option-0</value>
-      <webElementGuid>bffb8109-700f-4772-b546-c7836b6135e5</webElementGuid>
+      <webElementGuid>0911f7fa-4953-49f2-8a96-9dc0789ef6bb</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>false</isSelected>
@@ -57,7 +54,7 @@
       <name>data-option-index</name>
       <type>Main</type>
       <value>0</value>
-      <webElementGuid>80558ad6-9f7d-4eef-81db-194fae2da805</webElementGuid>
+      <webElementGuid>54c5e555-dda1-46e9-9bde-ca78f27cec3e</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>false</isSelected>
@@ -65,7 +62,7 @@
       <name>aria-disabled</name>
       <type>Main</type>
       <value>false</value>
-      <webElementGuid>5b20d6e7-1132-4671-804e-dbc753609bb3</webElementGuid>
+      <webElementGuid>5e4e0a0c-6335-4279-982a-9e0ecb15d07e</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>false</isSelected>
@@ -73,7 +70,7 @@
       <name>aria-selected</name>
       <type>Main</type>
       <value>false</value>
-      <webElementGuid>b7b0207c-32a0-4fca-ba05-2db342e58e03</webElementGuid>
+      <webElementGuid>838e8ce2-2412-49d1-bca0-2c7ee6458eec</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>false</isSelected>
@@ -81,7 +78,7 @@
       <name>class</name>
       <type>Main</type>
       <value>MuiAutocomplete-option Mui-focused</value>
-      <webElementGuid>3f46894b-276f-4322-ad46-32b637ab85d9</webElementGuid>
+      <webElementGuid>4786a17e-db8e-47ac-9259-147b16cf201d</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>true</isSelected>
@@ -89,7 +86,7 @@
       <name>text</name>
       <type>Main</type>
       <value>YES BANK</value>
-      <webElementGuid>cb08b400-3093-4e14-a9f9-8c2360882fd4</webElementGuid>
+      <webElementGuid>f7c67d41-95f1-4d01-bd64-871f44aa227f</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>false</isSelected>
@@ -97,7 +94,7 @@
       <name>xpath</name>
       <type>Main</type>
       <value>id(&quot;:rj:-option-0&quot;)</value>
-      <webElementGuid>cfafe4e3-1235-4ee4-89c9-d73b7b423d8a</webElementGuid>
+      <webElementGuid>b95a30b9-f5c6-4d9c-bfdc-171b9b770da9</webElementGuid>
    </webElementProperties>
    <webElementXpaths>
       <isSelected>true</isSelected>
@@ -105,7 +102,7 @@
       <name>xpath:attributes</name>
       <type>Main</type>
       <value>//li[@id=':rj:-option-0']</value>
-      <webElementGuid>f234255a-8bde-4f3e-8888-dab9c5840537</webElementGuid>
+      <webElementGuid>42b33cb4-a3f8-4ddc-94c0-8626d085f9aa</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
@@ -113,7 +110,7 @@
       <name>xpath:idRelative</name>
       <type>Main</type>
       <value>//ul[@id=':rj:-listbox']/li</value>
-      <webElementGuid>bbc47865-1a8d-41fd-8dfc-8436b84c5ea7</webElementGuid>
+      <webElementGuid>4e119a4e-a2c8-42ce-8192-926bfa6754e2</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
@@ -121,7 +118,7 @@
       <name>xpath:neighbor</name>
       <type>Main</type>
       <value>(.//*[normalize-space(text()) and normalize-space(.)='Yes'])[1]/following::li[1]</value>
-      <webElementGuid>cc662b64-d712-4442-8f1b-38448f22c67f</webElementGuid>
+      <webElementGuid>057bf923-6261-4ebf-9d94-4f43758df0a7</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
@@ -129,7 +126,7 @@
       <name>xpath:neighbor</name>
       <type>Main</type>
       <value>(.//*[normalize-space(text()) and normalize-space(.)='Manage Subscriptions'])[1]/following::li[1]</value>
-      <webElementGuid>664a108f-260e-4c47-8799-95895afdb240</webElementGuid>
+      <webElementGuid>ca14bf1d-d246-4a60-8f02-0b1fa13ddf34</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
@@ -137,7 +134,7 @@
       <name>xpath:neighbor</name>
       <type>Main</type>
       <value>(.//*[normalize-space(text()) and normalize-space(.)='AKHAND ANAND CO OP BANK LTD'])[1]/preceding::li[1]</value>
-      <webElementGuid>d91bdf7b-0522-4cd5-8290-fcb988c8ae2f</webElementGuid>
+      <webElementGuid>796c2eeb-05cb-4c6b-ae7c-ca9a1f63369e</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
@@ -145,7 +142,7 @@
       <name>xpath:neighbor</name>
       <type>Main</type>
       <value>(.//*[normalize-space(text()) and normalize-space(.)='THE AURANGABAD DISTRICT CENTRAL CO OP BANK LTD'])[1]/preceding::li[2]</value>
-      <webElementGuid>dd49f1c6-e33e-486f-a750-bca54ab8e1e1</webElementGuid>
+      <webElementGuid>6f2534e7-4861-4ab6-aa92-d154e194cae8</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
@@ -153,7 +150,7 @@
       <name>xpath:position</name>
       <type>Main</type>
       <value>//div[6]/div/ul/li</value>
-      <webElementGuid>b9ea9049-b95f-4a4f-9b65-4f16889a40c2</webElementGuid>
+      <webElementGuid>a3a8f01f-8923-4eda-84be-ecf92eb492a4</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
@@ -161,6 +158,6 @@
       <name>xpath:customAttributes</name>
       <type>Main</type>
       <value>//li[@id = ':rj:-option-0' and (text() = 'YES BANK' or . = 'YES BANK')]</value>
-      <webElementGuid>3c8ff46c-3072-4a0a-85fb-67773b1db310</webElementGuid>
+      <webElementGuid>f1fd8829-faa2-4cc9-b992-217f3c6a3207</webElementGuid>
    </webElementXpaths>
 </WebElementEntity>

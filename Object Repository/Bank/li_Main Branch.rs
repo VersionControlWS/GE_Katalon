@@ -6,12 +6,16 @@
    <elementGuidId>0fcf6cbe-a7a9-4ee2-b683-df5dbc373f93</elementGuidId>
    <selectorCollection>
       <entry>
-         <key>CSS</key>
-         <value>li.MuiButtonBase-root.MuiMenuItem-root.MuiMenuItem-gutters.MuiMenuItem-root.MuiMenuItem-gutters.css-kk1bwy-MuiButtonBase-root-MuiMenuItem-root</value>
+         <key>BASIC</key>
+         <value>//*[(text() = 'Main Branch' or . = 'Main Branch') and @class = 'MuiButtonBase-root MuiMenuItem-root MuiMenuItem-gutters MuiMenuItem-root MuiMenuItem-gutters css-kk1bwy-MuiButtonBase-root-MuiMenuItem-root']</value>
       </entry>
       <entry>
          <key>XPATH</key>
-         <value>//div[@id='menu-']/div[3]/ul/li</value>
+         <value>//*[@id=&quot;menu-&quot;]/div[3]/ul/li</value>
+      </entry>
+      <entry>
+         <key>CSS</key>
+         <value>li.MuiButtonBase-root.MuiMenuItem-root.MuiMenuItem-gutters.MuiMenuItem-root.MuiMenuItem-gutters.css-kk1bwy-MuiButtonBase-root-MuiMenuItem-root</value>
       </entry>
    </selectorCollection>
    <selectorMethod>XPATH</selectorMethod>
@@ -22,15 +26,7 @@
       <name>tag</name>
       <type>Main</type>
       <value>li</value>
-      <webElementGuid>ef3d5bce-804a-40c8-afbf-6d5f9417002c</webElementGuid>
-   </webElementProperties>
-   <webElementProperties>
-      <isSelected>false</isSelected>
-      <matchCondition>equals</matchCondition>
-      <name>class</name>
-      <type>Main</type>
-      <value>MuiButtonBase-root MuiMenuItem-root MuiMenuItem-gutters MuiMenuItem-root MuiMenuItem-gutters css-kk1bwy-MuiButtonBase-root-MuiMenuItem-root</value>
-      <webElementGuid>93875130-ef0b-48a9-85cd-7ac7331b87b9</webElementGuid>
+      <webElementGuid>61932544-f4f6-4c86-9724-2dc4eab6d134</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>false</isSelected>
@@ -38,7 +34,7 @@
       <name>tabindex</name>
       <type>Main</type>
       <value>0</value>
-      <webElementGuid>ffeef899-41c8-48e1-b84a-ce68d015dbaa</webElementGuid>
+      <webElementGuid>c717db79-cedf-49b7-bb20-087b7fdeebe5</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>false</isSelected>
@@ -46,7 +42,7 @@
       <name>role</name>
       <type>Main</type>
       <value>option</value>
-      <webElementGuid>59ab2557-3944-4a52-8fc5-a4abe34f0a21</webElementGuid>
+      <webElementGuid>5dc6bf00-3a82-4d32-9e10-3ae409ebefe0</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>false</isSelected>
@@ -54,7 +50,7 @@
       <name>aria-selected</name>
       <type>Main</type>
       <value>false</value>
-      <webElementGuid>1e23a99f-fa92-4a37-ae10-f0340bc09447</webElementGuid>
+      <webElementGuid>a0b04be4-c56e-4d8e-b933-65d544a9bc36</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>false</isSelected>
@@ -62,7 +58,7 @@
       <name>data-value</name>
       <type>Main</type>
       <value>36</value>
-      <webElementGuid>f128fdbb-d023-4f11-bc10-9927602f342c</webElementGuid>
+      <webElementGuid>013b4ab0-6b13-47b1-91fd-bd09c4727c70</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>true</isSelected>
@@ -70,7 +66,7 @@
       <name>text</name>
       <type>Main</type>
       <value>Main Branch</value>
-      <webElementGuid>88b781ee-f5ab-4af8-b59d-7dcf185cb216</webElementGuid>
+      <webElementGuid>23a2a384-1771-4283-8fdd-ce04546b313d</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>false</isSelected>
@@ -78,7 +74,15 @@
       <name>xpath</name>
       <type>Main</type>
       <value>id(&quot;menu-&quot;)/div[@class=&quot;MuiPaper-root MuiPaper-elevation MuiPaper-rounded MuiPaper-elevation1 MuiPaper-root MuiMenu-paper MuiPaper-elevation MuiPaper-rounded MuiPaper-elevation8 MuiPopover-paper css-1poimk-MuiPaper-root-MuiMenu-paper-MuiPaper-root-MuiPopover-paper&quot;]/ul[@class=&quot;MuiList-root MuiList-padding MuiMenu-list css-6hp17o-MuiList-root-MuiMenu-list&quot;]/li[@class=&quot;MuiButtonBase-root MuiMenuItem-root MuiMenuItem-gutters MuiMenuItem-root MuiMenuItem-gutters css-kk1bwy-MuiButtonBase-root-MuiMenuItem-root&quot;]</value>
-      <webElementGuid>f8821c1b-4a2a-41e4-a833-4e2d39034b1e</webElementGuid>
+      <webElementGuid>e7522c26-353e-4693-bc08-1b31930da419</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>true</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>class</name>
+      <type>Main</type>
+      <value>MuiButtonBase-root MuiMenuItem-root MuiMenuItem-gutters MuiMenuItem-root MuiMenuItem-gutters css-kk1bwy-MuiButtonBase-root-MuiMenuItem-root</value>
+      <webElementGuid>26f9d56e-afc7-4575-9ac2-1aac5c47290c</webElementGuid>
    </webElementProperties>
    <webElementXpaths>
       <isSelected>true</isSelected>
@@ -86,7 +90,7 @@
       <name>xpath:idRelative</name>
       <type>Main</type>
       <value>//div[@id='menu-']/div[3]/ul/li</value>
-      <webElementGuid>145bb73a-a8f9-420d-aea0-c3bcba023abf</webElementGuid>
+      <webElementGuid>fedc2ec2-de66-4a3f-adf3-afd684a3c0ab</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
@@ -94,7 +98,7 @@
       <name>xpath:neighbor</name>
       <type>Main</type>
       <value>(.//*[normalize-space(text()) and normalize-space(.)='Yes'])[1]/following::li[1]</value>
-      <webElementGuid>d0631bf2-a5ef-4494-858e-b9529418f364</webElementGuid>
+      <webElementGuid>319f6b6e-fd8f-42c1-9095-87e0004c67d0</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
@@ -102,7 +106,7 @@
       <name>xpath:neighbor</name>
       <type>Main</type>
       <value>(.//*[normalize-space(text()) and normalize-space(.)='Manage Subscriptions'])[1]/following::li[1]</value>
-      <webElementGuid>fed1680c-d13b-4443-8705-8ec51d604f82</webElementGuid>
+      <webElementGuid>4aa3c8b0-1111-4fc8-b6fc-34562bfe20ea</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
@@ -110,7 +114,7 @@
       <name>xpath:position</name>
       <type>Main</type>
       <value>//div[3]/ul/li</value>
-      <webElementGuid>43533971-a587-47ae-9d6f-a94f45386c56</webElementGuid>
+      <webElementGuid>6bc39cc2-cb7a-4c30-b4df-396ff607fa7e</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
@@ -118,6 +122,6 @@
       <name>xpath:customAttributes</name>
       <type>Main</type>
       <value>//li[(text() = 'Main Branch' or . = 'Main Branch')]</value>
-      <webElementGuid>90f1e29b-8c31-433e-94a8-a3644a505711</webElementGuid>
+      <webElementGuid>c4236d4c-b684-438d-8cee-e0e2d38cbcf5</webElementGuid>
    </webElementXpaths>
 </WebElementEntity>

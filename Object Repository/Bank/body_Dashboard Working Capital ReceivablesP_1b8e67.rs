@@ -6,12 +6,16 @@
    <elementGuidId>4f3b0e34-87d2-4d78-b3b8-0e4f0a7222b4</elementGuidId>
    <selectorCollection>
       <entry>
-         <key>CSS</key>
-         <value>body</value>
+         <key>BASIC</key>
+         <value>//*[(text() = 'Dashboard Working Capital ReceivablesPayablesSettlementsReportsInsuranceTredsBeta Version 1.0​UTH Invite17 ›Bank Profile Company BranchMain Branch Add as Beneficiary Bank NameYES BANK  Branch NameThaigudda  Account Number28451234 Branch IFSCYESB0000653Account TypeCA  MICR560532002 Account Holder NamePTHMandates Create E-Mandate  Create Physical-Mandate Company BranchMain Branch Add as Beneficiary Bank NameYES BANK  Branch NameChaigudda  Account Number28451236 Branch IFSCYESB0000653Account TypeSB  MICR560532002 Account Holder NameDTHMandates Create E-Mandate  Create Physical-Mandate Company Branch​​Add as BeneficiaryBank Name​  Branch Name​  Account Number​ Branch IFSC​Account Type​  MICR​ Account Holder Name​Mandates Create E-Mandate  Create Physical-Mandate SubmitAdd Bankid(&quot;menu-&quot;)/div[@class=&quot;MuiBackdrop-root MuiBackdrop-invisible css-g3hgs1-MuiBackdrop-root-MuiModal-backdrop&quot;]UTH PTuthukpnt@gmail.com+918553619133User ManagementSign Out  UTHBank ProfileManage SubscriptionsConfirm To End Your Session? YesMain Branch' or . = 'Dashboard Working Capital ReceivablesPayablesSettlementsReportsInsuranceTredsBeta Version 1.0​UTH Invite17 ›Bank Profile Company BranchMain Branch Add as Beneficiary Bank NameYES BANK  Branch NameThaigudda  Account Number28451234 Branch IFSCYESB0000653Account TypeCA  MICR560532002 Account Holder NamePTHMandates Create E-Mandate  Create Physical-Mandate Company BranchMain Branch Add as Beneficiary Bank NameYES BANK  Branch NameChaigudda  Account Number28451236 Branch IFSCYESB0000653Account TypeSB  MICR560532002 Account Holder NameDTHMandates Create E-Mandate  Create Physical-Mandate Company Branch​​Add as BeneficiaryBank Name​  Branch Name​  Account Number​ Branch IFSC​Account Type​  MICR​ Account Holder Name​Mandates Create E-Mandate  Create Physical-Mandate SubmitAdd Bankid(&quot;menu-&quot;)/div[@class=&quot;MuiBackdrop-root MuiBackdrop-invisible css-g3hgs1-MuiBackdrop-root-MuiModal-backdrop&quot;]UTH PTuthukpnt@gmail.com+918553619133User ManagementSign Out  UTHBank ProfileManage SubscriptionsConfirm To End Your Session? YesMain Branch')]</value>
       </entry>
       <entry>
          <key>XPATH</key>
-         <value>//body</value>
+         <value>//*[@id=&quot;demo-simple-select-standard&quot;]</value>
+      </entry>
+      <entry>
+         <key>CSS</key>
+         <value>body</value>
       </entry>
    </selectorCollection>
    <selectorMethod>XPATH</selectorMethod>
@@ -22,7 +26,7 @@
       <name>tag</name>
       <type>Main</type>
       <value>body</value>
-      <webElementGuid>363f1916-3f0f-42ce-bdd0-c40328efdca8</webElementGuid>
+      <webElementGuid>03dc3756-a235-49ba-9060-2ebec2e7a0cc</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>true</isSelected>
@@ -30,7 +34,7 @@
       <name>text</name>
       <type>Main</type>
       <value>Dashboard Working Capital ReceivablesPayablesSettlementsReportsInsuranceTredsBeta Version 1.0​UTH Invite17 ›Bank Profile Company BranchMain Branch Add as Beneficiary Bank NameYES BANK  Branch NameThaigudda  Account Number28451234 Branch IFSCYESB0000653Account TypeCA  MICR560532002 Account Holder NamePTHMandates Create E-Mandate  Create Physical-Mandate Company BranchMain Branch Add as Beneficiary Bank NameYES BANK  Branch NameChaigudda  Account Number28451236 Branch IFSCYESB0000653Account TypeSB  MICR560532002 Account Holder NameDTHMandates Create E-Mandate  Create Physical-Mandate Company Branch​​Add as BeneficiaryBank Name​  Branch Name​  Account Number​ Branch IFSC​Account Type​  MICR​ Account Holder Name​Mandates Create E-Mandate  Create Physical-Mandate SubmitAdd Bankid(&quot;menu-&quot;)/div[@class=&quot;MuiBackdrop-root MuiBackdrop-invisible css-g3hgs1-MuiBackdrop-root-MuiModal-backdrop&quot;]UTH PTuthukpnt@gmail.com+918553619133User ManagementSign Out  UTHBank ProfileManage SubscriptionsConfirm To End Your Session? YesMain Branch</value>
-      <webElementGuid>0fe156fc-d364-42ef-9ee6-99af296b1df8</webElementGuid>
+      <webElementGuid>33b791ca-9fb4-4588-a01c-c41fd4319b31</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>false</isSelected>
@@ -38,7 +42,7 @@
       <name>xpath</name>
       <type>Main</type>
       <value>/html[1]/body[1]</value>
-      <webElementGuid>f10c0a89-054d-4888-ac66-61dae70986e3</webElementGuid>
+      <webElementGuid>9a7fde40-3150-4cc2-bae7-1f7d107cb5ae</webElementGuid>
    </webElementProperties>
    <webElementXpaths>
       <isSelected>true</isSelected>
@@ -46,7 +50,7 @@
       <name>xpath:position</name>
       <type>Main</type>
       <value>//body</value>
-      <webElementGuid>e6ad1318-bbf6-4b36-b796-8e24e79b3896</webElementGuid>
+      <webElementGuid>0adb2f99-6542-4850-a716-fcf8ec4c0cd6</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
@@ -54,6 +58,6 @@
       <name>xpath:customAttributes</name>
       <type>Main</type>
       <value>//body[(text() = 'Dashboard Working Capital ReceivablesPayablesSettlementsReportsInsuranceTredsBeta Version 1.0​UTH Invite17 ›Bank Profile Company BranchMain Branch Add as Beneficiary Bank NameYES BANK  Branch NameThaigudda  Account Number28451234 Branch IFSCYESB0000653Account TypeCA  MICR560532002 Account Holder NamePTHMandates Create E-Mandate  Create Physical-Mandate Company BranchMain Branch Add as Beneficiary Bank NameYES BANK  Branch NameChaigudda  Account Number28451236 Branch IFSCYESB0000653Account TypeSB  MICR560532002 Account Holder NameDTHMandates Create E-Mandate  Create Physical-Mandate Company Branch​​Add as BeneficiaryBank Name​  Branch Name​  Account Number​ Branch IFSC​Account Type​  MICR​ Account Holder Name​Mandates Create E-Mandate  Create Physical-Mandate SubmitAdd Bankid(&quot;menu-&quot;)/div[@class=&quot;MuiBackdrop-root MuiBackdrop-invisible css-g3hgs1-MuiBackdrop-root-MuiModal-backdrop&quot;]UTH PTuthukpnt@gmail.com+918553619133User ManagementSign Out  UTHBank ProfileManage SubscriptionsConfirm To End Your Session? YesMain Branch' or . = 'Dashboard Working Capital ReceivablesPayablesSettlementsReportsInsuranceTredsBeta Version 1.0​UTH Invite17 ›Bank Profile Company BranchMain Branch Add as Beneficiary Bank NameYES BANK  Branch NameThaigudda  Account Number28451234 Branch IFSCYESB0000653Account TypeCA  MICR560532002 Account Holder NamePTHMandates Create E-Mandate  Create Physical-Mandate Company BranchMain Branch Add as Beneficiary Bank NameYES BANK  Branch NameChaigudda  Account Number28451236 Branch IFSCYESB0000653Account TypeSB  MICR560532002 Account Holder NameDTHMandates Create E-Mandate  Create Physical-Mandate Company Branch​​Add as BeneficiaryBank Name​  Branch Name​  Account Number​ Branch IFSC​Account Type​  MICR​ Account Holder Name​Mandates Create E-Mandate  Create Physical-Mandate SubmitAdd Bankid(&quot;menu-&quot;)/div[@class=&quot;MuiBackdrop-root MuiBackdrop-invisible css-g3hgs1-MuiBackdrop-root-MuiModal-backdrop&quot;]UTH PTuthukpnt@gmail.com+918553619133User ManagementSign Out  UTHBank ProfileManage SubscriptionsConfirm To End Your Session? YesMain Branch')]</value>
-      <webElementGuid>8555b773-c52b-4d67-8e4c-40dd260392a1</webElementGuid>
+      <webElementGuid>1fb32c30-6225-451f-a954-a91fcbc73795</webElementGuid>
    </webElementXpaths>
 </WebElementEntity>
