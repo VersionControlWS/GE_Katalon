@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <WebElementEntity>
    <description></description>
-   <name>div_Account Number already exists</name>
+   <name>Error_BankProfile_AccountNumberAlreadyExists</name>
    <tag></tag>
    <elementGuidId>b6a33407-e746-423a-b3de-34e8b1f8a9d7</elementGuidId>
    <selectorCollection>

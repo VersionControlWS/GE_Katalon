@@ -17,46 +17,52 @@ import com.kms.katalon.core.windows.keyword.WindowsBuiltinKeywords as Windows
 import internal.GlobalVariable as GlobalVariable
 import org.openqa.selenium.Keys as Keys
 
+
+public static String getRandomNumberString() {
+
+	Random rnd = new Random();
+	int number = rnd.nextInt(999999999);
+
+	return String.format("%09d", number);
+}
+
+public static String generateSessionKey(int length){
+	String alphabet =
+			new String("ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz");
+
+	int n = alphabet.length();
+
+	String result = new String();
+	Random r = new Random();
+
+	for (int i=0; i<length; i++)
+		result = result + alphabet.charAt(r.nextInt(n));
+
+	return result;
+}
+
+flag=0
+String Branch_Name = generateSessionKey(6)
+//println(Branch_Name)
+String Account_Number = getRandomNumberString()
+//println(Account_Number)
+String IFSC = 'YESB0000653'
+String MICR = '560532002'
+String accountHolderName = Branch_Name
+
+
 CustomKeywords.'giroPie.user.LoginwithUsernamePwd'()
 
 CustomKeywords.'giroPie.user.NavigatetoBankPage'()
 
 try {
-WebUI.click(findTestObject('Object Repository/Bank/p_Add Bank'))
 
-WebUI.click(findTestObject('Object Repository/Bank/body_Dashboard Working Capital ReceivablesP_1b8e67'))
+	CustomKeywords.'giroPie.user.EnterBankDetails'(Branch_Name, Account_Number, IFSC, MICR, accountHolderName)
+	flag = 1
 
-WebUI.click(findTestObject('Object Repository/Bank/li_Main Branch'))
-//WebUI.waitForElementVisible(findTestObject('Object Repository/Bank/svg_Add as Beneficiary_MuiSvgIcon-root MuiS_73e4e0'), 2)
-
-//WebUI.click(findTestObject('Object Repository/Bank/svg_Add as Beneficiary_MuiSvgIcon-root MuiS_73e4e0'))
-WebUI.waitForElementVisible(findTestObject('Object Repository/Bank/Page_GIROPie/path'), 2)
-
-WebUI.click(findTestObject('Object Repository/Bank/Page_GIROPie/path'))
-
-WebUI.waitForElementVisible(findTestObject('Object Repository/Bank/Page_GIROPie/li_YES BANK'), 2)
-WebUI.click(findTestObject('Object Repository/Bank/Page_GIROPie/li_YES BANK'))
-
-WebUI.setText(findTestObject('Object Repository/Bank/Page_GIROPie/input__branchName'), 'Tester')
-
-WebUI.setText(findTestObject('Object Repository/Bank/Page_GIROPie/input__accountNumber'), '284512386')
-
-WebUI.click(findTestObject('Object Repository/Bank/input__ifsc'))
-
-WebUI.setText(findTestObject('Object Repository/Bank/input__ifsc'), 'YESB0000653')
-
-WebUI.click(findTestObject('Object Repository/Bank/input__ro'))
-
-WebUI.click(findTestObject('Object Repository/Bank/li_Savings account'))
-
-WebUI.setText(findTestObject('Object Repository/Bank/Page_GIROPie/input__micr'), '560532002')
-
-WebUI.setText(findTestObject('Object Repository/Bank/Page_GIROPie/input__accountHolderName'), 'pTB')
-WebUI.delay(5)
-
-WebUI.click(findTestObject('Object Repository/Bank/Page_GIROPie/button_Submit'))
-
-WebUI.click(findTestObject('Object Repository/Bank/div_Account Number already exists'))
 }finally {
-WebUI.closeBrowser()
+	if(flag == 0) {
+		WebUI.takeScreenshot()
+	}
+	CustomKeywords.'giroPie.user.closeBrowser'()
 }

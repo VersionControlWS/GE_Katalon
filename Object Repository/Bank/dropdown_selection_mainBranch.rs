@@ -1,21 +1,21 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <WebElementEntity>
    <description></description>
-   <name>li_Main Branch</name>
+   <name>dropdown_selection_mainBranch</name>
    <tag></tag>
    <elementGuidId>0fcf6cbe-a7a9-4ee2-b683-df5dbc373f93</elementGuidId>
    <selectorCollection>
       <entry>
-         <key>BASIC</key>
-         <value>//*[(text() = 'Main Branch' or . = 'Main Branch') and @class = 'MuiButtonBase-root MuiMenuItem-root MuiMenuItem-gutters MuiMenuItem-root MuiMenuItem-gutters css-kk1bwy-MuiButtonBase-root-MuiMenuItem-root']</value>
+         <key>CSS</key>
+         <value>li.MuiButtonBase-root.MuiMenuItem-root.MuiMenuItem-gutters.MuiMenuItem-root.MuiMenuItem-gutters.css-kk1bwy-MuiButtonBase-root-MuiMenuItem-root</value>
       </entry>
       <entry>
          <key>XPATH</key>
          <value>//*[@id=&quot;menu-&quot;]/div[3]/ul/li</value>
       </entry>
       <entry>
-         <key>CSS</key>
-         <value>li.MuiButtonBase-root.MuiMenuItem-root.MuiMenuItem-gutters.MuiMenuItem-root.MuiMenuItem-gutters.css-kk1bwy-MuiButtonBase-root-MuiMenuItem-root</value>
+         <key>BASIC</key>
+         <value>//*[(text() = 'Main Branch' or . = 'Main Branch') and @class = 'MuiButtonBase-root MuiMenuItem-root MuiMenuItem-gutters MuiMenuItem-root MuiMenuItem-gutters css-kk1bwy-MuiButtonBase-root-MuiMenuItem-root']</value>
       </entry>
    </selectorCollection>
    <selectorMethod>XPATH</selectorMethod>

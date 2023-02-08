@@ -6,12 +6,11 @@
    <elementGuidId>77cb19f0-7d90-4dd6-a20f-9afe22dc96c0</elementGuidId>
    <selectorCollection>
       <entry>
-         <key>XPATH</key>
-         <value>//input[@id=':rr:']</value>
+         <key>CSS</key>
       </entry>
       <entry>
-         <key>CSS</key>
-         <value></value>
+         <key>XPATH</key>
+         <value>//input[@name=&quot;branchName&quot;]</value>
       </entry>
    </selectorCollection>
    <selectorMethod>XPATH</selectorMethod>
@@ -22,7 +21,7 @@
       <name>tag</name>
       <type>Main</type>
       <value>input</value>
-      <webElementGuid>73601bd3-347f-48e2-bf4c-7f10ef271192</webElementGuid>
+      <webElementGuid>b273effe-223e-4f77-b1f5-7fa40f14e3be</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>false</isSelected>
@@ -30,7 +29,7 @@
       <name>aria-invalid</name>
       <type>Main</type>
       <value>false</value>
-      <webElementGuid>f7b913bd-5d0c-4e4b-a531-4b3e199f7590</webElementGuid>
+      <webElementGuid>3aa43f51-a3b5-4c15-b6c3-fb364e717a6d</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>true</isSelected>
@@ -38,7 +37,7 @@
       <name>id</name>
       <type>Main</type>
       <value>:rr:</value>
-      <webElementGuid>34f322d4-9a3b-423e-9699-da15d24513c9</webElementGuid>
+      <webElementGuid>c471b4df-1750-4a30-8956-3e1bc9dc2355</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>true</isSelected>
@@ -46,7 +45,7 @@
       <name>name</name>
       <type>Main</type>
       <value>branchName</value>
-      <webElementGuid>55e4ff6d-e4b8-4994-92a1-dc71c4c4e1af</webElementGuid>
+      <webElementGuid>ba236ce5-5bee-4103-98be-64b1d2d3d0cf</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>true</isSelected>
@@ -54,7 +53,7 @@
       <name>type</name>
       <type>Main</type>
       <value>text</value>
-      <webElementGuid>92bd4fd3-a7c6-4f0a-809f-236238ffb1c8</webElementGuid>
+      <webElementGuid>e10510de-ae67-4d87-80fd-7022ee02e4cc</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>false</isSelected>
@@ -62,7 +61,7 @@
       <name>class</name>
       <type>Main</type>
       <value>MuiInputBase-input MuiOutlinedInput-input css-1t8l2tu-MuiInputBase-input-MuiOutlinedInput-input</value>
-      <webElementGuid>53459f67-389c-43b7-ab9f-5cb3e116431c</webElementGuid>
+      <webElementGuid>2520fff1-41c0-4d0e-8397-27a7501d32b5</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>false</isSelected>
@@ -70,7 +69,7 @@
       <name>xpath</name>
       <type>Main</type>
       <value>id(&quot;:rr:&quot;)</value>
-      <webElementGuid>5d1513c6-03e5-48cb-9152-d16ee1012670</webElementGuid>
+      <webElementGuid>7c1c3f56-bdf8-43a8-82b1-239a70913943</webElementGuid>
    </webElementProperties>
    <webElementXpaths>
       <isSelected>true</isSelected>
@@ -78,7 +77,7 @@
       <name>xpath:attributes</name>
       <type>Main</type>
       <value>//input[@id=':rr:']</value>
-      <webElementGuid>1e91b102-4c32-4dc9-8ab6-e7ec298d5b03</webElementGuid>
+      <webElementGuid>8b15cb89-2509-499f-a153-c4c2bedcf0a1</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
@@ -86,7 +85,7 @@
       <name>xpath:idRelative</name>
       <type>Main</type>
       <value>//div[@id='root']/div/div/div[2]/div[2]/div/div[2]/div/div/div[4]/div/form/div/div[4]/div/div/div/input</value>
-      <webElementGuid>2968f110-fb95-459f-9280-b828c38236ef</webElementGuid>
+      <webElementGuid>6b0fcb1a-6490-46d7-8a8b-6f13b2eaaeeb</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
@@ -94,7 +93,7 @@
       <name>xpath:neighbor</name>
       <type>Main</type>
       <value>(.//*[normalize-space(text()) and normalize-space(.)='​'])[4]/following::input[1]</value>
-      <webElementGuid>6934a632-5387-4ee6-8a61-a2ec8afdad6d</webElementGuid>
+      <webElementGuid>7a309359-4dcd-4400-ac50-98400be0bc11</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
@@ -102,7 +101,7 @@
       <name>xpath:neighbor</name>
       <type>Main</type>
       <value>(.//*[normalize-space(text()) and normalize-space(.)='Add as Beneficiary'])[4]/following::input[2]</value>
-      <webElementGuid>a89d70d2-c771-4111-b97d-7866df2af7bc</webElementGuid>
+      <webElementGuid>5b761fd0-a0c9-4661-ad47-0859bd57fca8</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
@@ -110,7 +109,7 @@
       <name>xpath:neighbor</name>
       <type>Main</type>
       <value>(.//*[normalize-space(text()) and normalize-space(.)='​'])[5]/preceding::input[1]</value>
-      <webElementGuid>4aa4471b-da96-4715-926a-4180b44552e3</webElementGuid>
+      <webElementGuid>b7ba8576-469d-437b-b4e2-5e6580758bd0</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
@@ -118,7 +117,7 @@
       <name>xpath:neighbor</name>
       <type>Main</type>
       <value>(.//*[normalize-space(text()) and normalize-space(.)='​'])[6]/preceding::input[2]</value>
-      <webElementGuid>7c9ce6ac-491a-4902-bcf6-51bccab235e4</webElementGuid>
+      <webElementGuid>2c85bfb5-a191-4502-a6e8-17929657fe53</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
@@ -126,7 +125,7 @@
       <name>xpath:position</name>
       <type>Main</type>
       <value>//div[4]/div/div/div/input</value>
-      <webElementGuid>1fef1a6f-ebe3-4f61-af86-64808c1e0e25</webElementGuid>
+      <webElementGuid>7382bbdd-7e90-42bb-bcf9-f729e1ee5b32</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
@@ -134,7 +133,7 @@
       <name>xpath:customAttributes</name>
       <type>Main</type>
       <value>//input[@id = ':rr:' and @name = 'branchName' and @type = 'text']</value>
-      <webElementGuid>f658deb2-0c9d-41a9-a159-350de1e35d6b</webElementGuid>
+      <webElementGuid>7671520f-db2e-4865-bcc2-1bd30f1c84a0</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
@@ -142,7 +141,7 @@
       <name>xpath:attributes</name>
       <type>Main</type>
       <value>//input[@id=':r11:']</value>
-      <webElementGuid>e399bd42-1be9-43a0-a392-2d8f841bbbcc</webElementGuid>
+      <webElementGuid>2da7d5d8-10d0-467e-a324-11412fd0b8aa</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
@@ -150,7 +149,7 @@
       <name>xpath:idRelative</name>
       <type>Main</type>
       <value>//div[@id='root']/div/div/div[2]/div[2]/div/div[2]/div/div/div[5]/div/form/div/div[4]/div/div/div/input</value>
-      <webElementGuid>07da7bdc-b25f-414a-9037-6bf648016c14</webElementGuid>
+      <webElementGuid>e10f8033-2497-4c5e-bf97-bc8adfb11382</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
@@ -158,6 +157,6 @@
       <name>xpath:customAttributes</name>
       <type>Main</type>
       <value>//input[@id = ':r11:' and @name = 'branchName' and @type = 'text']</value>
-      <webElementGuid>7a023238-7faa-43a4-b234-a9e26a640b2b</webElementGuid>
+      <webElementGuid>21201a26-6bef-4fe8-b76c-05ab010d42f6</webElementGuid>
    </webElementXpaths>
 </WebElementEntity>

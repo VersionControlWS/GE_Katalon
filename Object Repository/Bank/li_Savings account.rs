@@ -7,11 +7,10 @@
    <selectorCollection>
       <entry>
          <key>CSS</key>
-         <value></value>
       </entry>
       <entry>
          <key>XPATH</key>
-         <value>//li[@id=':ro:-option-0']</value>
+         <value>//li[text() = 'Savings account']</value>
       </entry>
    </selectorCollection>
    <selectorMethod>XPATH</selectorMethod>
@@ -22,7 +21,7 @@
       <name>tag</name>
       <type>Main</type>
       <value>li</value>
-      <webElementGuid>f07eb028-fa6e-42e5-92ac-d3c00247787e</webElementGuid>
+      <webElementGuid>6fcc4ce4-8ff0-4624-96e3-819aca20bcf4</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>false</isSelected>
@@ -30,7 +29,7 @@
       <name>tabindex</name>
       <type>Main</type>
       <value>-1</value>
-      <webElementGuid>b33a0fe8-ff6c-41d6-b74d-d71ee1d87e3d</webElementGuid>
+      <webElementGuid>9b3d68ca-abed-4893-9ba3-f28724362ceb</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>false</isSelected>
@@ -38,7 +37,7 @@
       <name>role</name>
       <type>Main</type>
       <value>option</value>
-      <webElementGuid>e37ac3a2-209f-41a3-afaf-6f5a6257f499</webElementGuid>
+      <webElementGuid>f67bb098-5bff-4ed6-96aa-bbc1aeff0864</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>true</isSelected>
@@ -46,7 +45,7 @@
       <name>id</name>
       <type>Main</type>
       <value>:ro:-option-0</value>
-      <webElementGuid>16381a64-9960-4a47-8e21-8d3f67efabae</webElementGuid>
+      <webElementGuid>2cae75a2-b112-4d81-9511-0050038be49a</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>false</isSelected>
@@ -54,7 +53,7 @@
       <name>data-option-index</name>
       <type>Main</type>
       <value>0</value>
-      <webElementGuid>7ffcbdee-0774-4efe-b6fe-5ef3d36c2bec</webElementGuid>
+      <webElementGuid>a5596f41-c2da-471c-8f2a-b53cce37b76d</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>false</isSelected>
@@ -62,7 +61,7 @@
       <name>aria-disabled</name>
       <type>Main</type>
       <value>false</value>
-      <webElementGuid>1e9cf7c4-5075-4163-90e1-a9a72b47471b</webElementGuid>
+      <webElementGuid>c20c5816-6e5a-408b-a617-1c4a34da7641</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>false</isSelected>
@@ -70,7 +69,7 @@
       <name>aria-selected</name>
       <type>Main</type>
       <value>false</value>
-      <webElementGuid>af1a5de0-c02a-4a61-a65c-13f3a6d222a7</webElementGuid>
+      <webElementGuid>5db45ac7-dc30-4b54-bb77-4ea2bc5554e4</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>false</isSelected>
@@ -78,7 +77,7 @@
       <name>class</name>
       <type>Main</type>
       <value>MuiAutocomplete-option Mui-focused</value>
-      <webElementGuid>8882b4ec-bcd8-4da9-b407-e8fa91cdfd5a</webElementGuid>
+      <webElementGuid>ab980d87-c5ea-4fbf-83ed-4969b4958016</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>true</isSelected>
@@ -86,7 +85,7 @@
       <name>text</name>
       <type>Main</type>
       <value>Savings account</value>
-      <webElementGuid>9d563f3a-a885-4d07-b4b0-cbf0df33ce69</webElementGuid>
+      <webElementGuid>0c9634da-8975-47e5-b8a0-b053863b4573</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>false</isSelected>
@@ -94,7 +93,7 @@
       <name>xpath</name>
       <type>Main</type>
       <value>id(&quot;:ro:-option-0&quot;)</value>
-      <webElementGuid>cc755572-3034-4d42-b23e-d4e8ff075d79</webElementGuid>
+      <webElementGuid>091bd549-bdbc-4830-a68b-f98e29b6c93c</webElementGuid>
    </webElementProperties>
    <webElementXpaths>
       <isSelected>true</isSelected>
@@ -102,7 +101,7 @@
       <name>xpath:attributes</name>
       <type>Main</type>
       <value>//li[@id=':ro:-option-0']</value>
-      <webElementGuid>56f8b554-8cad-4368-bf9c-835144d96f22</webElementGuid>
+      <webElementGuid>04b49859-f039-4525-81fd-0010aa7e4656</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
@@ -110,7 +109,7 @@
       <name>xpath:idRelative</name>
       <type>Main</type>
       <value>//ul[@id=':ro:-listbox']/li</value>
-      <webElementGuid>0d51ccb0-d007-4b55-a7de-618f3f906713</webElementGuid>
+      <webElementGuid>bb38c193-b365-44a0-b8b8-23917f8f40ab</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
@@ -118,7 +117,7 @@
       <name>xpath:neighbor</name>
       <type>Main</type>
       <value>(.//*[normalize-space(text()) and normalize-space(.)='Yes'])[1]/following::li[1]</value>
-      <webElementGuid>6e389c1d-d37a-428c-9371-40dda33c5fa5</webElementGuid>
+      <webElementGuid>c5748d94-20c0-4d48-a7db-ff89f295c3c7</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
@@ -126,7 +125,7 @@
       <name>xpath:neighbor</name>
       <type>Main</type>
       <value>(.//*[normalize-space(text()) and normalize-space(.)='Manage Subscriptions'])[1]/following::li[1]</value>
-      <webElementGuid>43db922d-2c0d-4055-907d-a8381bd44c75</webElementGuid>
+      <webElementGuid>6c960f27-cf13-4e45-9054-1650657c3323</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
@@ -134,7 +133,7 @@
       <name>xpath:neighbor</name>
       <type>Main</type>
       <value>(.//*[normalize-space(text()) and normalize-space(.)='Current accounts'])[1]/preceding::li[1]</value>
-      <webElementGuid>43026802-abb3-43d9-9e47-34fdc12d4c06</webElementGuid>
+      <webElementGuid>2f711c7e-3006-485a-857b-625c03dc8d4b</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
@@ -142,7 +141,7 @@
       <name>xpath:neighbor</name>
       <type>Main</type>
       <value>//*/text()[normalize-space(.)='Savings account']/parent::*</value>
-      <webElementGuid>f75976a0-04f3-4174-ab35-0d61473c0efe</webElementGuid>
+      <webElementGuid>5518b262-7e36-46e8-ac0f-5b2cc67b36b1</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
@@ -150,7 +149,7 @@
       <name>xpath:position</name>
       <type>Main</type>
       <value>//div[6]/div/ul/li</value>
-      <webElementGuid>0a55dd0b-0fa4-4223-b11a-052c6c324f38</webElementGuid>
+      <webElementGuid>eb3751ef-26b5-4f74-8508-e9fb265c0870</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
@@ -158,6 +157,6 @@
       <name>xpath:customAttributes</name>
       <type>Main</type>
       <value>//li[@id = ':ro:-option-0' and (text() = 'Savings account' or . = 'Savings account')]</value>
-      <webElementGuid>4a80e062-4696-4d01-83c9-ad030d1a76f2</webElementGuid>
+      <webElementGuid>a3a349a7-f553-4f70-a2e5-039a34e318ed</webElementGuid>
    </webElementXpaths>
 </WebElementEntity>

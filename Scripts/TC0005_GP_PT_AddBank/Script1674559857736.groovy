@@ -22,11 +22,11 @@ CustomKeywords.'nachPay.user.LoginwithUsernamePwd'()
 CustomKeywords.'nachPay.user.NavigatetoBankPage'()
 
 try {
-WebUI.click(findTestObject('Object Repository/Bank/p_Add Bank'))
+WebUI.click(findTestObject('Object Repository/Bank/AddBankButton_bankProfilePage'))
 
-WebUI.click(findTestObject('Object Repository/Bank/body_Dashboard Working Capital ReceivablesP_1b8e67'))
+WebUI.click(findTestObject('Object Repository/Bank/mainBranch_dropdown_bankProfile'))
 
-WebUI.click(findTestObject('Object Repository/Bank/li_Main Branch'))
+WebUI.click(findTestObject('Object Repository/Bank/dropdown_selection_mainBranch'))
 
 WebUI.click(findTestObject('Object Repository/Bank/svg_Add as Beneficiary_MuiSvgIcon-root MuiS_73e4e0'))
 
@@ -40,7 +40,7 @@ WebUI.click(findTestObject('Object Repository/Bank/input__ifsc'))
 
 WebUI.setText(findTestObject('Object Repository/Bank/input__ifsc'), 'YESB0000653')
 
-WebUI.click(findTestObject('Object Repository/Bank/input__ro'))
+WebUI.click(findTestObject('Object Repository/Bank/accountType_dropdown'))
 
 WebUI.click(findTestObject('Object Repository/Bank/li_Savings account'))
 
@@ -50,7 +50,7 @@ WebUI.setText(findTestObject('Object Repository/Bank/input__accountHolderName'),
 
 WebUI.click(findTestObject('Object Repository/Bank/button_Submit'))
 
-WebUI.click(findTestObject('Object Repository/Bank/div_Account Number already exists'))
+WebUI.click(findTestObject('Object Repository/Bank/Error_BankProfile_AccountNumberAlreadyExists'))
 }finally {
 WebUI.closeBrowser()
 }

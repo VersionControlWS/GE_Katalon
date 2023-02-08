@@ -7,11 +7,10 @@
    <selectorCollection>
       <entry>
          <key>CSS</key>
-         <value></value>
       </entry>
       <entry>
          <key>XPATH</key>
-         <value>//input[@id=':rn:']</value>
+         <value>//input[@name=&quot;ifsc&quot;]</value>
       </entry>
    </selectorCollection>
    <selectorMethod>XPATH</selectorMethod>
@@ -22,7 +21,7 @@
       <name>tag</name>
       <type>Main</type>
       <value>input</value>
-      <webElementGuid>d5160a4c-9d3a-4510-a908-52a359fa9546</webElementGuid>
+      <webElementGuid>cb34a59e-5f61-47cb-b2ce-19751a1d4814</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>false</isSelected>
@@ -30,7 +29,7 @@
       <name>aria-invalid</name>
       <type>Main</type>
       <value>false</value>
-      <webElementGuid>7091dffa-1458-4364-a956-4fbe2c989ff6</webElementGuid>
+      <webElementGuid>91cd386d-89b5-48db-bece-52981e99b0af</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>true</isSelected>
@@ -38,7 +37,7 @@
       <name>id</name>
       <type>Main</type>
       <value>:rn:</value>
-      <webElementGuid>3fcdcd9d-17de-48fb-a1c2-9031a205cde5</webElementGuid>
+      <webElementGuid>06823c4f-cf74-4803-99be-995a8a70807c</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>true</isSelected>
@@ -46,7 +45,7 @@
       <name>name</name>
       <type>Main</type>
       <value>ifsc</value>
-      <webElementGuid>978ed728-1497-41f0-a393-57027b1b52b5</webElementGuid>
+      <webElementGuid>0188623d-e6f5-4d15-9a0f-3b237728213e</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>true</isSelected>
@@ -54,7 +53,7 @@
       <name>type</name>
       <type>Main</type>
       <value>text</value>
-      <webElementGuid>2efa65cb-c219-45b6-806a-5bd04c826f4c</webElementGuid>
+      <webElementGuid>d421f15c-0fae-463a-a02b-93ee0477072d</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>false</isSelected>
@@ -62,7 +61,7 @@
       <name>class</name>
       <type>Main</type>
       <value>MuiInputBase-input MuiOutlinedInput-input css-1t8l2tu-MuiInputBase-input-MuiOutlinedInput-input</value>
-      <webElementGuid>bb3125bb-3da3-49f1-956a-6d36cbd75fe1</webElementGuid>
+      <webElementGuid>c38db71f-869b-45de-b889-79d459e410b2</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>false</isSelected>
@@ -70,7 +69,7 @@
       <name>xpath</name>
       <type>Main</type>
       <value>id(&quot;:rn:&quot;)</value>
-      <webElementGuid>8e9b7e6f-99c2-47b5-a487-cda49e60735e</webElementGuid>
+      <webElementGuid>3253a15d-4403-4f15-a4ba-704ad7a04c98</webElementGuid>
    </webElementProperties>
    <webElementXpaths>
       <isSelected>true</isSelected>
@@ -78,7 +77,7 @@
       <name>xpath:attributes</name>
       <type>Main</type>
       <value>//input[@id=':rn:']</value>
-      <webElementGuid>af9ff7dc-43c1-43c8-a003-93640c5f2184</webElementGuid>
+      <webElementGuid>1c80232f-b37e-47b6-8b67-1f8dadf0fb31</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
@@ -86,7 +85,7 @@
       <name>xpath:idRelative</name>
       <type>Main</type>
       <value>//div[@id='root']/div/div/div[2]/div[2]/div/div[2]/div/div/div[3]/div/form/div/div[6]/div/div/div/input</value>
-      <webElementGuid>9e952d41-7758-44c3-9557-1a6125f88a32</webElementGuid>
+      <webElementGuid>f43a8155-3dfb-439c-af2e-b440ccd235e8</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
@@ -94,7 +93,7 @@
       <name>xpath:position</name>
       <type>Main</type>
       <value>//div[6]/div/div/div/input</value>
-      <webElementGuid>d07087c8-f328-451b-b963-619cb522250b</webElementGuid>
+      <webElementGuid>c6b54caa-2533-4d68-8e34-8e3f0e0fb83a</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
@@ -102,6 +101,6 @@
       <name>xpath:customAttributes</name>
       <type>Main</type>
       <value>//input[@id = ':rn:' and @name = 'ifsc' and @type = 'text']</value>
-      <webElementGuid>0789850b-6259-41ac-945b-5e1fd53d2bea</webElementGuid>
+      <webElementGuid>75cca972-41f2-4ee1-9f41-98de9aa08956</webElementGuid>
    </webElementXpaths>
 </WebElementEntity>
