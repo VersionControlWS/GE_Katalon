@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<WebElementEntity>
+   <description></description>
+   <name>td_919856321474</name>
+   <tag></tag>
+   <elementGuidId>d91e53e1-baea-48fb-b991-1da80de468a3</elementGuidId>
+   <selectorCollection>
+      <entry>
+         <key>CSS</key>
+         <value></value>
+      </entry>
+      <entry>
+         <key>XPATH</key>
+         <value>//div[@id='simple-tabpanel-0']/div/p/div/div[2]/div/div/div/table/tbody/tr[2]/td[2]</value>
+      </entry>
+   </selectorCollection>
+   <selectorMethod>XPATH</selectorMethod>
+   <useRalativeImagePath>true</useRalativeImagePath>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>tag</name>
+      <type>Main</type>
+      <value>td</value>
+      <webElementGuid>967897c7-9604-4120-80d7-2d78c5bac07c</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>class</name>
+      <type>Main</type>
+      <value>MuiTableCell-root MuiTableCell-body MuiTableCell-alignCenter MuiTableCell-sizeSmall TDataCell md-6 css-13uwly5</value>
+      <webElementGuid>13671c84-6220-4076-8737-f679ebaf00f2</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>true</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>text</name>
+      <type>Main</type>
+      <value>+919856321474</value>
+      <webElementGuid>a99fcf80-45ab-4a51-ac02-b25b4d9ba480</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath</name>
+      <type>Main</type>
+      <value>id(&quot;simple-tabpanel-0&quot;)/div[@class=&quot;MuiBox-root css-mez6zq&quot;]/p[@class=&quot;MuiTypography-root MuiTypography-body1 css-ahj2mt-MuiTypography-root&quot;]/div[@class=&quot;automated&quot;]/div[@class=&quot;customGrid MuiBox-root css-0&quot;]/div[@class=&quot;custom-table MuiBox-root css-8atqhb&quot;]/div[@class=&quot;MuiPaper-root MuiPaper-elevation MuiPaper-rounded MuiPaper-elevation1 css-1pty0ct&quot;]/div[@class=&quot;MuiTableContainer-root css-17ca4z6&quot;]/table[@class=&quot;MuiTable-root MuiTable-stickyHeader css-3tzftu&quot;]/tbody[@class=&quot;MuiTableBody-root css-1xnox0e&quot;]/tr[@class=&quot;MuiTableRow-root MuiTableRow-hover css-1gqug66&quot;]/td[@class=&quot;MuiTableCell-root MuiTableCell-body MuiTableCell-alignCenter MuiTableCell-sizeSmall TDataCell md-6 css-13uwly5&quot;]</value>
+      <webElementGuid>0b18d39f-2c9c-49d4-9465-d00df8e61fcd</webElementGuid>
+   </webElementProperties>
+   <webElementXpaths>
+      <isSelected>true</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:idRelative</name>
+      <type>Main</type>
+      <value>//div[@id='simple-tabpanel-0']/div/p/div/div[2]/div/div/div/table/tbody/tr[2]/td[2]</value>
+      <webElementGuid>c44cd976-3663-45c1-a190-8e2655d98704</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:neighbor</name>
+      <type>Main</type>
+      <value>(.//*[normalize-space(text()) and normalize-space(.)='shreyank'])[1]/following::td[1]</value>
+      <webElementGuid>717cfc42-f150-46c5-b7f6-992862bc3475</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:neighbor</name>
+      <type>Main</type>
+      <value>(.//*[normalize-space(text()) and normalize-space(.)='Active'])[1]/following::td[3]</value>
+      <webElementGuid>9cf8aa16-a0b2-47e4-b178-5fb5bf2cb06e</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:neighbor</name>
+      <type>Main</type>
+      <value>(.//*[normalize-space(text()) and normalize-space(.)='mshreyank1999@gmail.com'])[1]/preceding::td[1]</value>
+      <webElementGuid>22a5361a-bb87-4a68-bbdc-398bd5eeb793</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:neighbor</name>
+      <type>Main</type>
+      <value>(.//*[normalize-space(text()) and normalize-space(.)='User'])[1]/preceding::td[2]</value>
+      <webElementGuid>28ff3de2-e343-4673-8906-c9399cf29057</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:neighbor</name>
+      <type>Main</type>
+      <value>//*/text()[normalize-space(.)='+919856321474']/parent::*</value>
+      <webElementGuid>d84ec6aa-a54c-4734-affc-961047ae9787</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:position</name>
+      <type>Main</type>
+      <value>//tr[2]/td[2]</value>
+      <webElementGuid>b6a12b4f-08a9-4dc3-ada6-ed428bd01f8c</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:customAttributes</name>
+      <type>Main</type>
+      <value>//td[(text() = '+919856321474' or . = '+919856321474)]</value>
+      <webElementGuid>498ca6e0-a139-4229-88c6-a7668ae57219</webElementGuid>
+   </webElementXpaths>
+</WebElementEntity>

@@ -17,19 +17,3 @@ import com.kms.katalon.core.windows.keyword.WindowsBuiltinKeywords as Windows
 import internal.GlobalVariable as GlobalVariable
 import org.openqa.selenium.Keys as Keys
 
-try {
-CustomKeywords.'giroPie.user.LoginwithUsernamePwd'()
-
-CustomKeywords.'giroPie.user.NavigatetoUserManagementPage'()
-
-CustomKeywords.'giroPie.user.ClickOnInviteUserButtonPresentOnUserMgntPage'()
-
-//CustomKeywords.'giroPie.user.EnterUserDetails'()
-
-'Verify whether the invite was sent successfully on Current user page'
-//WebUI.click(findTestObject('Object Repository/InviteUser/td_ZTest'))
-
-}
-finally {
-	WebUI.closeBrowser()
-}

@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<WebElementEntity>
+   <description></description>
+   <name>td_shreyank</name>
+   <tag></tag>
+   <elementGuidId>d3e5f3cf-48d0-4193-998f-d4e05b62c1c0</elementGuidId>
+   <selectorCollection>
+      <entry>
+         <key>CSS</key>
+         <value></value>
+      </entry>
+      <entry>
+         <key>XPATH</key>
+         <value>//div[@id='simple-tabpanel-0']/div/p/div/div[2]/div/div/div/table/tbody/tr[2]/td</value>
+      </entry>
+   </selectorCollection>
+   <selectorMethod>XPATH</selectorMethod>
+   <useRalativeImagePath>true</useRalativeImagePath>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>tag</name>
+      <type>Main</type>
+      <value>td</value>
+      <webElementGuid>787e4a78-616c-4da9-a3a8-b6eadc2c4d62</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>class</name>
+      <type>Main</type>
+      <value>MuiTableCell-root MuiTableCell-body MuiTableCell-alignCenter MuiTableCell-sizeSmall TDataCell md-5 css-13uwly5</value>
+      <webElementGuid>9a7872dc-b3ba-4cc9-8d6f-0240c84d22ed</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>true</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>text</name>
+      <type>Main</type>
+      <value>shreyank</value>
+      <webElementGuid>d66d7796-7d14-476c-b523-0449c712e524</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath</name>
+      <type>Main</type>
+      <value>id(&quot;simple-tabpanel-0&quot;)/div[@class=&quot;MuiBox-root css-mez6zq&quot;]/p[@class=&quot;MuiTypography-root MuiTypography-body1 css-ahj2mt-MuiTypography-root&quot;]/div[@class=&quot;automated&quot;]/div[@class=&quot;customGrid MuiBox-root css-0&quot;]/div[@class=&quot;custom-table MuiBox-root css-8atqhb&quot;]/div[@class=&quot;MuiPaper-root MuiPaper-elevation MuiPaper-rounded MuiPaper-elevation1 css-1pty0ct&quot;]/div[@class=&quot;MuiTableContainer-root css-17ca4z6&quot;]/table[@class=&quot;MuiTable-root MuiTable-stickyHeader css-3tzftu&quot;]/tbody[@class=&quot;MuiTableBody-root css-1xnox0e&quot;]/tr[@class=&quot;MuiTableRow-root MuiTableRow-hover css-1gqug66&quot;]/td[@class=&quot;MuiTableCell-root MuiTableCell-body MuiTableCell-alignCenter MuiTableCell-sizeSmall TDataCell md-5 css-13uwly5&quot;]</value>
+      <webElementGuid>262225cf-6d9a-4b1a-abeb-d524d11fb775</webElementGuid>
+   </webElementProperties>
+   <webElementXpaths>
+      <isSelected>true</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:idRelative</name>
+      <type>Main</type>
+      <value>//div[@id='simple-tabpanel-0']/div/p/div/div[2]/div/div/div/table/tbody/tr[2]/td</value>
+      <webElementGuid>8b877ee5-946f-4e3b-b4d3-9f03159546ab</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:neighbor</name>
+      <type>Main</type>
+      <value>(.//*[normalize-space(text()) and normalize-space(.)='Active'])[1]/following::td[2]</value>
+      <webElementGuid>481764c2-daa9-41e2-970c-d35aaaaaa5bc</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:neighbor</name>
+      <type>Main</type>
+      <value>(.//*[normalize-space(text()) and normalize-space(.)='tester'])[1]/following::td[4]</value>
+      <webElementGuid>5760c1d1-a609-490e-9fa3-4ef7602f9c4b</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:neighbor</name>
+      <type>Main</type>
+      <value>(.//*[normalize-space(text()) and normalize-space(.)='mshreyank1999@gmail.com'])[1]/preceding::td[2]</value>
+      <webElementGuid>c7234b73-e94f-4d55-b345-899c5cb3d821</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:neighbor</name>
+      <type>Main</type>
+      <value>(.//*[normalize-space(text()) and normalize-space(.)='User'])[1]/preceding::td[3]</value>
+      <webElementGuid>528c4785-d939-4158-be17-61c0625cb945</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:neighbor</name>
+      <type>Main</type>
+      <value>//*/text()[normalize-space(.)='shreyank']/parent::*</value>
+      <webElementGuid>4919731c-2288-467b-9708-000ab9a5bbed</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:position</name>
+      <type>Main</type>
+      <value>//tr[2]/td</value>
+      <webElementGuid>6eeb45f9-a11a-4546-9f39-0fb9949a9b03</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:customAttributes</name>
+      <type>Main</type>
+      <value>//td[(text() = 'shreyank' or . = 'shreyank')]</value>
+      <webElementGuid>ae1f33aa-ba33-45c3-9bd6-fecaa866aa49</webElementGuid>
+   </webElementXpaths>
+</WebElementEntity>
