@@ -1,11 +1,43 @@
 {
-  "keywordFileContentHash": "83699A100D5C16C2BEF47940244507B0",
+  "keywordFileContentHash": "5FD26DBF0E4CDD647978F5D43C17359E",
   "keywordClasses": [
     {
       "name": "verify.Element",
       "keywordMethods": [
         {
-          "name": "stringElementPresent",
+          "name": "stringElementText",
+          "parameters": [
+            {
+              "name": "to",
+              "initialExpression": "",
+              "type": {
+                "fullClassName": "com.kms.katalon.core.testobject.TestObject",
+                "unresolvedClassName": "TestObject",
+                "isArray": false,
+                "isGnericsPlaceHolder": false,
+                "hasImmutableClassName": false,
+                "genericsTypes": [],
+                "errorOnParsing": false
+              }
+            },
+            {
+              "name": "Heading",
+              "initialExpression": "",
+              "type": {
+                "fullClassName": "java.lang.String",
+                "unresolvedClassName": "String",
+                "isArray": false,
+                "isGnericsPlaceHolder": false,
+                "hasImmutableClassName": false,
+                "genericsTypes": [],
+                "errorOnParsing": false
+              }
+            }
+          ],
+          "javadoc": ""
+        },
+        {
+          "name": "stringToastElementText",
           "parameters": [
             {
               "name": "to",
@@ -38,6 +70,25 @@
         },
         {
           "name": "stringToastElementPresent",
+          "parameters": [
+            {
+              "name": "to",
+              "initialExpression": "",
+              "type": {
+                "fullClassName": "com.kms.katalon.core.testobject.TestObject",
+                "unresolvedClassName": "TestObject",
+                "isArray": false,
+                "isGnericsPlaceHolder": false,
+                "hasImmutableClassName": false,
+                "genericsTypes": [],
+                "errorOnParsing": false
+              }
+            }
+          ],
+          "javadoc": ""
+        },
+        {
+          "name": "stringElementPresent",
           "parameters": [
             {
               "name": "to",

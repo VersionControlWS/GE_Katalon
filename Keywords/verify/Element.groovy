@@ -54,21 +54,39 @@ import org.openqa.selenium.Keys as Keys
 class Element {
 
 	@Keyword
-	def stringElementPresent (TestObject to,String Heading) {
+	def stringElementText (TestObject to, String Heading) {
 		try {
 			String element = WebUiBuiltInKeywords.findWebElement(to).getAttribute('textContent');
 			element.trim()
 			if(element.equalsIgnoreCase(Heading)) {
 				System.out.println('')
-				System.out.println(element +" Element is same as the expected heading " +Heading)
+				System.out.println(element +" Element is same as the expected " +Heading)
 				System.out.println('')
 			}else {
 				System.out.println('')
-				System.out.println(element +" Element is not same  as the expected heading " +Heading)
+				System.out.println(element +" Element is not same  as the expected  " +Heading)
 				System.out.println('')
 			}
 		} catch (Exception e) {
-			KeywordUtil.markFailed("Fail to verify an element")
+			KeywordUtil.markFailed("Fail to verify an element Text")
+		}
+	}
+	@Keyword
+	def stringToastElementText (TestObject to, String Heading) {
+		try {
+			String element = WebUiBuiltInKeywords.findWebElement(to).getAttribute('textContent');
+			element.trim()
+			if(element.equalsIgnoreCase(Heading)) {
+				System.out.println('')
+				System.out.println(element +" Element is same as the expected " +Heading)
+				System.out.println('')
+			}else {
+				System.out.println('')
+				System.out.println(element +" Element is not same  as the expected " +Heading)
+				System.out.println('')
+			}
+		} catch (Exception e) {
+			KeywordUtil.markFailed("Fail to verify an Toast Element Test ")
 		}
 	}
 
@@ -79,50 +97,76 @@ class Element {
 			WebElement  element = WebUiBuiltInKeywords.findWebElement(to);
 			if(element.isDisplayed()) {
 				System.out.println('')
-				System.out.println(elemental + " is displayed")
+				System.out.println(elemental + " String Toast Element  is displayed")
 				System.out.println('')
 			}else {
 				System.out.println('')
-				System.out.println(elemental + " is not displayed")
+				System.out.println(elemental + " String Toast Element is not displayed")
 				System.out.println('')
 			}
 		}catch (Exception e) {
-			KeywordUtil.markFailed('ERROR: Toast object not found!')
+			KeywordUtil.markFailed('ERROR: String Toast Element object not found!')
+		}
+	}
+	@Keyword
+	def stringElementPresent (TestObject to) {
+		try {
+			String  elemental = WebUiBuiltInKeywords.findWebElement(to).getAttribute('textContent');
+			WebElement  element = WebUiBuiltInKeywords.findWebElement(to);
+			if(element.isDisplayed()) {
+				System.out.println('')
+				System.out.println(elemental + "String Element is displayed")
+				System.out.println('')
+			}else {
+				System.out.println('')
+				System.out.println(elemental + "String  Element is not displayed")
+				System.out.println('')
+			}
+		}catch (Exception e) {
+			KeywordUtil.markFailed('ERROR: String  Element object not found!')
 		}
 	}
 
 	@Keyword
 	def toastElementPresent (TestObject to) {
+		try {
 		WebElement toast;
 		toast = WebUiBuiltInKeywords.findWebElement(to)
 		// if (toast == null) {
 		if(!toast.isDisplayed()){
 			System.out.println('')
-			System.out.println('ERROR: object not found!')
-			KeywordUtil.markPassed('ERROR: Toast object not found!')
+			System.out.println('Toast Element is not displayed')
+			KeywordUtil.markPassed('Toast Element is not displayed')
 			System.out.println('')
 		}else if(toast.isDisplayed()){
 			System.out.println('')
-			System.out.println('Toast object found')
-			KeywordUtil.markPassed("Toast object found")
+			System.out.println('Toast Element is displayed')
+			KeywordUtil.markPassed("Toast Element is displayed")
 			System.out.println('')
+		}
+		}catch (Exception e) {
+			KeywordUtil.markFailed('ERROR: String  Element object not found!')
 		}
 	}
 	@Keyword
 	def elementPresent(TestObject to) {
+		try {
 		WebElement element;
 		element = WebUiBuiltInKeywords.findWebElement(to)
 		// if (element == null) {
 		if(!element.isDisplayed()){
 			System.out.println('')
-			System.out.println('ERROR: object not found!')
-			KeywordUtil.markPassed('ERROR: object not found!')
+			System.out.println('Element is not displayed')
+			KeywordUtil.markPassed('Element is not displayed')
 			System.out.println('')
 		}else if(element.isDisplayed()){
 			System.out.println('')
-			System.out.println('object found')
-			KeywordUtil.markPassed("object found")
+			System.out.println('Element is displayed')
+			KeywordUtil.markPassed("Element is displayed")
 			System.out.println('')
+		}
+		}catch (Exception e) {
+			KeywordUtil.markFailed('ERROR: String  Element object not found!')
 		}
 	}
 }
