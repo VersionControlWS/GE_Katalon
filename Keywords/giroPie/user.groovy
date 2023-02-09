@@ -110,7 +110,28 @@ public class user {
 		WebUI.setText(findTestObject('Object Repository/InviteSeller/input_As Seller_r6'), PAN_GSTIN)
 		WebUI.setText(findTestObject('Object Repository/InviteSeller/input_As Seller_r7'), Email)
 		WebUI.setText(findTestObject('Object Repository/InviteSeller/input_As Seller_r8'), Phone)
-		//WebUI.click(findTestObject('Object Repository/InviteSeller/button_Invite_1'))
+		WebUI.click(findTestObject('Object Repository/InviteSeller/button_Invite_1'))
+
+	}
+	@Keyword
+	def EnterSellerDetails(String CompanyName='', String PAN_GSTIN='', String Email='', String Phone='') {
+		WebUI.click(findTestObject('Object Repository/Company_Invite_Seller/Page_GIROPie/input_As Buyer_PrivateSwitchBase-input css-1m9pwf3'))
+		WebUI.setText(findTestObject('Object Repository/InviteSeller/input_As Seller_r5'), CompanyName)
+		WebUI.setText(findTestObject('Object Repository/InviteSeller/input_As Seller_r6'), PAN_GSTIN)
+		WebUI.setText(findTestObject('Object Repository/InviteSeller/input_As Seller_r7'), Email)
+		WebUI.setText(findTestObject('Object Repository/InviteSeller/input_As Seller_r8'), Phone)
+		WebUI.click(findTestObject('Object Repository/InviteSeller/button_Invite_1'))
+
+	}
+	@Keyword
+	def EnterBuyerSellerDetails(String CompanyName='', String PAN_GSTIN='', String Email='', String Phone='') {
+		WebUI.click(findTestObject('Object Repository/InviteSeller/input_Invite Bulk_PrivateSwitchBase-input c_7e24b0'))
+		WebUI.click(findTestObject('Object Repository/Company_Invite_Seller/Page_GIROPie/input_As Buyer_PrivateSwitchBase-input css-1m9pwf3'))
+		WebUI.setText(findTestObject('Object Repository/InviteSeller/input_As Seller_r5'), CompanyName)
+		WebUI.setText(findTestObject('Object Repository/InviteSeller/input_As Seller_r6'), PAN_GSTIN)
+		WebUI.setText(findTestObject('Object Repository/InviteSeller/input_As Seller_r7'), Email)
+		WebUI.setText(findTestObject('Object Repository/InviteSeller/input_As Seller_r8'), Phone)
+		WebUI.click(findTestObject('Object Repository/InviteSeller/button_Invite_1'))
 
 	}
 
@@ -128,12 +149,13 @@ public class user {
 	}
 
 	@Keyword
-	def EnterUserDetails() {
-		WebUI.setText(findTestObject('Object Repository/InviteUser/input_Invite User Bulk_MuiInputBase-input M_bcd2f6'), 'Ztest@gmail.com')
+	def EnterUserDetails(String User_Name,String Email_ID,String Mobile_No,String Designation ) {
+		WebUI.setText(findTestObject('Giropie/input_Invite User Bulk_MuiInputBase-input M_bcd2f6'), User_Name)
+		WebUI.setText(findTestObject('Object Repository/InviteUser/input_Invite User Bulk_MuiInputBase-input M_bcd2f6'), Email_ID)
 		WebUI.click(findTestObject('Object Repository/InviteUser/li_Main Branch'))
-		WebUI.setText(findTestObject('Object Repository/InviteUser/input__ra'), '8553399911')
-		WebUI.setText(findTestObject('Object Repository/InviteUser/input_Invite User Bulk_MuiInputBase-input M_bcd2f6'), 'Tester')
-		//WebUI.click(findTestObject('Object Repository/InviteUser/button_Invite User_1_2'))
+		WebUI.setText(findTestObject('Object Repository/InviteUser/input__ra'),  Mobile_No)
+		WebUI.setText(findTestObject('Object Repository/InviteUser/input_Invite User Bulk_MuiInputBase-input M_bcd2f6'),  Designation )
+		WebUI.click(findTestObject('Object Repository/InviteUser/button_Invite User_1_2'))
 	}
 
 	def EnterBankDetails(String Branch_Name, String Account_Number, String IFSC, String MICR, String accountHolderName) {

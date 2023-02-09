@@ -39,7 +39,7 @@ import com.kms.katalon.core.webui.exception.WebElementNotFoundException
 
 import org.openqa.selenium.Keys as Keys
 
-class AndSendText {
+class ClearAndSendText {
 	@Keyword
 	def clearAndSendKey(TestObject to,String Name) {
 

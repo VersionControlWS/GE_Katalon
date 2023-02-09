@@ -28,6 +28,7 @@ WebUI.setText(findTestObject('Object Repository/Giropie/input__MuiInputBase-inpu
 WebUI.sendKeys(findTestObject('Object Repository/Giropie/input__MuiInputBase-input MuiOutlinedInput-_047092'), Keys.chord(
         Keys.ENTER))
 
+
 WebUI.verifyElementText(findTestObject('Object Repository/Giropie/span_Dashboard'), 'Dashboard')
 
 WebUI.click(findTestObject('Object Repository/Giropie/img_Invite_MuiAvatar-img css-1hy9t21'))
@@ -37,6 +38,8 @@ WebUI.click(findTestObject('Object Repository/Giropie/li_User Management'))
 WebUI.verifyElementVisible(findTestObject('Giropie/button_Invite User'))
 
 WebUI.click(findTestObject('Giropie/button_Invite User'))
+
+CustomKeywords.'giroPie.user.EnterUserDetails'('shreyank', 'mshreyank1999@gmail.com', '9856321474', 'IT')
 
 WebUI.setText(findTestObject('Giropie/input_Invite User Bulk_MuiInputBase-input M_bcd2f6'), 'shreyank')
 
