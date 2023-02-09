@@ -135,7 +135,7 @@ public class user {
 		WebUI.setText(findTestObject('Object Repository/InviteUser/input_Invite User Bulk_MuiInputBase-input M_bcd2f6'), 'Tester')
 		//WebUI.click(findTestObject('Object Repository/InviteUser/button_Invite User_1_2'))
 	}
-	
+
 	def EnterBankDetails(String Branch_Name, String Account_Number, String IFSC, String MICR, String accountHolderName) {
 		WebUI.click(findTestObject('Object Repository/Bank/AddBankButton_bankProfilePage'))
 		WebUI.click(findTestObject('Object Repository/Bank/mainBranch_dropdown_bankProfile'))
@@ -153,13 +153,13 @@ public class user {
 		WebUI.click(findTestObject('Object Repository/Bank/accountType_dropdown'))
 		WebUI.click(findTestObject('Object Repository/Bank/li_Savings account'))
 		WebUI.setText(findTestObject('Object Repository/Bank/NewAddedObjects_HK/input__micr'), MICR)
-		WebUI.setText(findTestObject('Object Repository/Bank/NewAddedObjects_HK/input__accountHolderName'), accountHolderName)		
+		WebUI.setText(findTestObject('Object Repository/Bank/NewAddedObjects_HK/input__accountHolderName'), accountHolderName)
 		//WebUI.delay(5)
 		WebUI.click(findTestObject('Object Repository/Bank/NewAddedObjects_HK/button_Submit'))
 		WebUI.verifyElementText(findTestObject('Object Repository/Bank/NewAddedObjects_HK/PopUp_BankProfileAddedSuccessfully'),
-			('Bank Profile Added Successfully'))
+				('Bank Profile Added Successfully'))
 		WebUI.takeElementScreenshot(findTestObject('Object Repository/Bank/NewAddedObjects_HK/PopUp_BankProfileAddedSuccessfully'))
-		
+
 	}
 
 }

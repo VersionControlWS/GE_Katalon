@@ -16,15 +16,9 @@ import com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords as WebUI
 import com.kms.katalon.core.windows.keyword.WindowsBuiltinKeywords as Windows
 import internal.GlobalVariable as GlobalVariable
 import org.openqa.selenium.Keys as Keys
- 
 
-public static String getRandomNumberString() {
 
-	Random rnd = new Random();
-	int number = rnd.nextInt(999999999);
 
-	return String.format("%09d", number);
-}
 
 public static String generateSessionKey(int length){
 	String alphabet =
@@ -42,27 +36,34 @@ public static String generateSessionKey(int length){
 }
 
 flag=0
-String Branch_Name = generateSessionKey(6)
-//println(Branch_Name)
-String Account_Number = getRandomNumberString()
-//println(Account_Number)
-String IFSC = 'YESB0000653'
-String MICR = '560532002'
-String accountHolderName = Branch_Name
+String Branch_Name = generateSessionKey(4)
 
 
 CustomKeywords.'giroPie.user.LoginwithUsernamePwd'()
 
-CustomKeywords.'giroPie.user.NavigatetoBankPage'()
+CustomKeywords.'giroPie.user.NavigatetoCompanyProfilePage'()
 
-try {
+WebUI.click(findTestObject('Object Repository/Company_Info_Add_Branch/Page_GIROPie/p_Add Branch'))
 
-	CustomKeywords.'giroPie.user.EnterBankDetails'(Branch_Name, Account_Number, IFSC, MICR, accountHolderName)
-	flag = 1
+WebUI.setText(findTestObject('Object Repository/Company_Info_Add_Branch/Page_GIROPie/input_Branches_branchName'), Branch_Name)
 
-}finally {
-	if(flag == 0) {
-		WebUI.takeScreenshot()
-	}
-	CustomKeywords.'giroPie.user.closeBrowser'()
-}
+WebUI.click(findTestObject('Object Repository/Company_Info_Add_Branch/Page_GIROPie/input__gstin'))
+
+WebUI.click(findTestObject('Object Repository/Company_Info_Add_Branch/Page_GIROPie/p_07AAGFF2194N1Z1'))
+
+WebUI.setText(findTestObject('Object Repository/Company_Info_Add_Branch/Page_GIROPie/input__gstin'), '07AAGFF2194N1Z1')
+
+WebUI.setText(findTestObject('Object Repository/Company_Info_Add_Branch/Page_GIROPie/input__email'), 'ajay@uth-uk.com')
+
+WebUI.setText(findTestObject('Object Repository/Company_Info_Add_Branch/Page_GIROPie/input__contactName'), 'SH')
+
+WebUI.setText(findTestObject('Object Repository/Company_Info_Add_Branch/Page_GIROPie/input__address'), 'Jayanagar')
+
+WebUI.setText(findTestObject('Object Repository/Company_Info_Add_Branch/Page_GIROPie/input__pin_code'), '560064')
+
+WebUI.click(findTestObject('Object Repository/Company_Info_Add_Branch/Page_GIROPie/button_Submit'))
+
+WebUI.verifyElementText(findTestObject('Object Repository/Company_Info_Add_Branch/Page_GIROPie/div_Branch Updated'), 'Branch Updated')
+
+WebUI.closeBrowser()
+

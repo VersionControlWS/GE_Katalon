@@ -24,19 +24,23 @@ WebUI.navigateToUrl('https://staging.peppertree.ai/login')
 WebUI.verifyElementVisible(findTestObject('Object Repository/Login_Module/GTPT_LoginInvalid_TC_0007/Page_GIROPie/img'))
 
 WebUI.setText(findTestObject('Object Repository/Login_Module/GTPT_LoginInvalid_TC_0007/Page_GIROPie/input_Sign Up_r0'), 
-    'ajayp')
+    'ajay@uth-uk.com')
 
 WebUI.setEncryptedText(findTestObject('Object Repository/Login_Module/GTPT_LoginInvalid_TC_0007/Page_GIROPie/input__MuiInputBase-input MuiOutlinedInput-_047092'), 
-    'UaShBAleBmb3njxR2P8LuQ==')
+    'TVxKabY8n/cHifM4ug1pgQ==')
 
 WebUI.click(findTestObject('Object Repository/Login_Module/GTPT_LoginInvalid_TC_0007/Page_GIROPie/div_Continue'))
 
 WebUI.delay(1)
 
-WebUI.verifyElementText(findTestObject('Object Repository/Login_Module/GTPT_LoginInvalid_TC_0007/Popup_Text/Page_GIROPie/div_Please enter a valid email address'), 
-    ('Please Enter A Valid Email Address'))
+//System.out.print(WebUI.verifyElementText(findTestObject('Object Repository/Login_Module/GTPT_LoginInvalid_TC_0007/Popup_Text/Page_GIROPie/div_Please enter a valid email address'),
+//    ('Please Enter A Valid Address')))
+CustomKeywords.'verify.Element.stringToastElementPresent'(findTestObject('Object Repository/Login_Module/Invalid_Password/Page_GIROPie/div_wrong password'))
 
-WebUI.takeElementScreenshot(findTestObject('Object Repository/Login_Module/GTPT_LoginInvalid_TC_0007/Popup_Text/Page_GIROPie/div_Please enter a valid email address'))
+CustomKeywords.'verify.Element.stringToastElementText'(findTestObject('Object Repository/Login_Module/Invalid_Password/Page_GIROPie/div_wrong password'), 
+    'Wrong Password.')
+
+WebUI.takeElementScreenshot(findTestObject('Object Repository/Login_Module/Invalid_Password/Page_GIROPie/div_wrong password'))
 
 WebUI.closeBrowser()
 
