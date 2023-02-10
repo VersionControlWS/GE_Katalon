@@ -1,17 +1,17 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <WebElementEntity>
    <description></description>
-   <name>img_Invite_MuiAvatar-img css-1hy9t21</name>
+   <name>my_account_img</name>
    <tag></tag>
    <elementGuidId>4b9e6f38-158b-4df9-af09-191415c3a194</elementGuidId>
    <selectorCollection>
       <entry>
-         <key>CSS</key>
-         <value>img.MuiAvatar-img.css-1hy9t21</value>
-      </entry>
-      <entry>
          <key>XPATH</key>
          <value>//div[@id='root']/div/div/div[2]/div/header/div/div[3]/div[3]/img</value>
+      </entry>
+      <entry>
+         <key>CSS</key>
+         <value>img.MuiAvatar-img.css-1hy9t21</value>
       </entry>
    </selectorCollection>
    <selectorMethod>XPATH</selectorMethod>

@@ -83,9 +83,9 @@ class Element {
 				System.out.println(element +" Element is same as the expected " +Heading)
 				System.out.println('')
 			}else {
-				System.out.println('')               
+				System.out.println('')
 				System.out.println(element +" Element is not same  as the expected " +Heading)
-//				KeywordUtil.markWarning(element +" Element is not same  as the expected " +Heading)
+				//				KeywordUtil.markWarning(element +" Element is not same  as the expected " +Heading)
 				KeywordUtil.markFailed(element +" Element is not same  as the expected " +Heading)
 				System.out.println('')
 			}
@@ -107,7 +107,7 @@ class Element {
 			}else {
 				System.out.println('')
 				System.out.println(elemental + " String Toast Element is not displayed")
-//				KeywordUtil.markWarning(elemental + " String Toast Element is not displayed")
+				//				KeywordUtil.markWarning(elemental + " String Toast Element is not displayed")
 				KeywordUtil.markFailed(elemental + " String Toast Element is not displayed")
 				System.out.println('')
 			}
@@ -155,7 +155,7 @@ class Element {
 				KeywordUtil.markFailed("Toast Element is displayed")
 				System.out.println('')
 			}
-			
+
 		}catch (Exception e) {
 			KeywordUtil.markFailed('ERROR: String  Element object not found!')
 		}

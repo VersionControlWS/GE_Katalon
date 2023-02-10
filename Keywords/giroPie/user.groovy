@@ -95,43 +95,42 @@ public class user {
 		WebUI.click(findTestObject('Object Repository/Page_Mng_Subscription/UTH_Account_name'))
 		WebUI.click(findTestObject('Object Repository/Page_Mng_Subscription/Manage Subscriptions dropdown'))
 	}
-
 	@Keyword
 	def ClickOnInviteButtonPresentOnHomePage() {
-		WebUI.click(findTestObject('Object Repository/InviteSeller/button_Invite'))
+		WebUI.click(findTestObject('Object Repository/Companyinvite/Invite_Button'))
 		'Verfiy the text "Invite Individuals" below here which is not working as of now'
-		//WebUI.verifyElementPresent(findTestObject('Object Repository/InviteSeller/button_Invite Individual'))
+		//WebUI.verifyElementPresent(findTestObject('Object Repository/Companyinvite/Invite_individual/invite_Individual_button'))
 	}
 
 	@Keyword
 	def EnterBuyerDetails(String CompanyName='', String PAN_GSTIN='', String Email='', String Phone='') {
-		WebUI.click(findTestObject('Object Repository/InviteSeller/input_Invite Bulk_PrivateSwitchBase-input c_7e24b0'))
-		WebUI.setText(findTestObject('Object Repository/InviteSeller/input_As Seller_r5'), CompanyName)
-		WebUI.setText(findTestObject('Object Repository/InviteSeller/input_As Seller_r6'), PAN_GSTIN)
-		WebUI.setText(findTestObject('Object Repository/InviteSeller/input_As Seller_r7'), Email)
-		WebUI.setText(findTestObject('Object Repository/InviteSeller/input_As Seller_r8'), Phone)
-		WebUI.click(findTestObject('Object Repository/InviteSeller/button_Invite_1'))
+		WebUI.click(findTestObject('Object Repository/Companyinvite/inviteBuyer/checkbox Buyer'))
+		WebUI.setText(findTestObject('Object Repository/Companyinvite/Invite_individual/Enter Company name'), CompanyName)
+		WebUI.setText(findTestObject('Object Repository/Companyinvite/Invite_individual/Enter PANGSTIN'), PAN_GSTIN)
+		WebUI.setText(findTestObject('Object Repository/Companyinvite/Invite_individual/Enter Email ID'), Email)
+		WebUI.setText(findTestObject('Object Repository/Companyinvite/Invite_individual/Enter Contact Number'), Phone)
+		WebUI.click(findTestObject('Object Repository/Companyinvite/Submit_Invite_Button'))
 
 	}
 	@Keyword
 	def EnterSellerDetails(String CompanyName='', String PAN_GSTIN='', String Email='', String Phone='') {
 		WebUI.click(findTestObject('Object Repository/Company_Invite_Seller/Page_GIROPie/input_As Buyer_PrivateSwitchBase-input css-1m9pwf3'))
-		WebUI.setText(findTestObject('Object Repository/InviteSeller/input_As Seller_r5'), CompanyName)
-		WebUI.setText(findTestObject('Object Repository/InviteSeller/input_As Seller_r6'), PAN_GSTIN)
-		WebUI.setText(findTestObject('Object Repository/InviteSeller/input_As Seller_r7'), Email)
-		WebUI.setText(findTestObject('Object Repository/InviteSeller/input_As Seller_r8'), Phone)
-		WebUI.click(findTestObject('Object Repository/InviteSeller/button_Invite_1'))
+		WebUI.setText(findTestObject('Object Repository/Companyinvite/Invite_individual/Enter Company name'), CompanyName)
+		WebUI.setText(findTestObject('Object Repository/Companyinvite/Invite_individual/Enter PANGSTIN'), PAN_GSTIN)
+		WebUI.setText(findTestObject('Object Repository/Companyinvite/Invite_individual/Enter Email ID'), Email)
+		WebUI.setText(findTestObject('Object Repository/Companyinvite/Invite_individual/Enter Contact Number'), Phone)
+		WebUI.click(findTestObject('Object Repository/Companyinvite/Submit_Invite_Button'))
 
 	}
 	@Keyword
 	def EnterBuyerSellerDetails(String CompanyName='', String PAN_GSTIN='', String Email='', String Phone='') {
-		WebUI.click(findTestObject('Object Repository/InviteSeller/input_Invite Bulk_PrivateSwitchBase-input c_7e24b0'))
+		WebUI.click(findTestObject('Object Repository/Companyinvite/inviteBuyer/checkbox Buyer'))
 		WebUI.click(findTestObject('Object Repository/Company_Invite_Seller/Page_GIROPie/input_As Buyer_PrivateSwitchBase-input css-1m9pwf3'))
-		WebUI.setText(findTestObject('Object Repository/InviteSeller/input_As Seller_r5'), CompanyName)
-		WebUI.setText(findTestObject('Object Repository/InviteSeller/input_As Seller_r6'), PAN_GSTIN)
-		WebUI.setText(findTestObject('Object Repository/InviteSeller/input_As Seller_r7'), Email)
-		WebUI.setText(findTestObject('Object Repository/InviteSeller/input_As Seller_r8'), Phone)
-		WebUI.click(findTestObject('Object Repository/InviteSeller/button_Invite_1'))
+		WebUI.setText(findTestObject('Object Repository/Companyinvite/Invite_individual/Enter Company name'), CompanyName)
+		WebUI.setText(findTestObject('Object Repository/Companyinvite/Invite_individual/Enter PANGSTIN'), PAN_GSTIN)
+		WebUI.setText(findTestObject('Object Repository/Companyinvite/Invite_individual/Enter Email ID'), Email)
+		WebUI.setText(findTestObject('Object Repository/Companyinvite/Invite_individual/Enter Contact Number'), Phone)
+		WebUI.click(findTestObject('Object Repository/Companyinvite/Submit_Invite_Button'))
 
 	}
 

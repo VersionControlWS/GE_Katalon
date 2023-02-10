@@ -1,17 +1,17 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <WebElementEntity>
    <description></description>
-   <name>button_Invite</name>
+   <name>Browse_iles_button</name>
    <tag></tag>
-   <elementGuidId>75157b77-6211-4c49-b1de-2da7f82fc742</elementGuidId>
+   <elementGuidId>6a31e8c4-7db3-460c-a93e-9b02c9f91074</elementGuidId>
    <selectorCollection>
       <entry>
          <key>XPATH</key>
-         <value>(//button[@type='button'])[2]</value>
+         <value>(//button[@type='button'])[10]</value>
       </entry>
       <entry>
          <key>CSS</key>
-         <value>button.MuiButtonBase-root.MuiButton-root.MuiButton-contained.MuiButton-containedPrimary.MuiButton-sizeMedium.MuiButton-containedSizeMedium.css-12urtpq</value>
+         <value>button.MuiButtonBase-root.MuiButton-root.MuiButton-contained.MuiButton-containedPrimary.MuiButton-sizeMedium.MuiButton-containedSizeMedium.css-j5tups</value>
       </entry>
    </selectorCollection>
    <selectorMethod>XPATH</selectorMethod>
@@ -22,15 +22,15 @@
       <name>tag</name>
       <type>Main</type>
       <value>button</value>
-      <webElementGuid>195df75d-ac89-4fae-baaf-e6b87959a46d</webElementGuid>
+      <webElementGuid>8313373b-2789-464d-8efc-295651f5f61f</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>false</isSelected>
       <matchCondition>equals</matchCondition>
       <name>class</name>
       <type>Main</type>
-      <value>MuiButtonBase-root MuiButton-root MuiButton-contained MuiButton-containedPrimary MuiButton-sizeMedium MuiButton-containedSizeMedium css-12urtpq</value>
-      <webElementGuid>c61d0c8a-d3dc-4d9d-874d-750a2da7d155</webElementGuid>
+      <value>MuiButtonBase-root MuiButton-root MuiButton-contained MuiButton-containedPrimary MuiButton-sizeMedium MuiButton-containedSizeMedium css-j5tups</value>
+      <webElementGuid>73dbbc81-7bfb-4eb8-a1d2-fa8d545855f8</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>false</isSelected>
@@ -38,7 +38,7 @@
       <name>tabindex</name>
       <type>Main</type>
       <value>0</value>
-      <webElementGuid>d0d67f46-8756-4827-a451-44c671cbf3c9</webElementGuid>
+      <webElementGuid>8e00c4ef-6ce7-4ae3-bc92-5079e6462681</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>true</isSelected>
@@ -46,86 +46,86 @@
       <name>type</name>
       <type>Main</type>
       <value>button</value>
-      <webElementGuid>336e0525-5d4b-4308-bc08-aca0f4376edc</webElementGuid>
+      <webElementGuid>3988c61b-4a3d-4b30-89f9-f9c555422850</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>true</isSelected>
       <matchCondition>equals</matchCondition>
       <name>text</name>
       <type>Main</type>
-      <value>Invite</value>
-      <webElementGuid>095c4436-3c60-46bb-99af-14f878d617f3</webElementGuid>
+      <value>Browse files</value>
+      <webElementGuid>032b78d3-bf93-48d6-b192-ff9eafa89f5c</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>false</isSelected>
       <matchCondition>equals</matchCondition>
       <name>xpath</name>
       <type>Main</type>
-      <value>id(&quot;root&quot;)/div[@class=&quot;App&quot;]/div[@class=&quot;MuiBox-root css-hboir5&quot;]/div[@class=&quot;MuiBox-root css-1stk98t&quot;]/div[@class=&quot;navbar MuiBox-root css-1ck4cv3&quot;]/header[@class=&quot;MuiPaper-root MuiPaper-elevation MuiPaper-elevation4 MuiAppBar-root MuiAppBar-colorPrimary MuiAppBar-positionStatic css-1x7skt0&quot;]/div[@class=&quot;MuiToolbar-root MuiToolbar-gutters MuiToolbar-regular css-i6s8oy&quot;]/div[@class=&quot;MuiBox-root css-70qvj9&quot;]/div[@class=&quot;MuiBox-root css-13tqxrv&quot;]/button[@class=&quot;MuiButtonBase-root MuiButton-root MuiButton-contained MuiButton-containedPrimary MuiButton-sizeMedium MuiButton-containedSizeMedium css-12urtpq&quot;]</value>
-      <webElementGuid>b96bf96b-eaa7-4103-aff8-55fca4a97d0b</webElementGuid>
+      <value>id(&quot;form-file-upload&quot;)/div[@class=&quot;MuiBox-root css-t0051x&quot;]/div[@class=&quot;MuiBox-root css-efrzrm&quot;]/div[@class=&quot;css-1t62lt9&quot;]/button[@class=&quot;MuiButtonBase-root MuiButton-root MuiButton-contained MuiButton-containedPrimary MuiButton-sizeMedium MuiButton-containedSizeMedium css-j5tups&quot;]</value>
+      <webElementGuid>fd8af6ca-c9f6-4b30-b50b-e8c7a298d604</webElementGuid>
    </webElementProperties>
    <webElementXpaths>
       <isSelected>true</isSelected>
       <matchCondition>equals</matchCondition>
       <name>xpath:attributes</name>
       <type>Main</type>
-      <value>(//button[@type='button'])[2]</value>
-      <webElementGuid>64f96610-47c1-4a20-a56b-001a78bfc145</webElementGuid>
+      <value>(//button[@type='button'])[10]</value>
+      <webElementGuid>c3202708-4e6a-4242-baa3-c26eb981a563</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
       <matchCondition>equals</matchCondition>
       <name>xpath:idRelative</name>
       <type>Main</type>
-      <value>//div[@id='root']/div/div/div[2]/div/header/div/div[3]/div[2]/button</value>
-      <webElementGuid>5f1a88a4-cd5f-4575-b9a9-dc154f3150ea</webElementGuid>
+      <value>//form[@id='form-file-upload']/div/div[2]/div/button</value>
+      <webElementGuid>29fde5bd-0bcb-479e-a751-b4ad9f0f387b</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
       <matchCondition>equals</matchCondition>
       <name>xpath:neighbor</name>
       <type>Main</type>
-      <value>(.//*[normalize-space(text()) and normalize-space(.)='Uth Uk'])[1]/following::button[1]</value>
-      <webElementGuid>b99fdd7f-cf94-4253-b7fa-4801f485b747</webElementGuid>
+      <value>(.//*[normalize-space(text()) and normalize-space(.)='Download Template'])[1]/following::button[1]</value>
+      <webElementGuid>1c862fe3-03e0-4441-9387-d88d6f8c4772</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
       <matchCondition>equals</matchCondition>
       <name>xpath:neighbor</name>
       <type>Main</type>
-      <value>(.//*[normalize-space(text()) and normalize-space(.)='​'])[1]/following::button[1]</value>
-      <webElementGuid>365f4575-27d7-4972-b86b-1965aa1338d7</webElementGuid>
+      <value>(.//*[normalize-space(text()) and normalize-space(.)='As Seller'])[1]/following::button[2]</value>
+      <webElementGuid>d71ee11c-052f-43d8-a482-78039fb412a6</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
       <matchCondition>equals</matchCondition>
       <name>xpath:neighbor</name>
       <type>Main</type>
-      <value>(.//*[normalize-space(text()) and normalize-space(.)='​'])[2]/preceding::button[2]</value>
-      <webElementGuid>3dc243a1-2c4d-456a-af2a-d4c6697e655a</webElementGuid>
+      <value>(.//*[normalize-space(text()) and normalize-space(.)='Invite'])[2]/preceding::button[1]</value>
+      <webElementGuid>b7aa9ae7-6c97-4a5a-9206-b48521f470bc</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
       <matchCondition>equals</matchCondition>
       <name>xpath:neighbor</name>
       <type>Main</type>
-      <value>//*/text()[normalize-space(.)='Invite']/parent::*</value>
-      <webElementGuid>be8352db-7db7-46d3-97e2-e48d907038ff</webElementGuid>
+      <value>//*/text()[normalize-space(.)='Browse files']/parent::*</value>
+      <webElementGuid>77995aa6-b89d-4f34-adae-c14553a35b42</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
       <matchCondition>equals</matchCondition>
       <name>xpath:position</name>
       <type>Main</type>
-      <value>//div[3]/div[2]/button</value>
-      <webElementGuid>d3abbc65-7485-422a-9f37-f1eed4dc8f10</webElementGuid>
+      <value>//div[2]/div/button</value>
+      <webElementGuid>a2708e29-1eb0-483b-8ccf-4924077fa000</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
       <matchCondition>equals</matchCondition>
       <name>xpath:customAttributes</name>
       <type>Main</type>
-      <value>//button[@type = 'button' and (text() = 'Invite' or . = 'Invite')]</value>
-      <webElementGuid>2b81ff52-2888-49d1-8e7a-92d95b19dede</webElementGuid>
+      <value>//button[@type = 'button' and (text() = 'Browse files' or . = 'Browse files')]</value>
+      <webElementGuid>565e19bd-7471-4151-81f3-ad6d09d5f252</webElementGuid>
    </webElementXpaths>
 </WebElementEntity>

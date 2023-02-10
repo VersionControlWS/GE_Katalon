@@ -1,17 +1,17 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <WebElementEntity>
    <description></description>
-   <name>button_Invite Individual</name>
+   <name>invite_Individual_button</name>
    <tag></tag>
    <elementGuidId>34693742-b746-4eed-a79a-fb11b38cf528</elementGuidId>
    <selectorCollection>
       <entry>
-         <key>CSS</key>
-         <value>#mui-p-86117-T-1</value>
-      </entry>
-      <entry>
          <key>XPATH</key>
          <value>//button[@id='mui-p-86117-T-1']</value>
+      </entry>
+      <entry>
+         <key>CSS</key>
+         <value>#mui-p-86117-T-1</value>
       </entry>
    </selectorCollection>
    <selectorMethod>XPATH</selectorMethod>

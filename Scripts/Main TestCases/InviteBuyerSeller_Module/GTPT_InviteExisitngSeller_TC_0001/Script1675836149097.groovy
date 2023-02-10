@@ -18,25 +18,10 @@ import internal.GlobalVariable as GlobalVariable
 import org.openqa.selenium.Keys as Keys
 CustomKeywords.'giroPie.user.LoginwithUsernamePwd'()
 
-WebUI.click(findTestObject('Object Repository/Company_Invite_Seller/Page_GIROPie/button_Invite'))
-
-WebUI.verifyElementText(findTestObject('Object Repository/Company_Invite_Seller/Page_GIROPie/Page_GIROPie/button_Invite Individual'),'Invite Individual')
+CustomKeywords.'giroPie.user.ClickOnInviteButtonPresentOnHomePage'()
 
 CustomKeywords.'giroPie.user.EnterSellerDetails'('xxxy', 'CCCRPA0112X', 'darshan@uth-uk.com', '8197390625')
 
-WebUI.waitForElementVisible(findTestObject('Object Repository/Company_Invite_Seller/Page_GIROPie/Page_GIROPie/img_Invite_MuiAvatar-img css-1hy9t21'), 5)
 
-WebUI.click(findTestObject('Object Repository/Company_Invite_Seller/Page_GIROPie/Page_GIROPie/img_Invite_MuiAvatar-img css-1hy9t21'))
 
-WebUI.waitForElementVisible(findTestObject('Object Repository/InviteSeller/li_User Management'), 2)
-
-WebUI.click(findTestObject('Object Repository/InviteSeller/li_User Management'))
-
-WebUI.verifyElementText(findTestObject('Object Repository/Company_Invite_Seller/Page_GIROPie/button_Company Invites'), 'Company Invites')
-
-WebUI.verifyElementText(findTestObject('Object Repository/Company_Invite_Seller/Page_GIROPie/button_Sent'), 'Sent')
-
-WebUI.click(findTestObject('Object Repository/Company_Invite_Seller/Page_GIROPie/button_Sent'))
-
-//WebUI.verifyElementPresent(findTestObject('Object Repository/Company_Invite_Seller/Page_GIROPie/div_Company Name Sender Branch GSTIN PAN Re_207067'), 3)
 

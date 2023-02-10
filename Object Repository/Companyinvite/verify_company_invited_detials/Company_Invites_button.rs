@@ -1,17 +1,17 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <WebElementEntity>
    <description></description>
-   <name>button_Invite Individual</name>
+   <name>Company_Invites_button</name>
    <tag></tag>
-   <elementGuidId>ec5d2f7e-0d5e-4cfc-960c-d82787e71c44</elementGuidId>
+   <elementGuidId>91772304-bb46-4e64-86cb-5980da6d6a6d</elementGuidId>
    <selectorCollection>
       <entry>
          <key>XPATH</key>
-         <value>//button[@id='mui-p-51008-T-1']</value>
+         <value>//button[@id='simple-tab-2']</value>
       </entry>
       <entry>
          <key>CSS</key>
-         <value>#mui-p-51008-T-1</value>
+         <value>#simple-tab-2</value>
       </entry>
    </selectorCollection>
    <selectorMethod>XPATH</selectorMethod>
@@ -22,23 +22,23 @@
       <name>tag</name>
       <type>Main</type>
       <value>button</value>
-      <webElementGuid>5fa0caa7-25c9-48a3-80ac-5547d8717712</webElementGuid>
+      <webElementGuid>39ef4b1a-a1d2-499f-9ac5-489e9e7f1314</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>false</isSelected>
       <matchCondition>equals</matchCondition>
       <name>class</name>
       <type>Main</type>
-      <value>MuiButtonBase-root MuiTab-root MuiTab-textColorPrimary Mui-selected css-1q2h7u5</value>
-      <webElementGuid>c265deb6-84e8-461b-9685-f3226c8b0587</webElementGuid>
+      <value>MuiButtonBase-root MuiTab-root MuiTab-textColorPrimary index1  indexlast css-1ewsn4o</value>
+      <webElementGuid>04851f5c-d837-41a4-ad0f-28bfea256766</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>false</isSelected>
       <matchCondition>equals</matchCondition>
       <name>tabindex</name>
       <type>Main</type>
-      <value>0</value>
-      <webElementGuid>fda44aed-8b45-436b-aec0-63ac98a54e28</webElementGuid>
+      <value>-1</value>
+      <webElementGuid>615a5ebc-44fc-4570-98fc-1aaf3ae5bda4</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>true</isSelected>
@@ -46,7 +46,7 @@
       <name>type</name>
       <type>Main</type>
       <value>button</value>
-      <webElementGuid>de91fedb-a2a6-4286-913a-98ef61f7986b</webElementGuid>
+      <webElementGuid>0352236a-c1da-4b1b-8560-b646bd3f6103</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>false</isSelected>
@@ -54,110 +54,102 @@
       <name>role</name>
       <type>Main</type>
       <value>tab</value>
-      <webElementGuid>dcae6a7a-33fb-4d01-b2ae-d3110169fccd</webElementGuid>
+      <webElementGuid>176a9dc9-ed72-477a-a21a-a5016673ef54</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>false</isSelected>
       <matchCondition>equals</matchCondition>
       <name>aria-selected</name>
       <type>Main</type>
-      <value>true</value>
-      <webElementGuid>be72d655-67fe-4784-8eda-d71f3f02aa75</webElementGuid>
-   </webElementProperties>
-   <webElementProperties>
-      <isSelected>false</isSelected>
-      <matchCondition>equals</matchCondition>
-      <name>aria-controls</name>
-      <type>Main</type>
-      <value>mui-p-51008-P-1</value>
-      <webElementGuid>daed2808-4505-4c6d-8d95-56f3eb0d694c</webElementGuid>
+      <value>false</value>
+      <webElementGuid>1f0d7af1-9442-424f-950f-bd31596c07a7</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>true</isSelected>
       <matchCondition>equals</matchCondition>
       <name>id</name>
       <type>Main</type>
-      <value>mui-p-51008-T-1</value>
-      <webElementGuid>ca568f96-f9c1-4f1e-a35c-e0773dd404c5</webElementGuid>
+      <value>simple-tab-2</value>
+      <webElementGuid>f4456d99-8e22-4c23-a61b-e9cbdb5b240d</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>aria-controls</name>
+      <type>Main</type>
+      <value>simple-tabpanel-2</value>
+      <webElementGuid>eefcbc65-6de6-4cee-8e0d-023344ee16af</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>true</isSelected>
       <matchCondition>equals</matchCondition>
       <name>text</name>
       <type>Main</type>
-      <value>Invite Individual</value>
-      <webElementGuid>036bf657-89e6-466a-81be-3eed94ec7420</webElementGuid>
+      <value>Company Invites</value>
+      <webElementGuid>f79088b6-6321-4eeb-ba6d-c42f9fa82130</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>false</isSelected>
       <matchCondition>equals</matchCondition>
       <name>xpath</name>
       <type>Main</type>
-      <value>id(&quot;mui-p-51008-T-1&quot;)</value>
-      <webElementGuid>725aea4f-9285-4e9a-b303-edb4917dc41d</webElementGuid>
+      <value>id(&quot;simple-tab-2&quot;)</value>
+      <webElementGuid>59f979f4-7ee6-42f2-814e-04a80dca441a</webElementGuid>
    </webElementProperties>
    <webElementXpaths>
       <isSelected>true</isSelected>
       <matchCondition>equals</matchCondition>
       <name>xpath:attributes</name>
       <type>Main</type>
-      <value>//button[@id='mui-p-51008-T-1']</value>
-      <webElementGuid>1778f688-47ef-4890-a1d0-7af128179ad1</webElementGuid>
+      <value>//button[@id='simple-tab-2']</value>
+      <webElementGuid>b8895315-d78e-41ba-9925-05c9b88da5b2</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:idRelative</name>
+      <type>Main</type>
+      <value>//div[@id='root']/div/div/div[2]/div[2]/div/div[2]/div[2]/div/div[2]/div/button[3]</value>
+      <webElementGuid>7b0f34e1-cc56-409c-8b97-cb9a5c39cbc2</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
       <matchCondition>equals</matchCondition>
       <name>xpath:neighbor</name>
       <type>Main</type>
-      <value>(.//*[normalize-space(text()) and normalize-space(.)='Yes'])[1]/following::button[2]</value>
-      <webElementGuid>55d0d033-95ec-4b79-b509-15fcd7325bda</webElementGuid>
+      <value>(.//*[normalize-space(text()) and normalize-space(.)='Requests'])[1]/following::button[1]</value>
+      <webElementGuid>3eef6a94-db5b-4c2d-a81b-45c12570fb6e</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
       <matchCondition>equals</matchCondition>
       <name>xpath:neighbor</name>
       <type>Main</type>
-      <value>(.//*[normalize-space(text()) and normalize-space(.)='Manage Subscriptions'])[1]/following::button[4]</value>
-      <webElementGuid>68bb636e-3ba4-4f70-9e6b-a4be20c4e7cc</webElementGuid>
+      <value>(.//*[normalize-space(text()) and normalize-space(.)='Current Users'])[1]/following::button[2]</value>
+      <webElementGuid>842a18be-08ca-4818-a397-c5144a7099a2</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
       <matchCondition>equals</matchCondition>
       <name>xpath:neighbor</name>
       <type>Main</type>
-      <value>(.//*[normalize-space(text()) and normalize-space(.)='Invite Bulk'])[1]/preceding::button[1]</value>
-      <webElementGuid>d23d1f33-bbd1-4793-9a4f-0638a8d0e174</webElementGuid>
-   </webElementXpaths>
-   <webElementXpaths>
-      <isSelected>false</isSelected>
-      <matchCondition>equals</matchCondition>
-      <name>xpath:neighbor</name>
-      <type>Main</type>
-      <value>(.//*[normalize-space(text()) and normalize-space(.)='As Buyer'])[1]/preceding::button[2]</value>
-      <webElementGuid>7284b8ae-8003-4b0d-b2ee-cb5d2eb5179e</webElementGuid>
-   </webElementXpaths>
-   <webElementXpaths>
-      <isSelected>false</isSelected>
-      <matchCondition>equals</matchCondition>
-      <name>xpath:neighbor</name>
-      <type>Main</type>
-      <value>//*/text()[normalize-space(.)='Invite Individual']/parent::*</value>
-      <webElementGuid>d6122ead-4b1e-4b6f-b197-ca5f7564de73</webElementGuid>
+      <value>//*/text()[normalize-space(.)='Company Invites']/parent::*</value>
+      <webElementGuid>82a90266-8b66-42ab-9203-70a6c3696fdc</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
       <matchCondition>equals</matchCondition>
       <name>xpath:position</name>
       <type>Main</type>
-      <value>//div[3]/div/div/div/div/div/div/div/button</value>
-      <webElementGuid>1668ec65-d5d9-41ca-867f-033899a44e1e</webElementGuid>
+      <value>//button[3]</value>
+      <webElementGuid>6a30cb07-385e-4684-bfff-884ece9fd857</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
       <matchCondition>equals</matchCondition>
       <name>xpath:customAttributes</name>
       <type>Main</type>
-      <value>//button[@type = 'button' and @id = 'mui-p-51008-T-1' and (text() = 'Invite Individual' or . = 'Invite Individual')]</value>
-      <webElementGuid>7e3c9da3-977b-4058-9643-383edd4ea320</webElementGuid>
+      <value>//button[@type = 'button' and @id = 'simple-tab-2' and (text() = 'Company Invites' or . = 'Company Invites')]</value>
+      <webElementGuid>d83f96ce-3f7e-4d1b-96da-1f5156fe7e62</webElementGuid>
    </webElementXpaths>
 </WebElementEntity>

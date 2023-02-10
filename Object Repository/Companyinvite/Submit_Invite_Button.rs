@@ -1,17 +1,17 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <WebElementEntity>
    <description></description>
-   <name>button_Invite_1</name>
+   <name>Submit_Invite_Button</name>
    <tag></tag>
    <elementGuidId>cd4e9ebd-6d5a-4803-8541-0aaf27737432</elementGuidId>
    <selectorCollection>
       <entry>
-         <key>CSS</key>
-         <value>#submit</value>
-      </entry>
-      <entry>
          <key>XPATH</key>
          <value>//button[@id='submit']</value>
+      </entry>
+      <entry>
+         <key>CSS</key>
+         <value>#submit</value>
       </entry>
    </selectorCollection>
    <selectorMethod>XPATH</selectorMethod>

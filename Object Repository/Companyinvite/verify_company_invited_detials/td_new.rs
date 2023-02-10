@@ -6,12 +6,11 @@
    <elementGuidId>13d194d9-c86d-4752-b856-6223aa607224</elementGuidId>
    <selectorCollection>
       <entry>
-         <key>CSS</key>
-         <value></value>
-      </entry>
-      <entry>
          <key>XPATH</key>
          <value>//div[@id='simple-tabpanel-0']/div/p/div/div/div/div/table/tbody/tr[7]/td</value>
+      </entry>
+      <entry>
+         <key>CSS</key>
       </entry>
    </selectorCollection>
    <selectorMethod>XPATH</selectorMethod>

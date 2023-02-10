@@ -1,17 +1,16 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <WebElementEntity>
    <description></description>
-   <name>input_Invite Bulk_PrivateSwitchBase-input c_7e24b0</name>
+   <name>Enter PANGSTIN</name>
    <tag></tag>
-   <elementGuidId>feef815c-6029-4c5f-ac19-f09daf62f6b7</elementGuidId>
+   <elementGuidId>8700eeeb-13c5-434c-b067-72dec991d927</elementGuidId>
    <selectorCollection>
       <entry>
-         <key>CSS</key>
-         <value>input.PrivateSwitchBase-input.css-1m9pwf3</value>
+         <key>XPATH</key>
+         <value>//input[@id=':r6:']</value>
       </entry>
       <entry>
-         <key>XPATH</key>
-         <value>//input[@value='Buyer']</value>
+         <key>CSS</key>
       </entry>
    </selectorCollection>
    <selectorMethod>XPATH</selectorMethod>
@@ -22,78 +21,86 @@
       <name>tag</name>
       <type>Main</type>
       <value>input</value>
-      <webElementGuid>d7cd32e0-fd6a-4b24-a6d6-a6b49f1e43cf</webElementGuid>
+      <webElementGuid>d2c2ce08-0e0d-4606-8fa6-b008dcdcc41c</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>false</isSelected>
       <matchCondition>equals</matchCondition>
-      <name>class</name>
+      <name>aria-invalid</name>
       <type>Main</type>
-      <value>PrivateSwitchBase-input css-1m9pwf3</value>
-      <webElementGuid>c960da53-cc86-43ec-b068-82b0c539762c</webElementGuid>
+      <value>false</value>
+      <webElementGuid>424e160e-0e4d-44ec-816f-ef96d0210b5c</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>true</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>id</name>
+      <type>Main</type>
+      <value>:r6:</value>
+      <webElementGuid>29e17039-68b1-4157-b8ae-cb4513da2570</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>true</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>placeholder</name>
+      <type>Main</type>
+      <value>Enter PAN/GSTIN</value>
+      <webElementGuid>d500d978-3c64-419d-b7c5-444929210f2c</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>true</isSelected>
       <matchCondition>equals</matchCondition>
       <name>type</name>
       <type>Main</type>
-      <value>checkbox</value>
-      <webElementGuid>4eeff523-ca84-4be1-b0e2-84db7730db7c</webElementGuid>
+      <value>text</value>
+      <webElementGuid>85633eec-f653-4df9-9a87-3f305ff190a3</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>false</isSelected>
       <matchCondition>equals</matchCondition>
-      <name>data-indeterminate</name>
+      <name>class</name>
       <type>Main</type>
-      <value>false</value>
-      <webElementGuid>a24c1b83-00b5-41d4-97ab-bd91163a576e</webElementGuid>
-   </webElementProperties>
-   <webElementProperties>
-      <isSelected>false</isSelected>
-      <matchCondition>equals</matchCondition>
-      <name>value</name>
-      <type>Main</type>
-      <value>Buyer</value>
-      <webElementGuid>b5059a11-0df5-4ea4-892d-a34e6a5fee6b</webElementGuid>
+      <value>MuiInputBase-input MuiInput-input css-1x51dt5-MuiInputBase-input-MuiInput-input</value>
+      <webElementGuid>ad9705e3-72aa-45ac-a6b5-cb4817db26f0</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>false</isSelected>
       <matchCondition>equals</matchCondition>
       <name>xpath</name>
       <type>Main</type>
-      <value>id(&quot;mui-p-86117-P-1&quot;)/div[@class=&quot;MuiFormControl-root css-1s6r0nj&quot;]/label[@class=&quot;MuiFormControlLabel-root MuiFormControlLabel-labelPlacementStart css-8l6tpu&quot;]/span[@class=&quot;MuiButtonBase-root MuiCheckbox-root MuiCheckbox-colorPrimary PrivateSwitchBase-root MuiCheckbox-root MuiCheckbox-colorPrimary css-zun73v&quot;]/input[@class=&quot;PrivateSwitchBase-input css-1m9pwf3&quot;]</value>
-      <webElementGuid>2c6f9af7-4618-4e60-a1cb-8ddc20cfae25</webElementGuid>
+      <value>id(&quot;:r6:&quot;)</value>
+      <webElementGuid>ef0275fa-0e63-4bd9-be58-2ecfd8ec9788</webElementGuid>
    </webElementProperties>
    <webElementXpaths>
       <isSelected>true</isSelected>
       <matchCondition>equals</matchCondition>
       <name>xpath:attributes</name>
       <type>Main</type>
-      <value>//input[@value='Buyer']</value>
-      <webElementGuid>39283bc8-dedc-4bd4-812f-a82c986a04e0</webElementGuid>
+      <value>//input[@id=':r6:']</value>
+      <webElementGuid>419fd2ff-4517-4f15-b82d-5977c16bb1b2</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
       <matchCondition>equals</matchCondition>
       <name>xpath:idRelative</name>
       <type>Main</type>
-      <value>//div[@id='mui-p-86117-P-1']/div/label/span/input</value>
-      <webElementGuid>0baa5a0d-99ce-4501-8257-a109581ff874</webElementGuid>
+      <value>//div[@id='mui-p-86117-P-1']/div[3]/form/div[2]/div[2]/div/input</value>
+      <webElementGuid>45018eb7-098d-4177-b5aa-87a54ff5bde8</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
       <matchCondition>equals</matchCondition>
       <name>xpath:position</name>
       <type>Main</type>
-      <value>//span/input</value>
-      <webElementGuid>1ca279ce-2258-4f71-a7ca-60699455db55</webElementGuid>
+      <value>//div[2]/div/input</value>
+      <webElementGuid>b28093c1-a5ae-4a0f-869b-e8f7928caf8b</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
       <matchCondition>equals</matchCondition>
       <name>xpath:customAttributes</name>
       <type>Main</type>
-      <value>//input[@type = 'checkbox']</value>
-      <webElementGuid>c53ac09c-0e7e-4d18-a3cb-224794cd1572</webElementGuid>
+      <value>//input[@id = ':r6:' and @placeholder = 'Enter PAN/GSTIN' and @type = 'text']</value>
+      <webElementGuid>c2cf9d5f-4f2b-4645-a2e2-7c8b0d8a40c6</webElementGuid>
    </webElementXpaths>
 </WebElementEntity>
