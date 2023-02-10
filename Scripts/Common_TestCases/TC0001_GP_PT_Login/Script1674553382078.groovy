@@ -21,7 +21,7 @@ username_obj = 'Object Repository/Page_NachPay/input_Sign Up_r0'
 password_obj = 'Object Repository/Page_NachPay/input__MuiInputBase-input MuiOutlinedInput-_047092'
 submit_btn_obj = 'Object Repository/Page_NachPay/div_Continue'
 
-String url = "https://staging.peppertree.ai/"
+String url = GlobalVariable.baseUrl
 String username = "ajay@uth-uk.com"
 String password = "Tree@2023"
 

@@ -57,7 +57,7 @@ public class user {
 	def LoginwithUsernamePwd() {
 
 		//Local variables
-		String url = 'https://staging.peppertree.ai/'
+		String url = GlobalVariable.baseUrl
 		String username = 'ajay@uth-uk.com'
 		String password = 'Tree@2023'
 
