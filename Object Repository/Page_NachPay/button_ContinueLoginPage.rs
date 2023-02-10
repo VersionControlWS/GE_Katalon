@@ -1,17 +1,17 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <WebElementEntity>
    <description></description>
-   <name>div_Continue</name>
+   <name>button_ContinueLoginPage</name>
    <tag></tag>
    <elementGuidId>54901985-fad2-4afd-89fa-f96bf01b9ac8</elementGuidId>
    <selectorCollection>
       <entry>
-         <key>CSS</key>
-         <value>div.ContinueButton</value>
-      </entry>
-      <entry>
          <key>XPATH</key>
          <value>//div[@id='root']/div/div/div/div[4]/div[3]/div</value>
+      </entry>
+      <entry>
+         <key>CSS</key>
+         <value>div.ContinueButton</value>
       </entry>
    </selectorCollection>
    <selectorMethod>XPATH</selectorMethod>
