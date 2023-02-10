@@ -46,6 +46,9 @@ import com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords
 import com.kms.katalon.core.testobject.TestObject
 import javax.swing.JOptionPane;
 import org.openqa.selenium.Keys as Keys
+import com.kms.katalon.core.configuration.RunConfiguration
+import java.time.format.DateTimeFormatter;  
+import java.time.LocalDateTime;   
 
 class LoginStepDefinition {
 	/**
@@ -79,11 +82,23 @@ class LoginStepDefinition {
 		WebUI.click(findTestObject(submit_btn_obj))
 	}
 
+	public static takeScrnShotAndStoreInReportsDirectory(String status){
+		String dirName = RunConfiguration.getProjectDir()
+		println(dirName)
+		DateTimeFormatter dtf = DateTimeFormatter.ofPattern("yyyy_MM_dd_HH_mm_ss");
+		LocalDateTime now = LocalDateTime.now();
+		System.out.println(dtf.format(now));
+		String DateTime = dtf.format(now)
+		//println(dirName+"/Reports/BDD_LoginScnKeyword"+status+"_"+DateTime)
+		String path = dirName+"/Reports/BDD_LoginScnKeyword_"+status+"_"+DateTime+".png"
+		WebUI.takeScreenshot(path)
+	}
+	
 	@Then("I verify the (.*) in step")
 	def I_verify_the_status_in_step(String status) {
 //		println status
 		WebUI.waitForElementVisible(findTestObject("Object Repository/LoginPage_TextNError/"+status), 5)
-		WebUI.takeScreenshot()
+		takeScrnShotAndStoreInReportsDirectory(status)
 		//		WebUI.verifyElementText(findTestObject("Object Repository/LoginPage_TextNError/"+status), status)
 		println("This is what is expected")
 		println(WebUI.getText(findTestObject("Object Repository/LoginPage_TextNError/"+status)))
@@ -114,7 +129,7 @@ class LoginStepDefinition {
 		//		println ("withFullStop : "+withFullStop)
 		//		println ("withFullStopNew : "+withFullStopNew)
 		WebUI.waitForElementVisible(findTestObject("Object Repository/LoginPage_TextNError/"+status), 5)
-		WebUI.takeScreenshot()
+		takeScrnShotAndStoreInReportsDirectory(status)
 		println("This is what is expected")
 		println(WebUI.getText(findTestObject("Object Repository/LoginPage_TextNError/"+status)))
 		println("")
