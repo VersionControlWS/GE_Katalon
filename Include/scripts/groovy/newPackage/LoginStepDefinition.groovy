@@ -53,7 +53,7 @@ class LoginStepDefinition {
 	 */
 	@Given("to launch the browser with (.*)")
 	def to_launch_the_browser_with(String url) {
-//		println url
+		//		println url
 		WebUI.openBrowser('')
 		WebUI.navigateToUrl(url)
 		WebUI.maximizeWindow()
@@ -61,7 +61,7 @@ class LoginStepDefinition {
 
 	@When("I enter the user details such as (.*) (.*) in given textField")
 	def I_enter_the_user_details_such_as(String username, String password) {
-//		println value
+		//		println value
 		String user_obj = 'Object Repository/Page_NachPay/inputLoginPage_Username'
 		String pass_obj = 'Object Repository/Page_NachPay/inputLoginPage_Password'
 		String submit_btn_obj = 'Object Repository/Page_NachPay/button_ContinueLoginPage'
@@ -72,7 +72,7 @@ class LoginStepDefinition {
 
 	@When("phone number is entered as (.*) in given textField")
 	def phone_number_is_entered_in_textField(String phoneNumber) {
-		println phoneNumber
+//		println phoneNumber
 		String phoneNumber_obj = 'Object Repository/Page_NachPay/inputLoginPage_Username'
 		String submit_btn_obj = 'Object Repository/Page_NachPay/button_LoginPage_GetOTP'
 		WebUI.setText(findTestObject(phoneNumber_obj), phoneNumber)
@@ -81,16 +81,17 @@ class LoginStepDefinition {
 
 	@Then("I verify the (.*) in step")
 	def I_verify_the_status_in_step(String status) {
-		println status
+//		println status
 		WebUI.waitForElementVisible(findTestObject("Object Repository/LoginPage_TextNError/"+status), 5)
+		WebUI.takeScreenshot()
 		//		WebUI.verifyElementText(findTestObject("Object Repository/LoginPage_TextNError/"+status), status)
 		println("This is what is expected")
 		println(WebUI.getText(findTestObject("Object Repository/LoginPage_TextNError/"+status)))
 		println("")
 		WebUI.verifyElementText(findTestObject("Object Repository/LoginPage_TextNError/"+status), status)
 		println("")
-//		JOptionPane.showMessageDialog(null, status, "Verifying the text on this page", JOptionPane.INFORMATION_MESSAGE);
-//		WebUI.delay(5)
+		//		JOptionPane.showMessageDialog(null, status, "Verifying the text on this page", JOptionPane.INFORMATION_MESSAGE);
+		//		WebUI.delay(5)
 		WebUI.closeBrowser()
 	}
 
@@ -113,13 +114,14 @@ class LoginStepDefinition {
 		//		println ("withFullStop : "+withFullStop)
 		//		println ("withFullStopNew : "+withFullStopNew)
 		WebUI.waitForElementVisible(findTestObject("Object Repository/LoginPage_TextNError/"+status), 5)
+		WebUI.takeScreenshot()
 		println("This is what is expected")
 		println(WebUI.getText(findTestObject("Object Repository/LoginPage_TextNError/"+status)))
 		println("")
 		WebUI.verifyElementText(findTestObject("Object Repository/LoginPage_TextNError/"+status), withFullStopNew)
 		println("")
-//		JOptionPane.showMessageDialog(null, status, "Verifying the text on this page", JOptionPane.INFORMATION_MESSAGE);
-//		WebUI.delay(5)
+		//		JOptionPane.showMessageDialog(null, status, "Verifying the text on this page", JOptionPane.INFORMATION_MESSAGE);
+		//		WebUI.delay(5)
 		WebUI.closeBrowser()
 	}
 }
