@@ -84,7 +84,7 @@ class LoginStepDefinition {
 
 	public static takeScrnShotAndStoreInReportsDirectory(String status){
 		String dirName = RunConfiguration.getProjectDir()
-		println(dirName)
+		//println(dirName)
 		DateTimeFormatter dtf = DateTimeFormatter.ofPattern("yyyy_MM_dd_HH_mm_ss");
 		LocalDateTime now = LocalDateTime.now();
 		System.out.println(dtf.format(now));
