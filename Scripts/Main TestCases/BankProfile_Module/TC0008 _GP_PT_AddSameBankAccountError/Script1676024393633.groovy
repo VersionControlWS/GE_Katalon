@@ -13,14 +13,18 @@ import com.kms.katalon.core.testng.keyword.TestNGBuiltinKeywords as TestNGKW
 import com.kms.katalon.core.testobject.TestObject as TestObject
 import com.kms.katalon.core.webservice.keyword.WSBuiltInKeywords as WS
 import com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords as WebUI
-import com.kms.katalon.core.webui.keyword.internal.WebUIAbstractKeyword as WebUIAbstractKeyword
 import com.kms.katalon.core.windows.keyword.WindowsBuiltinKeywords as Windows
 import internal.GlobalVariable as GlobalVariable
 import org.openqa.selenium.Keys as Keys
 
+String Branch_Name = CustomKeywords.'randomNumberAndsessionKey.Stringelements.generateSessionKey'(6)
+String IFSC = 'YESB0000653'
+String MICR = '560532002'
+String accountHolderName = "Subbranch"
+String Account_Number = "872730773"
+
 CustomKeywords.'giroPie.user.LoginwithUsernamePwd'()
 CustomKeywords.'giroPie.user.NavigatetoBankPage'()
-CustomKeywords.'giroPie.user.DeleteBankAccountWithoutBeneficiary'()
-//System.out.println(WebUI.verifyElementNotPresent(findTestObject('Object Repository/DeleteBankWithoutBeneficiary/Specific_Account_number_path'), 378701967))
+CustomKeywords.'giroPie.user.SameAccountNumberError'(Branch_Name, Account_Number, IFSC, MICR, accountHolderName)
 WebUI.closeBrowser()
 

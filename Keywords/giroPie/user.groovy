@@ -182,8 +182,8 @@ public class user {
 		WebUI.takeElementScreenshot(findTestObject('Object Repository/Bank/NewAddedObjects_HK/PopUp_BankProfileAddedSuccessfully'))
 
 	}
-	
-	
+
+
 	@Keyword
 	def DeleteBankAccountWithoutBeneficiary() {
 		WebUI.waitForElementClickable(findTestObject('Object Repository/DeleteBankWithoutBeneficiary/Page_GIROPie/Bank_profile_deleteicon'), 3)
@@ -197,6 +197,46 @@ public class user {
 		WebUI.verifyElementText(findTestObject('Object Repository/DeleteBankWithoutBeneficiary/Page_GIROPie/Pop_Up_Bank Deleted Successfully'),
 				'Bank Deleted Successfully')
 		WebUI.takeElementScreenshot(findTestObject('Object Repository/DeleteBankWithoutBeneficiary/Page_GIROPie/Pop_Up_Bank Deleted Successfully'))
+
+	}
+
+	@Keyword
+	def SameAccountNumberError(String Branch_Name, String Account_Number, String IFSC, String MICR, String accountHolderName) {
+		WebUI.click(findTestObject('Object Repository/SameAccountNumberError/Page_GIROPie/BankProfile_Add Bank_Button'))
+
+		WebUI.click(findTestObject('Object Repository/SameAccountNumberError/Page_GIROPie/Bank_Profile_mainbranch_dropdown'))
+
+		WebUI.click(findTestObject('Object Repository/SameAccountNumberError/Page_GIROPie/Bank_profile_select_mainbranch'))
+
+		WebUI.waitForElementVisible(findTestObject('Object Repository/SameAccountNumberError/Page_GIROPie/BankName_dropdown'), 2)
+
+		WebUI.click(findTestObject('Object Repository/SameAccountNumberError/Page_GIROPie/BankName_dropdown'))
+
+		WebUI.waitForElementVisible(findTestObject('Object Repository/SameAccountNumberError/Page_GIROPie/YES BANK_Click'), 2)
+
+		WebUI.click(findTestObject('Object Repository/SameAccountNumberError/Page_GIROPie/YES BANK_Click'))
+
+		WebUI.setText(findTestObject('Object Repository/SameAccountNumberError/Page_GIROPie/input__branchName'), Branch_Name)
+
+		WebUI.setText(findTestObject('Object Repository/SameAccountNumberError/Page_GIROPie/input__accountNumber'), Account_Number)
+
+		WebUI.click(findTestObject('Object Repository/SameAccountNumberError/Page_GIROPie/input__ifsc'))
+
+		WebUI.setText(findTestObject('Object Repository/SameAccountNumberError/Page_GIROPie/input__ifsc'), IFSC)
+
+		WebUI.click(findTestObject('Object Repository/SameAccountNumberError/Page_GIROPie/Account_type_dropdown'))
+
+		WebUI.click(findTestObject('Object Repository/SameAccountNumberError/Page_GIROPie/li_Current accounts'))
+
+		WebUI.setText(findTestObject('Object Repository/SameAccountNumberError/Page_GIROPie/input__micr'), MICR)
+
+		WebUI.setText(findTestObject('Object Repository/SameAccountNumberError/Page_GIROPie/input__accountHolderName'), accountHolderName)
+		//WebUI.delay(5)
+		WebUI.click(findTestObject('Object Repository/SameAccountNumberError/Page_GIROPie/button_Submit'))
+
+		WebUI.verifyElementText(findTestObject('Object Repository/SameAccountNumberError/Page_GIROPie/div_Account Number Already Exists'),
+				'Account Number Already Exists')
+		WebUI.takeElementScreenshot(findTestObject('Object Repository/SameAccountNumberError/Page_GIROPie/div_Account Number Already Exists'))
 
 	}
 
