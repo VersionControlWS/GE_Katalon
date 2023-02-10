@@ -17,9 +17,9 @@ import com.kms.katalon.core.windows.keyword.WindowsBuiltinKeywords as Windows
 import internal.GlobalVariable as GlobalVariable
 import org.openqa.selenium.Keys as Keys
 
-username_obj = 'Object Repository/Page_NachPay/input_Sign Up_r0'
-password_obj = 'Object Repository/Page_NachPay/input__MuiInputBase-input MuiOutlinedInput-_047092'
-submit_btn_obj = 'Object Repository/Page_NachPay/div_Continue'
+username_obj = 'Object Repository/LoginPage_GIROPie/input_TextField_Username'
+password_obj = 'Object Repository/LoginPage_GIROPie/input_TextField_password'
+submit_btn_obj = 'Object Repository/LoginPage_GIROPie/Continue_SignUpButton'
 
 String url = GlobalVariable.baseUrl
 String username = "ajay@uth-uk.com"
