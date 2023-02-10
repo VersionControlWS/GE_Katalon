@@ -16,39 +16,15 @@ import com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords as WebUI
 import com.kms.katalon.core.windows.keyword.WindowsBuiltinKeywords as Windows
 import internal.GlobalVariable as GlobalVariable
 import org.openqa.selenium.Keys as Keys
- 
-
-public static String getRandomNumberString() {
-
-	Random rnd = new Random();
-	int number = rnd.nextInt(999999999);
-
-	return String.format("%09d", number);
-}
-
-public static String generateSessionKey(int length){
-	String alphabet =
-			new String("ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz");
-
-	int n = alphabet.length();
-
-	String result = new String();
-	Random r = new Random();
-
-	for (int i=0; i<length; i++)
-		result = result + alphabet.charAt(r.nextInt(n));
-
-	return result;
-}
 
 flag=0
-String Branch_Name = generateSessionKey(6)
+String Branch_Name = CustomKeywords.'randomNumberAndsessionKey.Stringelements.generateSessionKey'(6)
 //println(Branch_Name)
-String Account_Number = getRandomNumberString()
+String Account_Number = CustomKeywords.'randomNumberAndsessionKey.Stringelements.getRandomNumberString'()
 //println(Account_Number)
 String IFSC = 'YESB0000653'
 String MICR = '560532002'
-String accountHolderName = Branch_Name
+String accountHolderName = "Subbranch"
 
 
 CustomKeywords.'giroPie.user.LoginwithUsernamePwd'()

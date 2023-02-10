@@ -182,5 +182,22 @@ public class user {
 		WebUI.takeElementScreenshot(findTestObject('Object Repository/Bank/NewAddedObjects_HK/PopUp_BankProfileAddedSuccessfully'))
 
 	}
+	
+	
+	@Keyword
+	def DeleteBankAccountWithoutBeneficiary() {
+		WebUI.waitForElementClickable(findTestObject('Object Repository/DeleteBankWithoutBeneficiary/Page_GIROPie/Bank_profile_deleteicon'), 3)
+
+		WebUI.clickImage(findTestObject('Object Repository/DeleteBankWithoutBeneficiary/Page_GIROPie/Bank_profile_deleteicon'))
+
+		WebUI.waitForElementClickable(findTestObject('Object Repository/DeleteBankWithoutBeneficiary/Page_GIROPie/delete_button_Yes'),3)
+
+		WebUI.clickImage(findTestObject('Object Repository/DeleteBankWithoutBeneficiary/Page_GIROPie/delete_button_Yes'))
+
+		WebUI.verifyElementText(findTestObject('Object Repository/DeleteBankWithoutBeneficiary/Page_GIROPie/Pop_Up_Bank Deleted Successfully'),
+				'Bank Deleted Successfully')
+		WebUI.takeElementScreenshot(findTestObject('Object Repository/DeleteBankWithoutBeneficiary/Page_GIROPie/Pop_Up_Bank Deleted Successfully'))
+
+	}
 
 }

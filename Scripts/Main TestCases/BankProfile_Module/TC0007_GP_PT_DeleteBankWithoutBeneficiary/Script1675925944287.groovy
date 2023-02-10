@@ -13,32 +13,27 @@ import com.kms.katalon.core.testng.keyword.TestNGBuiltinKeywords as TestNGKW
 import com.kms.katalon.core.testobject.TestObject as TestObject
 import com.kms.katalon.core.webservice.keyword.WSBuiltInKeywords as WS
 import com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords as WebUI
-import com.kms.katalon.core.webui.keyword.internal.WebUIAbstractKeyword
+import com.kms.katalon.core.webui.keyword.internal.WebUIAbstractKeyword as WebUIAbstractKeyword
 import com.kms.katalon.core.windows.keyword.WindowsBuiltinKeywords as Windows
 import internal.GlobalVariable as GlobalVariable
 import org.openqa.selenium.Keys as Keys
 
 CustomKeywords.'giroPie.user.LoginwithUsernamePwd'()
-
 CustomKeywords.'giroPie.user.NavigatetoBankPage'()
 
-//WebUI.waitForElementClickable(findTestObject('Object Repository/DeleteBankWithoutBeneficiary/Page_GIROPie/Bank_profile_deleteicon'),3)
+//WebUI.verifyElementText(findTestObject('Object Repository/DeleteBankWithoutBeneficiary/Specific_Account_number_path'), 'Account Number')
 //
-//WebUI.clickImage(findTestObject('Object Repository/DeleteBankWithoutBeneficiary/Page_GIROPie/Bank_profile_deleteicon'))
-//
-//WebUI.waitForElementClickable(findTestObject('Object Repository/DeleteBankWithoutBeneficiary/Page_GIROPie/delete_button_Yes'),3)
-//
-//WebUI.clickImage(findTestObject('Object Repository/DeleteBankWithoutBeneficiary/Page_GIROPie/delete_button_Yes'))
-//
-//WebUI.delay(5)
+//CustomKeywords.'giroPie.user.DeleteBankAccountWithoutBeneficiary'()
+WebUI.waitForElementClickable(findTestObject('Object Repository/DeleteBankWithoutBeneficiary/Page_GIROPie/Bank_profile_deleteicon'), 3)
 
+WebUI.clickImage(findTestObject('Object Repository/DeleteBankWithoutBeneficiary/Page_GIROPie/Bank_profile_deleteicon'))
 
-CustomKeywords.'giroPie.user.DeleteBankProfileWithoutBeneficiary'()
-WebUI.takeElementScreenshot(findTestObject('Object Repository/DeleteBankWithoutBeneficiary/Page_GIROPie/Pop_Up_Bank Deleted Successfully'))
-//WebUI.waitForElementClickable(findTestObject('Object Repository/DeleteBankWithoutBeneficiary/Page_GIROPie/Pop_Up_Bank Deleted Successfully'),8)
-//CustomKeywords.'verify.Element.stringToastElementPresent'(findTestObject('Object Repository/DeleteBankWithoutBeneficiary/Page_GIROPie/Pop_Up_Bank Deleted Successfully'))
-//
-//CustomKeywords.'verify.Element.stringToastElementText'(findTestObject('Object Repository/DeleteBankWithoutBeneficiary/Page_GIROPie/Pop_Up_Bank Deleted Successfully'),"Bank Deleted Successfully.")
+WebUI.waitForElementClickable(findTestObject('Object Repository/DeleteBankWithoutBeneficiary/Page_GIROPie/delete_button_Yes'),3)
 
+WebUI.clickImage(findTestObject('Object Repository/DeleteBankWithoutBeneficiary/Page_GIROPie/delete_button_Yes'))
+
+WebUI.verifyElementText(findTestObject('Object Repository/DeleteBankWithoutBeneficiary/Page_GIROPie/Pop_Up_Bank Deleted Successfully'),
+	'Bank Deleted Successfully')
+WebUI.verifyElementNotPresent(findTestObject(), )
 WebUI.closeBrowser()
 
