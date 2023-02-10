@@ -43,27 +43,27 @@ CustomKeywords.'giroPie.user.LoginwithUsernamePwd'()
 
 CustomKeywords.'giroPie.user.NavigatetoCompanyProfilePage'()
 
-WebUI.click(findTestObject('Object Repository/Company_Info_Add_Branch/Page_GIROPie/p_Add Branch'))
+WebUI.click(findTestObject('Object Repository/Company_Info_Add_Branch_Module/Page_GIROPie/p_Add Branch'))
 
-WebUI.setText(findTestObject('Object Repository/Company_Info_Add_Branch/Page_GIROPie/input_Branches_branchName'), Branch_Name)
+WebUI.setText(findTestObject('Object Repository/Company_Info_Add_Branch_Module/Page_GIROPie/input_Branches_branchName'), Branch_Name)
 
-WebUI.click(findTestObject('Object Repository/Company_Info_Add_Branch/Page_GIROPie/input__gstin'))
+WebUI.click(findTestObject('Object Repository/Company_Info_Add_Branch_Module/Page_GIROPie/input__gstin'))
 
-WebUI.click(findTestObject('Object Repository/Company_Info_Add_Branch/Page_GIROPie/p_07AAGFF2194N1Z1'))
+WebUI.click(findTestObject('Object Repository/Company_Info_Add_Branch_Module/Page_GIROPie/p_07AAGFF2194N1Z1'))
 
-WebUI.setText(findTestObject('Object Repository/Company_Info_Add_Branch/Page_GIROPie/input__gstin'), '07AAGFF2194N1Z1')
+WebUI.setText(findTestObject('Object Repository/Company_Info_Add_Branch_Module/Page_GIROPie/input__gstin'), '07AAGFF2194N1Z1')
 
-WebUI.setText(findTestObject('Object Repository/Company_Info_Add_Branch/Page_GIROPie/input__email'), 'ajay@uth-uk.com')
+WebUI.setText(findTestObject('Object Repository/Company_Info_Add_Branch_Module/Page_GIROPie/input__email'), 'ajay@uth-uk.com')
 
-WebUI.setText(findTestObject('Object Repository/Company_Info_Add_Branch/Page_GIROPie/input__contactName'), 'SH')
+WebUI.setText(findTestObject('Object Repository/Company_Info_Add_Branch_Module/Page_GIROPie/input__contactName'), 'SH')
 
-WebUI.setText(findTestObject('Object Repository/Company_Info_Add_Branch/Page_GIROPie/input__address'), 'Jayanagar')
+WebUI.setText(findTestObject('Object Repository/Company_Info_Add_Branch_Module/Page_GIROPie/input__address'), 'Jayanagar')
 
-WebUI.setText(findTestObject('Object Repository/Company_Info_Add_Branch/Page_GIROPie/input__pin_code'), '560064')
+WebUI.setText(findTestObject('Object Repository/Company_Info_Add_Branch_Module/Page_GIROPie/input__pin_code'), '560064')
 
-WebUI.click(findTestObject('Object Repository/Company_Info_Add_Branch/Page_GIROPie/button_Submit'))
+WebUI.click(findTestObject('Object Repository/Company_Info_Add_Branch_Module/Page_GIROPie/button_Submit'))
 
-WebUI.verifyElementText(findTestObject('Object Repository/Company_Info_Add_Branch/Page_GIROPie/div_Branch Updated'), 'Branch Updated')
+WebUI.verifyElementText(findTestObject('Object Repository/Company_Info_Add_Branch_Module/Page_GIROPie/div_Branch Updated'), 'Branch Updated')
 
 WebUI.closeBrowser()
 
