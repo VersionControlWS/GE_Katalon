@@ -22,11 +22,6 @@ import internal.GlobalVariable
 
 public class user {
 
-	//Global variables
-	//	String url = 'https://staging.peppertree.ai/'
-	//	String username = 'uthukpnt@gmail.com'
-	//	String password = 'Peppertree@123'
-
 	@Keyword
 	def lauchBrowser(url) {
 		WebUI.openBrowser('')
