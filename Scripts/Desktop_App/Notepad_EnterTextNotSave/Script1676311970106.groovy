@@ -15,6 +15,8 @@ import com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords as WebUI
 import com.kms.katalon.core.windows.keyword.WindowsBuiltinKeywords as Windows
 import internal.GlobalVariable as GlobalVariable
 
+'https://github.com/katalon-studio/sample-windows-application-test/blob/master/Scripts/SampleNotepad/Script1563161374342.groovy'
+
 'Start NotePad application'
 Windows.startApplication('C:\\Windows\\System32\\notepad.exe')
 
