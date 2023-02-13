@@ -19,7 +19,8 @@ import org.openqa.selenium.Keys as Keys
 import com.kms.katalon.core.windows.keyword.helper.WindowsActionSettings as WindowsActionSettings
 import groovy.swing.factory.WindowFactory as WindowFactory
 
-Windows.startApplicationWithTitle('C:/Users/Lenovo UTH-UK/Downloads/putty.exe', '')
+//Windows.startApplicationWithTitle('C:/Users/Lenovo UTH-UK/Downloads/putty.exe', '')
+Windows.startApplication('C:/Users/Lenovo UTH-UK/Downloads/putty.exe')
 
 Windows.click(findWindowsObject('Object Repository/DesktopApp_Putty/HostName_TextField'))
 
@@ -30,3 +31,5 @@ Windows.setText(findWindowsObject('Object Repository/DesktopApp_Putty/HostName_T
 //Windows.switchToWindowTitle('PuTTY')
 
 //Windows.sendKeys(findWindowsObject("Object Repository/DesktopApp_Putty/Putty_TextArea"), 'UTH_offshore')
+
+Windows.closeApplication()
