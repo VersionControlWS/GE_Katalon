@@ -47,12 +47,12 @@ driver = new WiniumDriver(new URL('http://localhost:4723'), option)
 Thread.sleep(3000)
 
 //This Xpath is in location 'Object Repository/DesktopApp_Putty/HostName_TextField'
-driver.findElement(By.xpath('//Window/Edit[1]')).sendKeys('34.27.230.36');
+driver.findElement(By.xpath('//Window/Edit[@Name="Host Name (or IP address)"]')).sendKeys('34.27.230.36');
 
 actualTitle = driver.getTitle();
-System.out.println("ActualTitle is " + actualTitle );
+System.out.println("Actual Title of the window is " + actualTitle );
 
-//Windows.click(findWindowsObject('Object Repository/DesktopApp_Putty/OpenButton'))
+//Windows.click(findWindowsObject('Object Repository/DesktopApp_Putty/OpenButton_SystemGenerated'))
 
 //Windows.switchToWindowTitle('PuTTY')
 

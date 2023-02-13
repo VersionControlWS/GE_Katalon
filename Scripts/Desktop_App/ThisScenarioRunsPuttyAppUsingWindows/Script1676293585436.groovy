@@ -26,10 +26,25 @@ Windows.click(findWindowsObject('Object Repository/DesktopApp_Putty/HostName_Tex
 
 Windows.setText(findWindowsObject('Object Repository/DesktopApp_Putty/HostName_TextField'), '34.27.230.36')
 
-//Windows.click(findWindowsObject('Object Repository/DesktopApp_Putty/OpenButton'))
+Windows.click(findWindowsObject('Object Repository/DesktopApp_Putty/OpenButton_SystemGenerated'))
+
+Thread.sleep(6000)
+
+//Windows.switchToWindow(findWindowsObject('Object Repository/DesktopApp_Putty/Putty_Window'))
 
 //Windows.switchToWindowTitle('PuTTY')
 
-//Windows.sendKeys(findWindowsObject("Object Repository/DesktopApp_Putty/Putty_TextArea"), 'UTH_offshore')
+//https://docs.katalon.com/docs/author/keywords/keyword-description-in-katalon-studio/windows-keywords/windows-switch-to-application#ariaid-title1
+//Windows.switchToApplication()
+
+//Thread.sleep(6000)
+//
+//Windows.sendKeys(findWindowsObject("Object Repository/DesktopApp_Putty/Putty_Window"), 'UTH_offshore')
+
+//https://forum.katalon.com/t/switch-to-window-title-takes-long-desktop-app/41098/10
+//WindowsTestObject targetWindow2 = findWindowsObject('')
+//
+//Windows.switchToDesktop()
+//Windows.switchToWindow(targetWindow1)
 
 Windows.closeApplication()

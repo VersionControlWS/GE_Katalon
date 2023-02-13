@@ -3,7 +3,7 @@
    <description></description>
    <name>HostName_TextField</name>
    <tag></tag>
-   <locator>//Window/Edit[1]</locator>
+   <locator>//Window/Edit[@Name=&quot;Host Name (or IP address)&quot;]</locator>
    <locatorStrategy>XPATH</locatorStrategy>
    <properties>
       <isSelected>false</isSelected>

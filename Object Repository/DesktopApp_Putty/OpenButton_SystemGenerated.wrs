@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <WindowsElementEntity>
    <description></description>
-   <name>OpenButton</name>
+   <name>OpenButton_SystemGenerated</name>
    <tag></tag>
-   <locator>//Window/Button[@Name:	&quot;Open&quot;]</locator>
+   <locator>//Window/Button[1]</locator>
    <locatorStrategy>XPATH</locatorStrategy>
    <properties>
       <isSelected>false</isSelected>

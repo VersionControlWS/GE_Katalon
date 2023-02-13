@@ -19,6 +19,11 @@ import org.openqa.selenium.Keys as Keys
 
 import com.kms.katalon.core.util.KeywordUtil
 
+'https://docs.katalon.com/docs/get-started/sample-projects/data-driven-test/sample-webui-tests-project-with-data-driven-testing-shopping-cart-sample-in-katalon-studio'
+'https://github.com/katalon-studio-samples/custom-junit-report-example/blob/master/Scripts/Main%20Test%20Cases/TC1_Verify%20Successful%20Login/Script1482850539026.groovy'
+
+
+'https://forum.katalon.com/t/how-to-write-log-messages-into-a-specific-file/42214'
 KeywordUtil.logInfo("TESTING LOGGER IN KATALON")
 
 WebUI.comment('Story: Login to CURA system')
