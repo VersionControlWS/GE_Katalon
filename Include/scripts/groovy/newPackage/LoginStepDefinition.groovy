@@ -47,8 +47,8 @@ import com.kms.katalon.core.testobject.TestObject
 import javax.swing.JOptionPane;
 import org.openqa.selenium.Keys as Keys
 import com.kms.katalon.core.configuration.RunConfiguration
-import java.time.format.DateTimeFormatter;  
-import java.time.LocalDateTime;   
+import java.time.format.DateTimeFormatter;
+import java.time.LocalDateTime;
 
 class LoginStepDefinition {
 	/**
@@ -75,7 +75,7 @@ class LoginStepDefinition {
 
 	@When("phone number is entered as (.*) in given textField")
 	def phone_number_is_entered_in_textField(String phoneNumber) {
-//		println phoneNumber
+		//		println phoneNumber
 		String phoneNumber_obj = 'Object Repository/Page_NachPay/inputLoginPage_Username'
 		String submit_btn_obj = 'Object Repository/Page_NachPay/button_LoginPage_GetOTP'
 		WebUI.setText(findTestObject(phoneNumber_obj), phoneNumber)
@@ -93,10 +93,10 @@ class LoginStepDefinition {
 		String path = dirName+"/Reports/BDD_LoginScnKeyword_"+status+"_"+DateTime+".png"
 		WebUI.takeScreenshot(path)
 	}
-	
+
 	@Then("I verify the (.*) in step")
 	def I_verify_the_status_in_step(String status) {
-//		println status
+		//		println status
 		WebUI.waitForElementVisible(findTestObject("Object Repository/LoginPage_TextNError/"+status), 5)
 		takeScrnShotAndStoreInReportsDirectory(status)
 		//		WebUI.verifyElementText(findTestObject("Object Repository/LoginPage_TextNError/"+status), status)
