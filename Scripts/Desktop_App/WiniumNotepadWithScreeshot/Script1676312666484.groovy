@@ -26,6 +26,8 @@ import org.openqa.selenium.OutputType
 import org.openqa.selenium.TakesScreenshot
 import org.apache.commons.io.FileUtils
 
+'https://github.com/kazurayam/WindowsApplicationTestingWithWiniumInKatalonStudio/blob/master/Scripts/MyFirstWiniumTC/Script1562743149761.groovy'
+
 WiniumDriver driver = null
 
 // setup:
