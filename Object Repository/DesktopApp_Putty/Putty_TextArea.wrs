@@ -1,8 +1,0 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<WindowsElementEntity>
-   <description></description>
-   <name>Putty_TextArea</name>
-   <tag></tag>
-   <locator>//*[@ahk_exe=&quot;putty.exe&quot;]</locator>
-   <locatorStrategy>XPATH</locatorStrategy>
-</WindowsElementEntity>

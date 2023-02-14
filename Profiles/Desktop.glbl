@@ -9,4 +9,19 @@
       <initValue>5</initValue>
       <name>actionDelay</name>
    </GlobalVariableEntity>
+   <GlobalVariableEntity>
+      <description></description>
+      <initValue>'C:/Program Files/MySQL/MySQL Workbench 8.0/MySQLWorkbench.exe'</initValue>
+      <name>AppPath</name>
+   </GlobalVariableEntity>
+   <GlobalVariableEntity>
+      <description></description>
+      <initValue>'root'</initValue>
+      <name>MyDBMSUsername</name>
+   </GlobalVariableEntity>
+   <GlobalVariableEntity>
+      <description></description>
+      <initValue>'root@123'</initValue>
+      <name>MyDBMSPassword</name>
+   </GlobalVariableEntity>
 </GlobalVariableEntities>

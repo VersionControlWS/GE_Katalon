@@ -105,7 +105,6 @@ public class user {
 		WebUI.setText(findTestObject('Object Repository/Companyinvite/Invite_individual/Enter Email ID'), Email)
 		WebUI.setText(findTestObject('Object Repository/Companyinvite/Invite_individual/Enter Contact Number'), Phone)
 		WebUI.click(findTestObject('Object Repository/Companyinvite/Submit_Invite_Button'))
-
 	}
 	@Keyword
 	def EnterSellerDetails(String CompanyName='', String PAN_GSTIN='', String Email='', String Phone='') {
@@ -115,7 +114,6 @@ public class user {
 		WebUI.setText(findTestObject('Object Repository/Companyinvite/Invite_individual/Enter Email ID'), Email)
 		WebUI.setText(findTestObject('Object Repository/Companyinvite/Invite_individual/Enter Contact Number'), Phone)
 		WebUI.click(findTestObject('Object Repository/Companyinvite/Submit_Invite_Button'))
-
 	}
 	@Keyword
 	def EnterBuyerSellerDetails(String CompanyName='', String PAN_GSTIN='', String Email='', String Phone='') {
@@ -126,7 +124,6 @@ public class user {
 		WebUI.setText(findTestObject('Object Repository/Companyinvite/Invite_individual/Enter Email ID'), Email)
 		WebUI.setText(findTestObject('Object Repository/Companyinvite/Invite_individual/Enter Contact Number'), Phone)
 		WebUI.click(findTestObject('Object Repository/Companyinvite/Submit_Invite_Button'))
-
 	}
 
 	@Keyword
@@ -192,7 +189,6 @@ public class user {
 		WebUI.verifyElementText(findTestObject('Object Repository/DeleteBankWithoutBeneficiary/Page_GIROPie/Pop_Up_Bank Deleted Successfully'),
 				'Bank Deleted Successfully')
 		WebUI.takeElementScreenshot(findTestObject('Object Repository/DeleteBankWithoutBeneficiary/Page_GIROPie/Pop_Up_Bank Deleted Successfully'))
-
 	}
 
 	@Keyword
@@ -234,5 +230,4 @@ public class user {
 		WebUI.takeElementScreenshot(findTestObject('Object Repository/SameAccountNumberError/Page_GIROPie/div_Account Number Already Exists'))
 
 	}
-
 }
