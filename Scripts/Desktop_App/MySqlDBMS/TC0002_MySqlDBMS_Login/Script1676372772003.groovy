@@ -66,3 +66,8 @@ Windows.click(findWindowsObject(Server_MenuItem))
 
 Windows.sendKeys(findWindowsObject(Server_MenuItem),Keys.chord(Keys.ARROW_DOWN))
 
+Windows.sendKeys(findWindowsObject(Server_MenuItem),Keys.chord(Keys.ARROW_DOWN))
+
+Windows.sendKeys(findWindowsObject(Server_MenuItem),Keys.chord(Keys.ARROW_DOWN))
+
+Windows.sendKeys(findWindowsObject(Server_MenuItem),Keys.chord(Keys.ENTER))
