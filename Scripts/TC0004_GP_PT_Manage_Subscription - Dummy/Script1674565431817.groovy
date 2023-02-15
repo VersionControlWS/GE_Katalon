@@ -25,11 +25,11 @@ import com.kms.katalon.core.webui.driver.DriverFactory as DriverFactory
 
 CustomKeywords.'nachPay.user.LoginwithUsernamePwd'()
 
-WebUI.click(findTestObject('Object Repository/Page_Mng_Subscription/UTH_Account_name'))
+WebUI.click(findTestObject('null'))
 
-WebUI.click(findTestObject('Object Repository/Page_Mng_Subscription/Manage Subscriptions dropdown'))
+WebUI.click(findTestObject('null'))
 
-System.out.println(WebUI.verifyElementPresent(findTestObject('Object Repository/Page_Mng_Subscription/text field with current version'), 
+System.out.println(WebUI.verifyElementPresent(findTestObject('null'), 
         3))
 
 //WebDriver driver = DriverFactory.getWebDriver()
@@ -39,10 +39,10 @@ System.out.println(WebUI.verifyElementPresent(findTestObject('Object Repository/
 // 
 //System.out.println(cur_version)
 //
-//String cur_version1 = WebUI.getText(findTestObject('Object Repository/Page_Mng_Subscription/Page_test/p_Current Plan'))
+//String cur_version1 = WebUI.getText(findTestObject('null'))
 //
 //System.out.println(cur_version1)
-String cur_version2 = WebUI.getText(findTestObject('Object Repository/Page_Mng_Subscription/Version displayed on page'))
+String cur_version2 = WebUI.getText(findTestObject('null'))
 
 //System.out.println(cur_version2)
 String exp_version = 'Beta Version 1.0'
@@ -51,5 +51,5 @@ if (cur_version2.equalsIgnoreCase(exp_version)) {
     System.out.println(cur_version2)
 }
 
-//System.out.println(WebUI.verifyElementPresent(findTestObject('Object Repository/Page_Mng_Subscription/Page_test/button_Invite User'), 3))
+//System.out.println(WebUI.verifyElementPresent(findTestObject('null'), 3))
 CustomKeywords.'nachPay.user.closeBrowser'()

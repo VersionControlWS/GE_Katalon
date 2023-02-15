@@ -24,14 +24,14 @@ CustomKeywords.'nachPay.user.NavigatetoCompanyProfilePage'()
 
 CustomKeywords.'nachPay.user.ClickonDeleteAndYes'()
 
-//WebUI.click(findTestObject('Object Repository/DeleteBranch/p_2'))
+//WebUI.click(findTestObject('null'))
 
-String No_of_branches_b4_del = WebUI.getText(findTestObject('Object Repository/DeleteBranch/p_2'))
+String No_of_branches_b4_del = WebUI.getText(findTestObject('null'))
 
 'Refresh the current web page'
 WebUI.refresh()
 
-String No_of_branches_after_del = WebUI.getText(findTestObject('Object Repository/DeleteBranch/p_2'))
+String No_of_branches_after_del = WebUI.getText(findTestObject('null'))
 
 System.out.println("Number of branches after deletion : "+No_of_branches_b4_del)
 System.out.println("Number of branches before deletion : "+No_of_branches_after_del)

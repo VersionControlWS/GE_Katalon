@@ -51,12 +51,12 @@ System.out.println(username + password)
 
 WebUI.openBrowser(arra[0][1])
 
-WebUI.setText(findTestObject('Object Repository/LoginPage_GIROPie/input_TextField_Username'), username)
+WebUI.setText(findTestObject('null'), username)
 
-WebUI.setText(findTestObject('Object Repository/LoginPage_GIROPie/input_TextField_password'),
+WebUI.setText(findTestObject('null'),
 	password)
 
-WebUI.click(findTestObject('Object Repository/LoginPage_GIROPie/Continue_SignUpButton'))
+WebUI.click(findTestObject('null'))
 
 WebUI.closeBrowser()
 

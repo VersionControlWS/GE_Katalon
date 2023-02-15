@@ -1,8 +1,0 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<TestCaseEntity>
-   <description></description>
-   <name>TC0007_GP_PT_DeleteBankWithoutBeneficiary</name>
-   <tag></tag>
-   <comment></comment>
-   <testCaseGuid>267106f8-750d-453c-8e94-e02b3b56e202</testCaseGuid>
-</TestCaseEntity>

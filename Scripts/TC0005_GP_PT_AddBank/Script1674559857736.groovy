@@ -22,35 +22,35 @@ CustomKeywords.'nachPay.user.LoginwithUsernamePwd'()
 CustomKeywords.'nachPay.user.NavigatetoBankPage'()
 
 try {
-WebUI.click(findTestObject('Object Repository/Bank/AddBankButton_bankProfilePage'))
+WebUI.click(findTestObject('null'))
 
-WebUI.click(findTestObject('Object Repository/Bank/mainBranch_dropdown_bankProfile'))
+WebUI.click(findTestObject('null'))
 
-WebUI.click(findTestObject('Object Repository/Bank/dropdown_selection_mainBranch'))
+WebUI.click(findTestObject('null'))
 
-WebUI.click(findTestObject('Object Repository/Bank/svg_Add as Beneficiary_MuiSvgIcon-root MuiS_73e4e0'))
+WebUI.click(findTestObject('null'))
 
-WebUI.click(findTestObject('Object Repository/Bank/li_YES BANK'))
+WebUI.click(findTestObject('null'))
 
-WebUI.setText(findTestObject('Object Repository/Bank/input__branchName'), 'Test')
+WebUI.setText(findTestObject('null'), 'Test')
 
-WebUI.setText(findTestObject('Object Repository/Bank/input__accountNumber'), '28451236')
+WebUI.setText(findTestObject('null'), '28451236')
 
-WebUI.click(findTestObject('Object Repository/Bank/input__ifsc'))
+WebUI.click(findTestObject('null'))
 
-WebUI.setText(findTestObject('Object Repository/Bank/input__ifsc'), 'YESB0000653')
+WebUI.setText(findTestObject('null'), 'YESB0000653')
 
-WebUI.click(findTestObject('Object Repository/Bank/accountType_dropdown'))
+WebUI.click(findTestObject('null'))
 
-WebUI.click(findTestObject('Object Repository/Bank/li_Savings account'))
+WebUI.click(findTestObject('null'))
 
-WebUI.setText(findTestObject('Object Repository/Bank/input__micr'), '560532002')
+WebUI.setText(findTestObject('null'), '560532002')
 
-WebUI.setText(findTestObject('Object Repository/Bank/input__accountHolderName'), 'ATB')
+WebUI.setText(findTestObject('null'), 'ATB')
 
-WebUI.click(findTestObject('Object Repository/Bank/button_Submit'))
+WebUI.click(findTestObject('null'))
 
-WebUI.click(findTestObject('Object Repository/Bank/Error_BankProfile_AccountNumberAlreadyExists'))
+WebUI.click(findTestObject('null'))
 }finally {
 WebUI.closeBrowser()
 }

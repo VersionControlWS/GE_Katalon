@@ -1,8 +1,0 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<TestCaseEntity>
-   <description>Login using Empty password field</description>
-   <name>GTPT_Login_TC_0018</name>
-   <tag></tag>
-   <comment></comment>
-   <testCaseGuid>95480740-599c-4137-812d-df537d8401ae</testCaseGuid>
-</TestCaseEntity>

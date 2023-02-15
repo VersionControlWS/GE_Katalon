@@ -28,10 +28,10 @@ CustomKeywords.'nachPay.user.LoginwithUsernamePwd'()
 
 CustomKeywords.'nachPay.user.NavigatetoManageSubscriptionPage'()
 
-System.out.println(WebUI.verifyElementPresent(findTestObject('Object Repository/Page_Mng_Subscription/text field with current version'), 
+System.out.println(WebUI.verifyElementPresent(findTestObject('null'), 
         3))
 
-String cur_version2 = WebUI.getText(findTestObject('Object Repository/Page_Mng_Subscription/Version displayed on page'))
+String cur_version2 = WebUI.getText(findTestObject('null'))
 
 String exp_version = 'Beta Version 1.0'
 

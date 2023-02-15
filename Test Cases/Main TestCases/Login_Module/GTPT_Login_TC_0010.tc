@@ -1,8 +1,0 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<TestCaseEntity>
-   <description>Valid Email and Invalid Password</description>
-   <name>GTPT_Login_TC_0010</name>
-   <tag></tag>
-   <comment></comment>
-   <testCaseGuid>673f339a-4eec-4d07-b98d-ee5e0e6823c3</testCaseGuid>
-</TestCaseEntity>

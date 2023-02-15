@@ -34,16 +34,16 @@ WebUI.openBrowser(GlobalVariable.G_SiteURL)
 
 //WebUI.click(findTestObject('Page_CuraHomepage/btn_MakeAppointment'))
 
-WebUI.setText(findTestObject('Object Repository/LoginPage_GIROPie/input_TextField_Username'), "ajay@uth-uk.com")
+WebUI.setText(findTestObject('null'), "ajay@uth-uk.com")
 
-WebUI.setText(findTestObject('Object Repository/LoginPage_GIROPie/input_TextField_password'), "Tree@2023")
+WebUI.setText(findTestObject('null'), "Tree@2023")
 
 WebUI.comment('When he logins to CURA system')
 
-WebUI.click(findTestObject('Object Repository/LoginPage_GIROPie/Continue_SignUpButton'))
+WebUI.click(findTestObject('null'))
 
 WebUI.comment('Then he should be able to login successfully')
 
-//landingPage = WebUI.verifyElementPresent(findTestObject('Object Repository/LoginPage_TextNError/Dashboard'), GlobalVariable.G_Timeout)
+//landingPage = WebUI.verifyElementPresent(findTestObject('null'), GlobalVariable.G_Timeout)
 
 WebUI.closeBrowser()

@@ -27,7 +27,7 @@ CustomKeywords.'nachPay.user.ClickOnInviteUserButtonPresentOnUserMgntPage'()
 CustomKeywords.'nachPay.user.EnterUserDetails'()
 
 'Verify whether the invite was sent successfully on Current user page'
-//WebUI.click(findTestObject('Object Repository/InviteUser/td_ZTest'))
+//WebUI.click(findTestObject('null'))
 
 }
 finally {
