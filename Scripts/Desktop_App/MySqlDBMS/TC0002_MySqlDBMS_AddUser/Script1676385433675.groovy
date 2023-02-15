@@ -33,13 +33,9 @@ String LoginPassword = 'Test@1234'
 Windows.startApplication(AppPath)
 
 CustomKeywords.'desktopMySQL.function.LoginToMySqlwithPasswordAndVerifyHomePage'(password);
-
 CustomKeywords.'desktopMySQLNav.Navigation.NavigateTo_MenuItem_Server_UsersandPrivileges'();
-
 CustomKeywords.'desktopMySQL.function.AddUserAccount'(LoginUserName, LoginPassword);
-
 CustomKeywords.'desktopMySQL.function.CloseOpenedFunctionTab'();
-
 CustomKeywords.'desktopMySQL.function.CloseMainTab'();
 
 Windows.closeApplication()
