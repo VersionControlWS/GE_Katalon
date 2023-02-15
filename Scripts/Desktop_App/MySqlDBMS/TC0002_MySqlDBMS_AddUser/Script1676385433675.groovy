@@ -19,75 +19,84 @@ import org.openqa.selenium.Keys as Keys
 import com.kms.katalon.core.configuration.RunConfiguration as RunConfiguration
 
 def fileDir = RunConfiguration.getProjectDir()
+
 String ProjectExePath = fileDir
+
 System.out.println('Curent project running path : ' + ProjectExePath)
 
 String AppPath = GlobalVariable.AppPath
+
 String password = GlobalVariable.MyDBMSPassword
 
 System.out.println('Path of exe file : ' + AppPath)
 
-String SelectFirstDBButton = 'Object Repository/DesktopApps/Desktop_DBMS/SelectFirstDBButton'
-String PasswordTextFieldinEditPopUp = 'Object Repository/DesktopApps/Desktop_DBMS/PasswordTextFieldinEditPopUp'
-String OKButtonLoginPopUp = 'Object Repository/DesktopApps/Desktop_DBMS/OKButtonLoginPopUp'
-String SchemaKeywordLoginPage = 'Object Repository/DesktopApps/Desktop_DBMS/TreeItem'
-String CloseButton = 'Object Repository/DesktopApps/Desktop_DBMS/CloseButton'
 String Server_MenuItem = 'Object Repository/DesktopApps/Desktop_DBMS/DBMS_TC0002/Server_MenuItem'
+
 String UsersNPrivileges = 'Object Repository/DesktopApps/Desktop_DBMS/DBMS_TC0002/Server_MenuItem - Users and Privileges'
-String AddAccountButton = 'Object Repository/DesktopApps/Desktop_DBMS/DBMS_TC0002/AddAccountButton';
 
+String AddAccountButton = 'Object Repository/DesktopApps/Desktop_DBMS/DBMS_TC0002/AddAccountButton'
 
-String LoginName = 'Object Repository/DesktopApps/Desktop_DBMS/DBMS_TC0002/LoginName';
-String Password = 'Object Repository/DesktopApps/Desktop_DBMS/DBMS_TC0002/Password';
-String ConfirmPassword = 'Object Repository/DesktopApps/Desktop_DBMS/DBMS_TC0002/ConfirmPassword';
-String ApplyButton = 'Object Repository/DesktopApps/Desktop_DBMS/DBMS_TC0002/ApplyButton';
-String TabItemAdministrativeRoles = 'Object Repository/DesktopApps/Desktop_DBMS/DBMS_TC0002/TabItemAdministrativeRoles';
-String MaintenanceAdmin = 'Object Repository/DesktopApps/Desktop_DBMS/DBMS_TC0002/MaintenanceAdmin';
-String TabItemMainTab = 'Object Repository/DesktopApps/Desktop_DBMS/DBMS_TC0002/TabItemMainTab';
-String TabItemMainAdminwhere = 'Object Repository/DesktopApps/Desktop_DBMS/DBMS_TC0002/TabItemAdminWheredataisEntered';
+String LoginName = 'Object Repository/DesktopApps/Desktop_DBMS/DBMS_TC0002/LoginName'
 
-String LoginUserName = "Test";
-String LoginPassword = "Test@1234";
+String Password = 'Object Repository/DesktopApps/Desktop_DBMS/DBMS_TC0002/Password'
+
+String ConfirmPassword = 'Object Repository/DesktopApps/Desktop_DBMS/DBMS_TC0002/ConfirmPassword'
+
+String ApplyButton = 'Object Repository/DesktopApps/Desktop_DBMS/DBMS_TC0002/ApplyButton'
+
+String TabItemAdministrativeRoles = 'Object Repository/DesktopApps/Desktop_DBMS/DBMS_TC0002/TabItemAdministrativeRoles'
+
+String MaintenanceAdmin = 'Object Repository/DesktopApps/Desktop_DBMS/DBMS_TC0002/MaintenanceAdmin'
+
+String TabItemMainTab = 'Object Repository/DesktopApps/Desktop_DBMS/DBMS_TC0002/TabItemMainTab'
+
+String TabItemMainAdminwhere = 'Object Repository/DesktopApps/Desktop_DBMS/DBMS_TC0002/TabItemAdminWheredataisEntered'
+
+String LoginUserName = 'Test'
+
+String LoginPassword = 'Test@1234'
 
 Windows.startApplication(AppPath)
 
-Windows.click(findWindowsObject(SelectFirstDBButton))
-Windows.setText(findWindowsObject(PasswordTextFieldinEditPopUp), password)
-Windows.click(findWindowsObject(OKButtonLoginPopUp))
-//Thread.sleep(3000)
-Windows.verifyElementPresent(findWindowsObject(SchemaKeywordLoginPage), 5)
-String LoginText = Windows.getText(findWindowsObject(SchemaKeywordLoginPage))
-System.out.println(('Successfully logged into Dashboard, hence ' + LoginText) + ' is visible')
-Windows.verifyElementPresent(findWindowsObject(SchemaKeywordLoginPage), 5)
-Windows.click(findWindowsObject(Server_MenuItem))
+CustomKeywords.'desktopMySQL.function.LoginToMySqlwithPasswordAndVerifyHomePage'(password);
 
-
-Windows.sendKeys(findWindowsObject(Server_MenuItem),Keys.chord(Keys.ARROW_DOWN))
-Windows.sendKeys(findWindowsObject(Server_MenuItem),Keys.chord(Keys.ARROW_DOWN))
-Windows.sendKeys(findWindowsObject(Server_MenuItem),Keys.chord(Keys.ARROW_DOWN))
-Windows.sendKeys(findWindowsObject(Server_MenuItem),Keys.chord(Keys.ENTER))
+CustomKeywords.'desktopMySQLNav.Navigation.NavigateTo_MenuItem_Server_UsersandPrivileges'();
 
 Windows.verifyElementPresent(findWindowsObject(AddAccountButton), 5)
+
 Windows.click(findWindowsObject(AddAccountButton))
 
-
 Windows.verifyElementPresent(findWindowsObject(LoginName), 5)
+
 Windows.setText(findWindowsObject(LoginName), LoginUserName)
+
 Windows.setText(findWindowsObject(Password), LoginPassword)
+
 Windows.setText(findWindowsObject(ConfirmPassword), LoginPassword)
+
 Windows.click(findWindowsObject(ApplyButton))
 
 Windows.click(findWindowsObject(TabItemAdministrativeRoles))
+
 Windows.verifyElementPresent(findWindowsObject(MaintenanceAdmin), 5)
+
 Windows.click(findWindowsObject(MaintenanceAdmin))
+
 Windows.click(findWindowsObject(ApplyButton))
 
 Windows.rightClick(findWindowsObject(TabItemMainAdminwhere))
-Windows.sendKeys(findWindowsObject(TabItemMainAdminwhere),Keys.chord(Keys.ARROW_DOWN))
-Windows.sendKeys(findWindowsObject(TabItemMainAdminwhere),Keys.chord(Keys.ENTER))
+
+Windows.sendKeys(findWindowsObject(TabItemMainAdminwhere), Keys.chord(Keys.ARROW_DOWN))
+
+Windows.sendKeys(findWindowsObject(TabItemMainAdminwhere), Keys.chord(Keys.ENTER))
 
 Windows.rightClick(findWindowsObject(TabItemMainTab))
-Windows.sendKeys(findWindowsObject(TabItemMainTab),Keys.chord(Keys.ARROW_DOWN))
-Windows.sendKeys(findWindowsObject(TabItemMainTab),Keys.chord(Keys.ENTER))
+
+Windows.sendKeys(findWindowsObject(TabItemMainTab), Keys.chord(Keys.ARROW_DOWN))
+
+Windows.sendKeys(findWindowsObject(TabItemMainTab), Keys.chord(Keys.ENTER))
 
 Windows.closeApplication()
+
+WebUI.callTestCase(findTestCase('Desktop_App/MySqlDBMS/TC0004_MySqlDBMS_DeleteUser'), [:], FailureHandling.CONTINUE_ON_FAILURE)
+

@@ -1,0 +1,16 @@
+{
+  "keywordFileContentHash": "97738792319F12B1514AC16E3B9878E8",
+  "keywordClasses": [
+    {
+      "name": "desktopMySQLNav.Navigation",
+      "keywordMethods": [
+        {
+          "name": "NavigateTo_MenuItem_Server_UsersandPrivileges",
+          "parameters": [],
+          "javadoc": ""
+        }
+      ]
+    }
+  ],
+  "javadocParsed": true
+}
