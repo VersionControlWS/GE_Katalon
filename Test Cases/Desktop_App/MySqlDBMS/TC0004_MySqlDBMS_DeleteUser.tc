@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <TestCaseEntity>
    <description></description>
-   <name>TC0003_MySqlDBMS_DeleteUser</name>
+   <name>TC0004_MySqlDBMS_DeleteUser</name>
    <tag></tag>
    <comment></comment>
    <testCaseGuid>cd1fddca-ac6b-42a3-b422-ca921dee662f</testCaseGuid>

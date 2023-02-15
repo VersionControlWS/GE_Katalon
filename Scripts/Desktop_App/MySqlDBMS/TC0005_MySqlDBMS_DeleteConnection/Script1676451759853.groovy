@@ -16,14 +16,28 @@ import com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords as WebUI
 import com.kms.katalon.core.windows.keyword.WindowsBuiltinKeywords as Windows
 import internal.GlobalVariable as GlobalVariable
 import org.openqa.selenium.Keys as Keys
+import com.kms.katalon.core.configuration.RunConfiguration as RunConfiguration
 
-flag = 0
-try {
-	CucumberKW.runFeatureFile('Include/features/GTPT_LoginScenarios_TC_0001.feature')
-	flag = 1
-}finally {
-	if(flag == 0) {
-		WebUI.takeScreenshot()
-	}
-	System.out.println("Successfully completed")
-}
+String AppPath = GlobalVariable.AppPath
+System.out.println('Path of exe file : ' + AppPath)
+Windows.startApplication(AppPath)
+
+String NewlyAddedConnectionTest = 'Object Repository/DesktopApps/Desktop_DBMS/TC006/NewlyAddedConnectionTest';
+Windows.rightClick(findWindowsObject(NewlyAddedConnectionTest))
+
+Windows.sendKeys(findWindowsObject(NewlyAddedConnectionTest),Keys.chord(Keys.ARROW_UP))
+Windows.sendKeys(findWindowsObject(NewlyAddedConnectionTest),Keys.chord(Keys.ARROW_UP))
+Windows.sendKeys(findWindowsObject(NewlyAddedConnectionTest),Keys.chord(Keys.ENTER))
+
+String DeletePopUpText = 'Object Repository/DesktopApps/Desktop_DBMS/TC006/Text';
+String Rcvd_text =  Windows.getText(findWindowsObject(DeletePopUpText))
+System.out.println(Rcvd_text)
+
+Windows.verifyElementPresent(findWindowsObject(DeletePopUpText), 5)
+
+String DeleteButton = 'Object Repository/DesktopApps/Desktop_DBMS/TC006/DeleteButton';
+Windows.click(findWindowsObject(DeleteButton))
+
+//println(Windows.getText(findWindowsObject('Object Repository/DesktopApps/Desktop_DBMS/TC006/FirstDisplayedConnection')))
+
+Windows.closeApplication()
