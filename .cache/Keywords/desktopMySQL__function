@@ -1,5 +1,5 @@
 {
-  "keywordFileContentHash": "14286567615FDC0FBF2962CE0B0723CD",
+  "keywordFileContentHash": "9BDEC7F35259708FFBDA27F31F32B3A1",
   "keywordClasses": [
     {
       "name": "desktopMySQL.function",
@@ -52,6 +52,14 @@
               }
             }
           ]
+        },
+        {
+          "name": "CloseOpenedFunctionTab",
+          "parameters": []
+        },
+        {
+          "name": "CloseMainTab",
+          "parameters": []
         }
       ]
     }

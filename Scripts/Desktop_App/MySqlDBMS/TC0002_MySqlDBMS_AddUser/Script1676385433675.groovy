@@ -27,14 +27,6 @@ String password = GlobalVariable.MyDBMSPassword
 
 System.out.println('Path of exe file : ' + AppPath)
 
-String Server_MenuItem = 'Object Repository/DesktopApps/Desktop_DBMS/DBMS_TC0002/Server_MenuItem'
-
-String UsersNPrivileges = 'Object Repository/DesktopApps/Desktop_DBMS/DBMS_TC0002/Server_MenuItem - Users and Privileges'
-
-String TabItemMainTab = 'Object Repository/DesktopApps/Desktop_DBMS/DBMS_TC0002/TabItemMainTab'
-
-String TabItemMainAdminwhere = 'Object Repository/DesktopApps/Desktop_DBMS/DBMS_TC0002/TabItemAdminWheredataisEntered'
-
 String LoginUserName = 'Test'
 String LoginPassword = 'Test@1234'
 
@@ -46,41 +38,11 @@ CustomKeywords.'desktopMySQLNav.Navigation.NavigateTo_MenuItem_Server_UsersandPr
 
 CustomKeywords.'desktopMySQL.function.AddUserAccount'(LoginUserName, LoginPassword);
 
-//Windows.verifyElementPresent(findWindowsObject(AddAccountButton), 5)
-//
-//Windows.click(findWindowsObject(AddAccountButton))
-//
-//Windows.verifyElementPresent(findWindowsObject(LoginName), 5)
-//
-//Windows.setText(findWindowsObject(LoginName), LoginUserName)
-//
-//Windows.setText(findWindowsObject(Password), LoginPassword)
-//
-//Windows.setText(findWindowsObject(ConfirmPassword), LoginPassword)
-//
-//Windows.click(findWindowsObject(ApplyButton))
-//
-//Windows.click(findWindowsObject(TabItemAdministrativeRoles))
-//
-//Windows.verifyElementPresent(findWindowsObject(MaintenanceAdmin), 5)
-//
-//Windows.click(findWindowsObject(MaintenanceAdmin))
-//
-//Windows.click(findWindowsObject(ApplyButton))
-//
-//Windows.rightClick(findWindowsObject(TabItemMainAdminwhere))
-//
-//Windows.sendKeys(findWindowsObject(TabItemMainAdminwhere), Keys.chord(Keys.ARROW_DOWN))
-//
-//Windows.sendKeys(findWindowsObject(TabItemMainAdminwhere), Keys.chord(Keys.ENTER))
-//
-//Windows.rightClick(findWindowsObject(TabItemMainTab))
-//
-//Windows.sendKeys(findWindowsObject(TabItemMainTab), Keys.chord(Keys.ARROW_DOWN))
-//
-//Windows.sendKeys(findWindowsObject(TabItemMainTab), Keys.chord(Keys.ENTER))
+CustomKeywords.'desktopMySQL.function.CloseOpenedFunctionTab'();
+
+CustomKeywords.'desktopMySQL.function.CloseMainTab'();
 
 Windows.closeApplication()
 
-//WebUI.callTestCase(findTestCase('Desktop_App/MySqlDBMS/TC0004_MySqlDBMS_DeleteUser'), [:], FailureHandling.CONTINUE_ON_FAILURE)
+WebUI.callTestCase(findTestCase('Desktop_App/MySqlDBMS/TC0004_MySqlDBMS_DeleteUser'), [:], FailureHandling.CONTINUE_ON_FAILURE)
 

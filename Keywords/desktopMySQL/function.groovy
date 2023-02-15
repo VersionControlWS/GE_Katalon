@@ -20,6 +20,7 @@ import com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords as WebUI
 import com.kms.katalon.core.windows.keyword.WindowsBuiltinKeywords as Windows
 
 import internal.GlobalVariable
+import org.openqa.selenium.Keys as Keys
 
 public class function {
 
@@ -42,18 +43,18 @@ public class function {
 		Windows.verifyElementPresent(findWindowsObject(SchemaKeywordLoginPage), 5)
 
 	}
-	
+
 	@Keyword
 	public void AddUserAccount(LoginUserName, LoginPassword) {
-		
+
 		String AddAccountButton = 'Object Repository/DesktopApps/Desktop_DBMS/DBMS_TC0002/AddAccountButton';
-		String LoginName = 'Object Repository/DesktopApps/Desktop_DBMS/DBMS_TC0002/LoginName';		
-		String Password = 'Object Repository/DesktopApps/Desktop_DBMS/DBMS_TC0002/Password';		
-		String ConfirmPassword = 'Object Repository/DesktopApps/Desktop_DBMS/DBMS_TC0002/ConfirmPassword';		
-		String ApplyButton = 'Object Repository/DesktopApps/Desktop_DBMS/DBMS_TC0002/ApplyButton';		
-		String TabItemAdministrativeRoles = 'Object Repository/DesktopApps/Desktop_DBMS/DBMS_TC0002/TabItemAdministrativeRoles';		
-		String MaintenanceAdmin = 'Object Repository/DesktopApps/Desktop_DBMS/DBMS_TC0002/MaintenanceAdmin';		
-		
+		String LoginName = 'Object Repository/DesktopApps/Desktop_DBMS/DBMS_TC0002/LoginName';
+		String Password = 'Object Repository/DesktopApps/Desktop_DBMS/DBMS_TC0002/Password';
+		String ConfirmPassword = 'Object Repository/DesktopApps/Desktop_DBMS/DBMS_TC0002/ConfirmPassword';
+		String ApplyButton = 'Object Repository/DesktopApps/Desktop_DBMS/DBMS_TC0002/ApplyButton';
+		String TabItemAdministrativeRoles = 'Object Repository/DesktopApps/Desktop_DBMS/DBMS_TC0002/TabItemAdministrativeRoles';
+		String MaintenanceAdmin = 'Object Repository/DesktopApps/Desktop_DBMS/DBMS_TC0002/MaintenanceAdmin';
+
 		Windows.verifyElementPresent(findWindowsObject(AddAccountButton), 5)
 		Windows.click(findWindowsObject(AddAccountButton))
 		Windows.verifyElementPresent(findWindowsObject(LoginName), 5)
@@ -65,6 +66,31 @@ public class function {
 		Windows.verifyElementPresent(findWindowsObject(MaintenanceAdmin), 5)
 		Windows.click(findWindowsObject(MaintenanceAdmin))
 		Windows.click(findWindowsObject(ApplyButton))
+	}
+
+	@Keyword
+	public void CloseOpenedFunctionTab() {
+
+		String TabItemMainAdminwhere = 'Object Repository/DesktopApps/Desktop_DBMS/DBMS_TC0002/TabItemAdminWheredataisEntered';
+
+		if(Windows.verifyElementPresent(findWindowsObject(TabItemMainAdminwhere), 5)) {
+			Windows.rightClick(findWindowsObject(TabItemMainAdminwhere))
+			Windows.sendKeys(findWindowsObject(TabItemMainAdminwhere), Keys.chord(Keys.ARROW_DOWN))
+			Windows.sendKeys(findWindowsObject(TabItemMainAdminwhere), Keys.chord(Keys.ENTER))
+		}
+	}
+
+	@Keyword
+	public void CloseMainTab() {
+
+		String TabItemMainTab = 'Object Repository/DesktopApps/Desktop_DBMS/DBMS_TC0002/TabItemMainTab';
+
+		if(Windows.verifyElementPresent(findWindowsObject(TabItemMainTab), 5)) {
+			Windows.rightClick(findWindowsObject(TabItemMainTab))
+			Windows.sendKeys(findWindowsObject(TabItemMainTab), Keys.chord(Keys.ARROW_DOWN))
+			Windows.sendKeys(findWindowsObject(TabItemMainTab), Keys.chord(Keys.ENTER))
+
+		}
 	}
 
 }
