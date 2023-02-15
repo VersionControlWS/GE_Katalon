@@ -1,16 +1,15 @@
 {
-  "keywordFileContentHash": "97738792319F12B1514AC16E3B9878E8",
+  "keywordFileContentHash": "6A3757EAC7DE95CB82B869F6FE854BAE",
   "keywordClasses": [
     {
       "name": "desktopMySQLNav.Navigation",
       "keywordMethods": [
         {
           "name": "NavigateTo_MenuItem_Server_UsersandPrivileges",
-          "parameters": [],
-          "javadoc": ""
+          "parameters": []
         }
       ]
     }
   ],
-  "javadocParsed": true
+  "javadocParsed": false
 }

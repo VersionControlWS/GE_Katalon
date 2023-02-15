@@ -1,5 +1,5 @@
 {
-  "keywordFileContentHash": "F9B6DC90C44352EC72808FE742A2FD6C",
+  "keywordFileContentHash": "14286567615FDC0FBF2962CE0B0723CD",
   "keywordClasses": [
     {
       "name": "desktopMySQL.function",
@@ -20,11 +20,41 @@
                 "errorOnParsing": false
               }
             }
-          ],
-          "javadoc": ""
+          ]
+        },
+        {
+          "name": "AddUserAccount",
+          "parameters": [
+            {
+              "name": "LoginUserName",
+              "initialExpression": "",
+              "type": {
+                "fullClassName": "java.lang.Object",
+                "unresolvedClassName": "java.lang.Object",
+                "isArray": false,
+                "isGnericsPlaceHolder": false,
+                "hasImmutableClassName": true,
+                "genericsTypes": [],
+                "errorOnParsing": false
+              }
+            },
+            {
+              "name": "LoginPassword",
+              "initialExpression": "",
+              "type": {
+                "fullClassName": "java.lang.Object",
+                "unresolvedClassName": "java.lang.Object",
+                "isArray": false,
+                "isGnericsPlaceHolder": false,
+                "hasImmutableClassName": true,
+                "genericsTypes": [],
+                "errorOnParsing": false
+              }
+            }
+          ]
         }
       ]
     }
   ],
-  "javadocParsed": true
+  "javadocParsed": false
 }

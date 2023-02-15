@@ -37,16 +37,21 @@ public class Navigation {
 		Windows.sendKeys(findWindowsObject(Server_MenuItem), Keys.chord(Keys.ARROW_DOWN))
 		Windows.sendKeys(findWindowsObject(Server_MenuItem), Keys.chord(Keys.ARROW_DOWN))
 		Windows.sendKeys(findWindowsObject(Server_MenuItem), Keys.chord(Keys.ENTER))
-		if(Windows.verifyElementNotPresent(findWindowsObject(UserAndPrivileges_TextToVerify), 5)) {
+
+		if(Windows.verifyElementPresent(findWindowsObject(UserAndPrivileges_TextToVerify), 5)) {
+			String text = Windows.getText(findWindowsObject(UserAndPrivileges_TextToVerify))
+			System.out.println("Successfully navigated to '"+text+"' page");
+		}else {
 			Windows.verifyElementPresent(findWindowsObject(Server_MenuItem), 5)
 			Windows.click(findWindowsObject(Server_MenuItem))
 			Windows.sendKeys(findWindowsObject(Server_MenuItem), Keys.chord(Keys.ARROW_DOWN))
 			Windows.sendKeys(findWindowsObject(Server_MenuItem), Keys.chord(Keys.ARROW_DOWN))
 			Windows.sendKeys(findWindowsObject(Server_MenuItem), Keys.chord(Keys.ARROW_DOWN))
-			Windows.sendKeys(findWindowsObject(Server_MenuItem), Keys.chord(Keys.ENTER))	
-		}else {
+			Windows.sendKeys(findWindowsObject(Server_MenuItem), Keys.chord(Keys.ENTER))
+
 			String text = Windows.getText(findWindowsObject(UserAndPrivileges_TextToVerify))
 			System.out.println("Successfully navigated to '"+text+"' page");
+
 		}
 	}
 }
