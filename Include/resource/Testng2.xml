@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="TestNG/JUnit test-scenario for MySQL DBMS">
+	<test name="User Functionalities">
+		<classes>
+			<class name="src.test.java.testClassPackage.TestClass" />
+		</classes>
+	</test>
+</suite>
