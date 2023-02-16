@@ -17,13 +17,18 @@ import com.kms.katalon.core.windows.keyword.WindowsBuiltinKeywords as Windows
 import internal.GlobalVariable as GlobalVariable
 import org.openqa.selenium.Keys as Keys
 
-flag = 0
-try {
-	CucumberKW.runFeatureFile('Include/features/MySQL_DBMS_User_Scenarios_TC_0001.feature.feature')
-	flag = 1
-}finally {
-	if(flag == 0) {
-		WebUI.takeScreenshot()
-	}
-	System.out.println("Successfully completed")
-}
+import org.apache.commons.lang.RandomStringUtils;
+
+	int length = 5;
+	boolean useLetters = true;
+	boolean useNumbers = false;
+//	String generatedString = RandomStringUtils.random(length, useLetters, useNumbers).toLowerCase();
+	String name = RandomStringUtils.random(length, useLetters, useNumbers).toLowerCase();
+	System.out.println(name);
+
+	String firstLetter = name.substring(0, 1);
+	String remainingLetters = name.substring(1, name.length());
+	
+	firstLetter = firstLetter.toUpperCase();
+	name = firstLetter + remainingLetters;
+	System.out.println("Loginusername: " + name);

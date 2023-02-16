@@ -144,7 +144,7 @@ public class function {
 
 	@Keyword
 	public void DeleteConnection() {
-		
+
 		String NewlyAddedConnectionTest = 'Object Repository/DesktopApps/Desktop_DBMS/DBMS_TC005/NewlyAddedConnectionTest';
 		String DeletePopUpText = 'Object Repository/DesktopApps/Desktop_DBMS/DBMS_TC005/Text';
 		String DeleteButton = 'Object Repository/DesktopApps/Desktop_DBMS/DBMS_TC005/DeleteButton';

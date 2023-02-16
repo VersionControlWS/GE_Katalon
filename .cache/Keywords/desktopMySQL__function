@@ -1,5 +1,5 @@
 {
-  "keywordFileContentHash": "719BA25FC498A4278F0A442BCFA10822",
+  "keywordFileContentHash": "448F36B15E82A1E677FFA65FA582DCB9",
   "keywordClasses": [
     {
       "name": "desktopMySQL.function",
@@ -20,7 +20,8 @@
                 "errorOnParsing": false
               }
             }
-          ]
+          ],
+          "javadoc": ""
         },
         {
           "name": "AddUserAccount",
@@ -51,11 +52,13 @@
                 "errorOnParsing": false
               }
             }
-          ]
+          ],
+          "javadoc": ""
         },
         {
           "name": "DeleteUserAccount",
-          "parameters": []
+          "parameters": [],
+          "javadoc": ""
         },
         {
           "name": "ToAddNewConnectionClickonPlusButton",
@@ -73,7 +76,8 @@
                 "errorOnParsing": false
               }
             }
-          ]
+          ],
+          "javadoc": ""
         },
         {
           "name": "EnterNewConnectionDetails",
@@ -117,7 +121,8 @@
                 "errorOnParsing": false
               }
             }
-          ]
+          ],
+          "javadoc": ""
         },
         {
           "name": "VerifyNewlyAddedConnection",
@@ -135,22 +140,26 @@
                 "errorOnParsing": false
               }
             }
-          ]
+          ],
+          "javadoc": ""
         },
         {
           "name": "DeleteConnection",
-          "parameters": []
+          "parameters": [],
+          "javadoc": ""
         },
         {
           "name": "CloseOpenedFunctionTab",
-          "parameters": []
+          "parameters": [],
+          "javadoc": ""
         },
         {
           "name": "CloseMainTab",
-          "parameters": []
+          "parameters": [],
+          "javadoc": ""
         }
       ]
     }
   ],
-  "javadocParsed": false
+  "javadocParsed": true
 }
