@@ -3,8 +3,8 @@
    <description></description>
    <name>ApplyButton</name>
    <tag></tag>
-   <locator>//Window/Tab[1]/Pane[1]/Window[1]/Pane[1]/Pane[1]/Pane[2]/Pane[1]/Pane[1]/Pane[1]/Pane[1]/Tab[1]/Pane[1]/Window[1]/Pane[1]/Tab[1]/Pane[1]/Pane[1]/Pane[3]/Pane[1]/Button[4]</locator>
-   <locatorStrategy>XPATH</locatorStrategy>
+   <locator>Apply</locator>
+   <locatorStrategy>NAME</locatorStrategy>
    <properties>
       <isSelected>false</isSelected>
       <matchCondition>equals</matchCondition>

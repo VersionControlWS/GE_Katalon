@@ -53,7 +53,7 @@ public class function {
 		String ConfirmPassword = 'Object Repository/DesktopApps/Desktop_DBMS/DBMS_TC0002/ConfirmPassword';
 		String ApplyButton = 'Object Repository/DesktopApps/Desktop_DBMS/DBMS_TC0002/ApplyButton';
 		String TabItemAdministrativeRoles = 'Object Repository/DesktopApps/Desktop_DBMS/DBMS_TC0002/TabItemAdministrativeRoles';
-		String MaintenanceAdmin = 'Object Repository/DesktopApps/Desktop_DBMS/DBMS_TC0002/MaintenanceAdmin';
+		String MaintenanceAdmin = 'Object Repository/DesktopApps/Desktop_DBMS/DBMS_TC0002/MaintenanceAdmin - ScriptGenerated';
 
 		Windows.verifyElementPresent(findWindowsObject(AddAccountButton), 5)
 		Windows.click(findWindowsObject(AddAccountButton))
@@ -67,6 +67,103 @@ public class function {
 		Windows.click(findWindowsObject(MaintenanceAdmin))
 		Windows.click(findWindowsObject(ApplyButton))
 	}
+
+	@Keyword
+	public void DeleteUserAccount() {
+
+		String DeleteAccountButton = 'Object Repository/DesktopApps/Desktop_DBMS/DBMS_TC0003/DeleteButton';
+
+		String NewlyAddedDataItem_User = 'Object Repository/DesktopApps/Desktop_DBMS/DBMS_TC0003/NewlyAddedDataItem_User';
+		String DeleteButton = 'Object Repository/DesktopApps/Desktop_DBMS/DBMS_TC0003/DeleteButton';
+		String DeleteTextHeader = 'Object Repository/DesktopApps/Desktop_DBMS/DBMS_TC0003/DeleteTextHeader';
+		String DeleteButton_PopUp = 'Object Repository/DesktopApps/Desktop_DBMS/DBMS_TC0003/DeleteButton_PopUp';
+		String RefreshButton = 'Object Repository/DesktopApps/Desktop_DBMS/DBMS_TC0003/RefreshButton';
+
+		Windows.verifyElementPresent(findWindowsObject(DeleteAccountButton), 5)
+		Windows.verifyElementPresent(findWindowsObject(NewlyAddedDataItem_User), 5)
+		Windows.doubleClick(findWindowsObject(NewlyAddedDataItem_User))
+		Windows.click(findWindowsObject(DeleteAccountButton))
+		Windows.verifyElementPresent(findWindowsObject(DeleteTextHeader), 5)
+		Windows.click(findWindowsObject(DeleteButton_PopUp))
+		Windows.verifyElementPresent(findWindowsObject(RefreshButton), 5)
+		Windows.click(findWindowsObject(RefreshButton))
+	}
+
+	@Keyword
+	public void ToAddNewConnectionClickonPlusButton(AppPath) {
+
+		String PlusButton = 'Object Repository/DesktopApps/Desktop_DBMS/DBMS_TC0002/PlusButton';
+
+		if(Windows.verifyElementPresent(findWindowsObject(PlusButton), 5)) {
+			Windows.click(findWindowsObject(PlusButton))
+		}else {
+			Windows.startApplication(AppPath)
+
+			Windows.verifyElementPresent(findWindowsObject(PlusButton), 5)
+			Windows.click(findWindowsObject(PlusButton))
+		}
+	}
+
+	@Keyword
+	public void EnterNewConnectionDetails(ConnectionNameTextToEnter, ConnectionUsername, DefaultSchema) {
+
+		String ConnectionName = 'Object Repository/DesktopApps/Desktop_DBMS/DBMS_TC0002/ConnectionName';
+		String FrontPageEditUserName = 'Object Repository/DesktopApps/Desktop_DBMS/DBMS_TC0002/FrontPageEditUserName';
+		String Schema = 'Object Repository/DesktopApps/Desktop_DBMS/DBMS_TC0002/Schema';
+		String OKButton = 'Object Repository/DesktopApps/Desktop_DBMS/DBMS_TC0002/OKButton';
+
+
+		Windows.verifyElementPresent(findWindowsObject(ConnectionName), 5)
+		Windows.sendKeys(findWindowsObject(ConnectionName), ConnectionNameTextToEnter)
+		Windows.click(findWindowsObject(FrontPageEditUserName))
+		Windows.clearText(findWindowsObject(FrontPageEditUserName))
+		Windows.sendKeys(findWindowsObject(FrontPageEditUserName), ConnectionUsername)
+		Windows.sendKeys(findWindowsObject(Schema), DefaultSchema)
+		Windows.click(findWindowsObject(OKButton))
+	}
+
+	@Keyword
+	public void VerifyNewlyAddedConnection(NewUserLoginPassword) {
+
+		String NewUserAdded = 'Object Repository/DesktopApps/Desktop_DBMS/DBMS_TC0002/NewUserAdded';
+
+		String PasswordTextFieldinEditPopUp = 'Object Repository/DesktopApps/Desktop_DBMS/DBMS_TC0001/PasswordTextFieldinEditPopUp';
+		String OKButtonLoginPopUp = 'Object Repository/DesktopApps/Desktop_DBMS/DBMS_TC0001/OKButtonLoginPopUp';
+		String SchemaKeywordLoginPage = 'Object Repository/DesktopApps/Desktop_DBMS/DBMS_TC0001/SchemaKeywordHomePage';
+
+
+		Windows.click(findWindowsObject(NewUserAdded))
+		Windows.verifyElementPresent(findWindowsObject(PasswordTextFieldinEditPopUp), 5)
+		Windows.setText(findWindowsObject(PasswordTextFieldinEditPopUp), NewUserLoginPassword)
+		Windows.click(findWindowsObject(OKButtonLoginPopUp))
+		Windows.verifyElementPresent(findWindowsObject(SchemaKeywordLoginPage), 5)
+
+		String LoginText = Windows.getText(findWindowsObject(SchemaKeywordLoginPage))
+		System.out.println(('Successfully logged into Dashboard, hence ' + LoginText) + ' is visible')
+	}
+
+	@Keyword
+	public void DeleteConnection() {
+		
+		String NewlyAddedConnectionTest = 'Object Repository/DesktopApps/Desktop_DBMS/DBMS_TC005/NewlyAddedConnectionTest';
+		String DeletePopUpText = 'Object Repository/DesktopApps/Desktop_DBMS/DBMS_TC005/Text';
+		String DeleteButton = 'Object Repository/DesktopApps/Desktop_DBMS/DBMS_TC005/DeleteButton';
+
+		Windows.rightClick(findWindowsObject(NewlyAddedConnectionTest))
+
+		Windows.sendKeys(findWindowsObject(NewlyAddedConnectionTest),Keys.chord(Keys.ARROW_UP))
+		Windows.sendKeys(findWindowsObject(NewlyAddedConnectionTest),Keys.chord(Keys.ARROW_UP))
+		Windows.sendKeys(findWindowsObject(NewlyAddedConnectionTest),Keys.chord(Keys.ENTER))
+
+		String Rcvd_text =  Windows.getText(findWindowsObject(DeletePopUpText))
+		System.out.println(Rcvd_text)
+		Windows.verifyElementPresent(findWindowsObject(DeletePopUpText), 5)
+		Windows.click(findWindowsObject(DeleteButton))
+
+		//System.out.println(Windows.getText(findWindowsObject('Object Repository/DesktopApps/Desktop_DBMS/DBMS_TC005/FirstDisplayedConnection')))
+	}
+
+
 
 	@Keyword
 	public void CloseOpenedFunctionTab() {
@@ -89,8 +186,6 @@ public class function {
 			Windows.rightClick(findWindowsObject(TabItemMainTab))
 			Windows.sendKeys(findWindowsObject(TabItemMainTab), Keys.chord(Keys.ARROW_DOWN))
 			Windows.sendKeys(findWindowsObject(TabItemMainTab), Keys.chord(Keys.ENTER))
-
 		}
 	}
-
 }

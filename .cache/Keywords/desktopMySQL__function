@@ -1,5 +1,5 @@
 {
-  "keywordFileContentHash": "9BDEC7F35259708FFBDA27F31F32B3A1",
+  "keywordFileContentHash": "719BA25FC498A4278F0A442BCFA10822",
   "keywordClasses": [
     {
       "name": "desktopMySQL.function",
@@ -52,6 +52,94 @@
               }
             }
           ]
+        },
+        {
+          "name": "DeleteUserAccount",
+          "parameters": []
+        },
+        {
+          "name": "ToAddNewConnectionClickonPlusButton",
+          "parameters": [
+            {
+              "name": "AppPath",
+              "initialExpression": "",
+              "type": {
+                "fullClassName": "java.lang.Object",
+                "unresolvedClassName": "java.lang.Object",
+                "isArray": false,
+                "isGnericsPlaceHolder": false,
+                "hasImmutableClassName": true,
+                "genericsTypes": [],
+                "errorOnParsing": false
+              }
+            }
+          ]
+        },
+        {
+          "name": "EnterNewConnectionDetails",
+          "parameters": [
+            {
+              "name": "ConnectionNameTextToEnter",
+              "initialExpression": "",
+              "type": {
+                "fullClassName": "java.lang.Object",
+                "unresolvedClassName": "java.lang.Object",
+                "isArray": false,
+                "isGnericsPlaceHolder": false,
+                "hasImmutableClassName": true,
+                "genericsTypes": [],
+                "errorOnParsing": false
+              }
+            },
+            {
+              "name": "ConnectionUsername",
+              "initialExpression": "",
+              "type": {
+                "fullClassName": "java.lang.Object",
+                "unresolvedClassName": "java.lang.Object",
+                "isArray": false,
+                "isGnericsPlaceHolder": false,
+                "hasImmutableClassName": true,
+                "genericsTypes": [],
+                "errorOnParsing": false
+              }
+            },
+            {
+              "name": "DefaultSchema",
+              "initialExpression": "",
+              "type": {
+                "fullClassName": "java.lang.Object",
+                "unresolvedClassName": "java.lang.Object",
+                "isArray": false,
+                "isGnericsPlaceHolder": false,
+                "hasImmutableClassName": true,
+                "genericsTypes": [],
+                "errorOnParsing": false
+              }
+            }
+          ]
+        },
+        {
+          "name": "VerifyNewlyAddedConnection",
+          "parameters": [
+            {
+              "name": "NewUserLoginPassword",
+              "initialExpression": "",
+              "type": {
+                "fullClassName": "java.lang.Object",
+                "unresolvedClassName": "java.lang.Object",
+                "isArray": false,
+                "isGnericsPlaceHolder": false,
+                "hasImmutableClassName": true,
+                "genericsTypes": [],
+                "errorOnParsing": false
+              }
+            }
+          ]
+        },
+        {
+          "name": "DeleteConnection",
+          "parameters": []
         },
         {
           "name": "CloseOpenedFunctionTab",

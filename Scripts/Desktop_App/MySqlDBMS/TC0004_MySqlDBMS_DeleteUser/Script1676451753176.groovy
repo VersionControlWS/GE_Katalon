@@ -18,70 +18,19 @@ import internal.GlobalVariable as GlobalVariable
 import org.openqa.selenium.Keys as Keys
 import com.kms.katalon.core.configuration.RunConfiguration as RunConfiguration
 
-def fileDir = RunConfiguration.getProjectDir()
-String ProjectExePath = fileDir
-System.out.println('Curent project running path : ' + ProjectExePath)
+//String AppPath = GlobalVariable.AppPath
+//String password = GlobalVariable.MyDBMSPassword
 
-String AppPath = GlobalVariable.AppPath
-System.out.println('Path of exe file : ' + AppPath)
+String AppPath = 'C:/Program Files/MySQL/MySQL Workbench 8.0/MySQLWorkbench.exe'
+String password = 'root@123'
 
-String SelectFirstDBButton = 'Object Repository/DesktopApps/Desktop_DBMS/SelectFirstDBButton'
-String PasswordTextFieldinEditPopUp = 'Object Repository/DesktopApps/Desktop_DBMS/PasswordTextFieldinEditPopUp'
-String OKButtonLoginPopUp = 'Object Repository/DesktopApps/Desktop_DBMS/OKButtonLoginPopUp'
-String SchemaKeywordLoginPage = 'Object Repository/DesktopApps/Desktop_DBMS/TreeItem'
-String CloseButton = 'Object Repository/DesktopApps/Desktop_DBMS/CloseButton'
-String Server_MenuItem = 'Object Repository/DesktopApps/Desktop_DBMS/DBMS_TC0002/Server_MenuItem'
-String UsersNPrivileges = 'Object Repository/DesktopApps/Desktop_DBMS/DBMS_TC0002/Server_MenuItem - Users and Privileges'
-
-String DeleteAccountButton = 'Object Repository/DesktopApps/Desktop_DBMS/DBMS_TC0003/DeleteButton';
-
-String NewlyAddedDataItem_User = 'Object Repository/DesktopApps/Desktop_DBMS/DBMS_TC0003/NewlyAddedDataItem_User';
-String DeleteButton = 'Object Repository/DesktopApps/Desktop_DBMS/DBMS_TC0003/DeleteButton';
-String DeleteTextHeader = 'Object Repository/DesktopApps/Desktop_DBMS/DBMS_TC0003/DeleteTextHeader';
-String DeleteButton_PopUp = 'Object Repository/DesktopApps/Desktop_DBMS/DBMS_TC0003/DeleteButton_PopUp';
-String RefreshButton = 'Object Repository/DesktopApps/Desktop_DBMS/DBMS_TC0003/RefreshButton';
-
-String TabItemMainTab = 'Object Repository/DesktopApps/Desktop_DBMS/DBMS_TC0002/TabItemMainTab';
-String TabItemMainAdminwhere = 'Object Repository/DesktopApps/Desktop_DBMS/DBMS_TC0002/TabItemAdminWheredataisEntered';
-
-String password = "root@123";
 
 Windows.startApplication(AppPath)
 
-Windows.click(findWindowsObject(SelectFirstDBButton))
-Windows.setText(findWindowsObject(PasswordTextFieldinEditPopUp), password)
-Windows.click(findWindowsObject(OKButtonLoginPopUp))
-Windows.verifyElementPresent(findWindowsObject(SchemaKeywordLoginPage), 5)
-
-String LoginText = Windows.getText(findWindowsObject(SchemaKeywordLoginPage))
-System.out.println(('Successfully logged into Dashboard, hence ' + LoginText) + ' is visible')
-
-Windows.verifyElementPresent(findWindowsObject(SchemaKeywordLoginPage), 5)
-
-Windows.click(findWindowsObject(Server_MenuItem))
-
-Windows.sendKeys(findWindowsObject(Server_MenuItem),Keys.chord(Keys.ARROW_DOWN))
-Windows.sendKeys(findWindowsObject(Server_MenuItem),Keys.chord(Keys.ARROW_DOWN))
-Windows.sendKeys(findWindowsObject(Server_MenuItem),Keys.chord(Keys.ARROW_DOWN))
-Windows.sendKeys(findWindowsObject(Server_MenuItem),Keys.chord(Keys.ENTER))
-Windows.verifyElementPresent(findWindowsObject(DeleteAccountButton), 5)
-
-Windows.verifyElementPresent(findWindowsObject(NewlyAddedDataItem_User), 5)
-Windows.doubleClick(findWindowsObject(NewlyAddedDataItem_User))
-
-Windows.click(findWindowsObject(DeleteAccountButton))
-Windows.verifyElementPresent(findWindowsObject(DeleteTextHeader), 5)
-Windows.click(findWindowsObject(DeleteButton_PopUp))
-
-Windows.verifyElementPresent(findWindowsObject(RefreshButton), 5)
-Windows.click(findWindowsObject(RefreshButton))
-
-Windows.rightClick(findWindowsObject(TabItemMainAdminwhere))
-Windows.sendKeys(findWindowsObject(TabItemMainAdminwhere),Keys.chord(Keys.ARROW_DOWN))
-Windows.sendKeys(findWindowsObject(TabItemMainAdminwhere),Keys.chord(Keys.ENTER))
-
-Windows.rightClick(findWindowsObject(TabItemMainTab))
-Windows.sendKeys(findWindowsObject(TabItemMainTab),Keys.chord(Keys.ARROW_DOWN))
-Windows.sendKeys(findWindowsObject(TabItemMainTab),Keys.chord(Keys.ENTER))
+CustomKeywords.'desktopMySQL.function.LoginToMySqlwithPasswordAndVerifyHomePage'(password);
+CustomKeywords.'desktopMySQLNav.Navigation.NavigateTo_MenuItem_Server_UsersandPrivileges'();
+CustomKeywords.'desktopMySQL.function.DeleteUserAccount'();
+CustomKeywords.'desktopMySQL.function.CloseOpenedFunctionTab'();
+CustomKeywords.'desktopMySQL.function.CloseMainTab'();
 
 Windows.closeApplication()

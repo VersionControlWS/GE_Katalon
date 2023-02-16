@@ -18,43 +18,20 @@ import internal.GlobalVariable as GlobalVariable
 import org.openqa.selenium.Keys as Keys
 import com.kms.katalon.core.configuration.RunConfiguration as RunConfiguration
 
-String AppPath = GlobalVariable.AppPath
+//String AppPath = GlobalVariable.AppPath
 
-String PasswordTextFieldinEditPopUp = 'Object Repository/DesktopApps/Desktop_DBMS/PasswordTextFieldinEditPopUp'
-String OKButtonLoginPopUp = 'Object Repository/DesktopApps/Desktop_DBMS/OKButtonLoginPopUp'
-String SchemaKeywordLoginPage = 'Object Repository/DesktopApps/Desktop_DBMS/TreeItem'
-
-String PlusButton = 'Object Repository/DesktopApps/Desktop_DBMS/DBMS_TC0002/PlusButton';
-String ConnectionName = 'Object Repository/DesktopApps/Desktop_DBMS/DBMS_TC0002/ConnectionName';
-String FrontPageEditUserName = 'Object Repository/DesktopApps/Desktop_DBMS/DBMS_TC0002/FrontPageEditUserName';
-String Schema = 'Object Repository/DesktopApps/Desktop_DBMS/DBMS_TC0002/Schema';
-String OKButton = 'Object Repository/DesktopApps/Desktop_DBMS/DBMS_TC0002/OKButton';
-
-String NewUserAdded = 'Object Repository/DesktopApps/Desktop_DBMS/DBMS_TC0002/NewUserAdded';
+String AppPath = 'C:/Program Files/MySQL/MySQL Workbench 8.0/MySQLWorkbench.exe'
 
 String ConnectionNameTextToEnter = "Test";
 String ConnectionUsername = "Test";
 String DefaultSchema = "freshers";
+
 String NewUserLoginPassword = "Test@1234";
 
 Windows.startApplication(AppPath)
 
-Windows.verifyElementPresent(findWindowsObject(PlusButton), 5)
-Windows.click(findWindowsObject(PlusButton))
-Windows.verifyElementPresent(findWindowsObject(ConnectionName), 5)
-Windows.sendKeys(findWindowsObject(ConnectionName), ConnectionNameTextToEnter)
-Windows.click(findWindowsObject(FrontPageEditUserName))
-Windows.clearText(findWindowsObject(FrontPageEditUserName))
-Windows.sendKeys(findWindowsObject(FrontPageEditUserName), ConnectionUsername)
-Windows.sendKeys(findWindowsObject(Schema), DefaultSchema)
-Windows.click(findWindowsObject(OKButton))
-
-Windows.doubleClick(findWindowsObject(NewUserAdded))
-Windows.setText(findWindowsObject(PasswordTextFieldinEditPopUp), NewUserLoginPassword)
-Windows.click(findWindowsObject(OKButtonLoginPopUp))
-Windows.verifyElementPresent(findWindowsObject(SchemaKeywordLoginPage), 5)
-
-String LoginText = Windows.getText(findWindowsObject(SchemaKeywordLoginPage))
-System.out.println(('Successfully logged into Dashboard, hence ' + LoginText) + ' is visible')
+CustomKeywords.'desktopMySQL.function.ToAddNewConnectionClickonPlusButton'(AppPath)
+CustomKeywords.'desktopMySQL.function.EnterNewConnectionDetails'(ConnectionNameTextToEnter, ConnectionUsername, DefaultSchema)
+CustomKeywords.'desktopMySQL.function.VerifyNewlyAddedConnection'(NewUserLoginPassword)
 
 Windows.closeApplication()

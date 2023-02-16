@@ -22,8 +22,12 @@ def fileDir = RunConfiguration.getProjectDir()
 String ProjectExePath = fileDir
 System.out.println('Curent project running path : ' + ProjectExePath)
 
-String AppPath = GlobalVariable.AppPath
-String password = GlobalVariable.MyDBMSPassword
+//String AppPath = GlobalVariable.AppPath
+//String password = GlobalVariable.MyDBMSPassword
+
+String AppPath = 'C:/Program Files/MySQL/MySQL Workbench 8.0/MySQLWorkbench.exe'
+String password = 'root@123'
+
 
 System.out.println('Path of exe file : ' + AppPath)
 
@@ -39,6 +43,4 @@ CustomKeywords.'desktopMySQL.function.CloseOpenedFunctionTab'();
 CustomKeywords.'desktopMySQL.function.CloseMainTab'();
 
 Windows.closeApplication()
-
-WebUI.callTestCase(findTestCase('Desktop_App/MySqlDBMS/TC0004_MySqlDBMS_DeleteUser'), [:], FailureHandling.CONTINUE_ON_FAILURE)
 
