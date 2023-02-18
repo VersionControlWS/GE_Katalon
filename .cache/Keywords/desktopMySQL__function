@@ -1,5 +1,5 @@
 {
-  "keywordFileContentHash": "448F36B15E82A1E677FFA65FA582DCB9",
+  "keywordFileContentHash": "E29537C6DA2BDD3FCF727C981CC6731D",
   "keywordClasses": [
     {
       "name": "desktopMySQL.function",
@@ -39,6 +39,25 @@
                 "errorOnParsing": false
               }
             },
+            {
+              "name": "LoginPassword",
+              "initialExpression": "",
+              "type": {
+                "fullClassName": "java.lang.Object",
+                "unresolvedClassName": "java.lang.Object",
+                "isArray": false,
+                "isGnericsPlaceHolder": false,
+                "hasImmutableClassName": true,
+                "genericsTypes": [],
+                "errorOnParsing": false
+              }
+            }
+          ],
+          "javadoc": ""
+        },
+        {
+          "name": "AddUserAccountwithOnlyPassword",
+          "parameters": [
             {
               "name": "LoginPassword",
               "initialExpression": "",
