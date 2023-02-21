@@ -35,8 +35,7 @@ class WinFunctions{
 
 	WebDriver driver;
 
-	WinFunctions()
-	{
+	WinFunctions() {
 		this.driver = Windows.getDriver()
 	}
 
@@ -62,21 +61,28 @@ class WinFunctions{
 		System.out.println("The image source is : "+ele.getAttribute("Value.Value"));
 		WebElement elem = driver.findElement(By.xpath('//TreeItem[@Name="BackupAdmin"]/DataItem[@Name="Column0"]'));
 		System.out.println("The BackupAdmin is : "+elem.getAttribute("Value.Value"));
-
 	}
-	
+
 	@Keyword
 	void trialtoClose() {
 		WebElement element = driver.findElement(By.name("File"))
 		element.sendKeys(Keys.chord(Keys.CONTROL, 'w'))
 		Thread.sleep(3000)
-		
-//		StringBuilder keys = new StringBuilder();
-//		keys.append(Keys.CONTROL);
-//		keys.append(Keys.SHIFT);
-//		element.sendKeys(Keys.chord(keys.toString()));
-//		element.sendKeys(Keys.chord(Keys.CONTROL, 'w'))
 
+		//		StringBuilder keys = new StringBuilder();
+		//		keys.append(Keys.CONTROL);
+		//		keys.append(Keys.SHIFT);
+		//		element.sendKeys(Keys.chord(keys.toString()));
+		//		element.sendKeys(Keys.chord(Keys.CONTROL, 'w'))
+
+	}
+	
+	@Keyword
+	void Navigate_to_Menu_Server_UserAndPrevilidges() {
+		WebElement element = driver.findElement(By.name("Server"))
+		element.sendKeys(Keys.chord(Keys.ALT, 's'))
+		element.sendKeys( Keys.chord(Keys.DOWN))
+		element.sendKeys( Keys.chord('u'))
 	}
 
 	@Keyword

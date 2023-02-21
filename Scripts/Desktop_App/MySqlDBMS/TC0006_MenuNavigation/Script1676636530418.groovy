@@ -25,7 +25,8 @@ CustomKeywords.'desktopDriver.WinFunctions.findAndClickWindowsElement'('Local in
 CustomKeywords.'desktopDriver.WinFunctions.findAndsendKeysWindowsElement'('Password', 'root@123')
 CustomKeywords.'desktopDriver.WinFunctions.findAndClickWindowsElement'('OK')
 //CustomKeywords.'desktopDriver.WinFunctions.findAndClickWindowsElement'('Server')
-CustomKeywords.'desktopMySQLNav.Navigation.NavigateTo_MenuItem_Server_UsersandPrivileges'();
+CustomKeywords.'desktopDriver.WinFunctions.Navigate_to_Menu_Server_UserAndPrevilidges'()
+//CustomKeywords.'desktopMySQLNav.Navigation.NavigateTo_MenuItem_Server_UsersandPrivileges'();
 CustomKeywords.'desktopDriver.WinFunctions.findAndClickWindowsElement'('Add Account')
 //CustomKeywords.'desktopDriver.WinFunctions.findAndsendKeysWindowsElementByXpathLogin'('//Edit[@Name="Login Name:"]')
 ////CustomKeywords.'desktopDriver.WinFunctions.findAndClickWindowsElementByXpath'('//ComboBox[@Name="Authentication Type:"]')
