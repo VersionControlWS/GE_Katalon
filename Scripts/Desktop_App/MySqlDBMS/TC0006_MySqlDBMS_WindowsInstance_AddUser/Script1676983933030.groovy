@@ -28,42 +28,53 @@ String SetNewPwd = 'Test@1234';
 
 String AppPath = 'C:/Program Files/MySQL/MySQL Workbench 8.0/MySQLWorkbench.exe';
 
-Windows.startApplication(AppPath)
 
-CustomKeywords.'common.WinAppDriver.WinInstance.toGenerateADriverInstance'()
+try {
 
-CustomKeywords.'common.WinAppDriver.WindowsFunction.findAndClickWindowsElementByName'('Local instance MySQL80')
-CustomKeywords.'common.WinAppDriver.WindowsFunction.findAndsendKeysWindowsElementByName'('Password', LoginPassword)
-CustomKeywords.'common.WinAppDriver.WindowsFunction.findAndClickWindowsElementByName'('OK')
+	Windows.startApplication(AppPath)
 
-CustomKeywords.'common.WinAppDriver.WindowsFunction.Navigate_to_Menu_Server_UserAndPrevilidges'()
-//CustomKeywords.'desktopMySQLNav.Navigation.NavigateTo_MenuItem_Server_UsersandPrivileges'();
+	CustomKeywords.'common.WinAppDriver.WinInstance.toGenerateADriverInstance'()
 
-CustomKeywords.'common.WinAppDriver.WindowsFunction.findAndClickWindowsElementByName'('Add Account')
+	CustomKeywords.'common.WinAppDriver.WindowsFunction.findAndClickWindowsElementByName'('Local instance MySQL80')
+	CustomKeywords.'common.WinAppDriver.WindowsFunction.findAndsendKeysWindowsElementByName'('Password', LoginPassword)
+	CustomKeywords.'common.WinAppDriver.WindowsFunction.findAndClickWindowsElementByName'('OK')
 
-//Enter user details such as Login Name, Authentication Type, Password, Confirm Password
+	CustomKeywords.'common.WinAppDriver.WindowsFunction.Navigate_to_Menu_Server_UserAndPrevilidges'()
+	//CustomKeywords.'desktopMySQLNav.Navigation.NavigateTo_MenuItem_Server_UsersandPrivileges'();
 
-CustomKeywords.'common.WinAppDriver.WindowsFunction.findAndsendKeysWindowsElementByXpathLogin'('//Edit[@Name="Login Name:"]')
-//CustomKeywords.'common.WinAppDriver.WindowsFunction.findAndClickWindowsElementByXpath'('//ComboBox[@Name="Authentication Type:"]')
-//CustomKeywords.'common.WinAppDriver.WindowsFunction.selectElementValueByXpath'('//ComboBox[@Name="Authentication Type:"]', AuthenticationType)
-CustomKeywords.'common.WinAppDriver.WindowsFunction.findAndsendKeysWindowsElementByXpath'('//Edit[@Name="Password:"]', SetNewPwd)
-CustomKeywords.'common.WinAppDriver.WindowsFunction.findAndsendKeysWindowsElementByXpath'('//Edit[@Name="Confirm Password:"]', SetNewPwd)
+	CustomKeywords.'common.WinAppDriver.WindowsFunction.findAndClickWindowsElementByName'('Add Account')
 
-//Enter user details such as Login Name, Authentication Type, Password, Confirm Password
-CustomKeywords.'common.WinAppDriver.WindowsFunction.findAndClickWindowsElementByName'('Administrative Roles')
+	//Enter user details such as Login Name, Authentication Type, Password, Confirm Password
 
-//CustomKeywords.'common.WinAppDriver.WindowsFunction.findAndClickWindowsElementByXpath'('//TreeItem[@Name="MaintenanceAdmin"]/DataItem[1]')
-//CustomKeywords.'common.WinAppDriver.WindowsFunction.findAndClickWindowsElementByXpath'('//TreeItem[@Name="MaintenanceAdmin"]/DataItem[@Name="Column0"]')
+	CustomKeywords.'common.WinAppDriver.WindowsFunction.findAndsendKeysWindowsElementByXpathLogin'('//Edit[@Name="Login Name:"]')
 
-CustomKeywords.'common.WinAppDriver.WindowsFunction.selectCheckbox'('//TreeItem[@Name="MaintenanceAdmin"]/DataItem[@Name="Column0"]')
-CustomKeywords.'common.WinAppDriver.WindowsFunction.selectCheckbox'('//TreeItem[@Name="BackupAdmin"]/DataItem[@Name="Column0"]')
+	//CustomKeywords.'common.WinAppDriver.WindowsFunction.findAndClickWindowsElementByXpath'('//ComboBox[@Name="Authentication Type:"]')
+	//CustomKeywords.'common.WinAppDriver.WindowsFunction.findAndClickWindowsElementByXpath'('//Button[@Name="Open"]')
+	//CustomKeywords.'common.WinAppDriver.WindowsFunction.findAndClickWindowsElementByName'('Standard')
+	//OR
+	CustomKeywords.'common.WinAppDriver.WindowsFunction.selectElementValueByXpath'('//ComboBox[@Name="Authentication Type:"]', 'SHA256 Password')
+	//Windows.setText(findWindowsObject('Object Repository/DesktopApps/Desktop_DBMS/AuthType'), 'Standard')
+	//Thread.sleep(3000)
 
-//Click on Apply button
-//CustomKeywords.'common.WinAppDriver.WindowsFunction.findAndClickWindowsElementByName'('Apply')
+	CustomKeywords.'common.WinAppDriver.WindowsFunction.findAndsendKeysWindowsElementByXpath'('//Edit[@Name="Password:"]', SetNewPwd)
+	CustomKeywords.'common.WinAppDriver.WindowsFunction.findAndsendKeysWindowsElementByXpath'('//Edit[@Name="Confirm Password:"]', SetNewPwd)
+	//
+	////Enter user details such as Login Name, Authentication Type, Password, Confirm Password
+	CustomKeywords.'common.WinAppDriver.WindowsFunction.findAndClickWindowsElementByName'('Administrative Roles')
+	//
+	CustomKeywords.'common.WinAppDriver.WindowsFunction.findAndClickWindowsElementByXpath'('//TreeItem[@Name="MaintenanceAdmin"]/DataItem[1]')
+	////CustomKeywords.'common.WinAppDriver.WindowsFunction.findAndClickWindowsElementByXpath'('//TreeItem[@Name="MaintenanceAdmin"]/DataItem[@Name="Column0"]')
+	//
+	//CustomKeywords.'common.WinAppDriver.WindowsFunction.selectCheckbox'('//TreeItem[@Name="MaintenanceAdmin"]/DataItem[@Name="Column0"]')
+	////CustomKeywords.'common.WinAppDriver.WindowsFunction.selectCheckbox'('//TreeItem[@Name="BackupAdmin"]/DataItem[@Name="Column0"]')
+	//
+	////Click on Apply button
+	////CustomKeywords.'common.WinAppDriver.WindowsFunction.findAndClickWindowsElementByName'('Apply')
 
-CustomKeywords.'common.WinAppDriver.WindowsFunction.closeTab'()
+	CustomKeywords.'common.WinAppDriver.WindowsFunction.closeTab'()
 
-//Pending
-//CustomKeywords.'common.WinAppDriver.WindowsFunction.closeConnection'()
-
-Windows.closeApplication()
+	//Pending
+	//CustomKeywords.'common.WinAppDriver.WindowsFunction.closeConnection'()
+}finally {
+	Windows.closeApplication()
+}

@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description></description>
+   <name>TC0007_MySqlDBMS_WindowsInstance_AddConnE2E</name>
+   <tag></tag>
+   <comment></comment>
+   <testCaseGuid>a07bc5d5-c88a-4634-a81e-97c530316013</testCaseGuid>
+</TestCaseEntity>

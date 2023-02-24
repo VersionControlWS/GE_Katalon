@@ -15,10 +15,12 @@ import com.kms.katalon.core.testcase.TestCase
 import com.kms.katalon.core.testdata.TestData
 import com.kms.katalon.core.testng.keyword.TestNGBuiltinKeywords as TestNGKW
 import com.kms.katalon.core.testobject.TestObject
+import com.kms.katalon.core.testobject.WindowsTestObject
 import com.kms.katalon.core.webservice.keyword.WSBuiltInKeywords as WS
 import com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords as WebUI
 import com.kms.katalon.core.windows.keyword.WindowsBuiltinKeywords as Windows
 
+import groovy.ui.SystemOutputInterceptor
 import internal.GlobalVariable
 import org.openqa.selenium.WebElement as WebElement
 import org.openqa.selenium.By as By
@@ -28,7 +30,7 @@ import org.openqa.selenium.support.ui.Select;
 import org.openqa.selenium.Keys as Keys
 import org.openqa.selenium.interactions.Actions;
 
-
+import com.kms.katalon.core.testobject.WindowsTestObject.LocatorStrategy;
 
 class WindowsFunction{
 
@@ -39,14 +41,42 @@ class WindowsFunction{
 	}
 
 	void display(){
-		println(_Windows.getTitle())
+		System.out.println(_Windows.getTitle())
 	}
 
 	@Keyword
 	void findAndClickWindowsElementByName(Name){
-		WebElement ele = _Windows.findElement(By.name(Name))
-		ele.click()
+		String xpath = generateXpath(Name)
+		println(xpath)
+		try {
+			WebElement ele = _Windows.findElement(By.xpath(xpath))
+			ele.click()	
+		}catch(Exception e){
+			WebElement ele = _Windows.findElement(By.name(Name))
+			ele.click()		
+		}
 	}
+
+	@Keyword
+	void findAndDoubleClickWindowsElementByName(Name){
+		WebElement ele = _Windows.findElement(By.name(Name))
+		Actions act = new Actions(_Windows);
+		act.doubleClick(_Windows.findElement(By.name(Name))).build().perform();
+	}
+
+	@Keyword
+	void DoubleClickWindowsElementByName(Value){
+		WindowsTestObject cmb = new WindowsTestObject('')
+		cmb.setLocatorStrategy(LocatorStrategy.NAME)
+		cmb.setLocator(Value)
+		Windows.doubleClick(cmb)
+	}
+
+	//public static TestObject getTestObjectFromWebElement(WebElement element) {
+	//	TestObject object = new TestObject()
+	//	object.addProperty("xpath", ConditionType.CONTAINS, _Windows.findElement(By.name(element))
+	//	return object
+	//}
 
 	@Keyword
 	void findAndClickWindowsElementByXpath(Xpath){
@@ -165,6 +195,37 @@ class WindowsFunction{
 		//Select dropdown = new Select(testDropDown);
 		//dropdown.selectByValue(value);
 		//dropdown.selectByVisibleText("Standard");
+	}
+
+	@Keyword
+	public TestObject convertWebElementToTestObjectByXpath(Xpath) {
+		WebElement ele = _Windows.findElement(By.xpath(Name))
+		TestObject obj = _Windows.convertWebElementToTestObject(ele)
+		return obj
+	}
+
+	public TestObject createTestObject(String locator){
+		TestObject updatedTestObject = new TestObject("Grid")
+		updatedTestObject.addProperty("xpath", ConditionType.EQUALS, locator)
+		return updatedTestObject
+	}
+	
+	/**
+	 * Construct a Katalon-compatible TestObject in memory.
+	 * @param css (String) The CSS selector used to find the target element.
+	 * @return (TestObject) The constructed TestObject.
+	 */
+	 @Keyword
+	 static TestObject makeTO(String css) {
+		 TestObject testobj = new TestObject()
+		 //testobj.addProperty("css", ConditionType.EQUALS, css)
+		 return testobj
+	 }
+	 
+	@Keyword
+	public static String generateXpath(String name) {
+		String Xpath;
+		return Xpath =  "//*[@Name='"+name+"']"
 	}
 }
 

@@ -1,5 +1,5 @@
 {
-  "keywordFileContentHash": "6CC6CF167ECEC314D9245FF89C641B70",
+  "keywordFileContentHash": "3AA1D259FEB1F7E916FFAB4947563615",
   "keywordClasses": [
     {
       "name": "common.WinAppDriver.WindowsFunction",
@@ -9,6 +9,44 @@
           "parameters": [
             {
               "name": "Name",
+              "initialExpression": "",
+              "type": {
+                "fullClassName": "java.lang.Object",
+                "unresolvedClassName": "java.lang.Object",
+                "isArray": false,
+                "isGnericsPlaceHolder": false,
+                "hasImmutableClassName": true,
+                "genericsTypes": [],
+                "errorOnParsing": false
+              }
+            }
+          ],
+          "javadoc": ""
+        },
+        {
+          "name": "findAndDoubleClickWindowsElementByName",
+          "parameters": [
+            {
+              "name": "Name",
+              "initialExpression": "",
+              "type": {
+                "fullClassName": "java.lang.Object",
+                "unresolvedClassName": "java.lang.Object",
+                "isArray": false,
+                "isGnericsPlaceHolder": false,
+                "hasImmutableClassName": true,
+                "genericsTypes": [],
+                "errorOnParsing": false
+              }
+            }
+          ],
+          "javadoc": ""
+        },
+        {
+          "name": "DoubleClickWindowsElementByName",
+          "parameters": [
+            {
+              "name": "Value",
               "initialExpression": "",
               "type": {
                 "fullClassName": "java.lang.Object",
@@ -217,6 +255,63 @@
                 "isArray": false,
                 "isGnericsPlaceHolder": false,
                 "hasImmutableClassName": true,
+                "genericsTypes": [],
+                "errorOnParsing": false
+              }
+            }
+          ],
+          "javadoc": ""
+        },
+        {
+          "name": "convertWebElementToTestObjectByXpath",
+          "parameters": [
+            {
+              "name": "Xpath",
+              "initialExpression": "",
+              "type": {
+                "fullClassName": "java.lang.Object",
+                "unresolvedClassName": "java.lang.Object",
+                "isArray": false,
+                "isGnericsPlaceHolder": false,
+                "hasImmutableClassName": true,
+                "genericsTypes": [],
+                "errorOnParsing": false
+              }
+            }
+          ],
+          "javadoc": ""
+        },
+        {
+          "name": "makeTO",
+          "parameters": [
+            {
+              "name": "css",
+              "initialExpression": "",
+              "type": {
+                "fullClassName": "java.lang.String",
+                "unresolvedClassName": "String",
+                "isArray": false,
+                "isGnericsPlaceHolder": false,
+                "hasImmutableClassName": false,
+                "genericsTypes": [],
+                "errorOnParsing": false
+              }
+            }
+          ],
+          "javadoc": "/**\r\n\t * Construct a Katalon-compatible TestObject in memory.\r\n\t * @param css (String) The CSS selector used to find the target element.\r\n\t * @return (TestObject) The constructed TestObject.\r\n\t */"
+        },
+        {
+          "name": "generateXpath",
+          "parameters": [
+            {
+              "name": "name",
+              "initialExpression": "",
+              "type": {
+                "fullClassName": "java.lang.String",
+                "unresolvedClassName": "String",
+                "isArray": false,
+                "isGnericsPlaceHolder": false,
+                "hasImmutableClassName": false,
                 "genericsTypes": [],
                 "errorOnParsing": false
               }
