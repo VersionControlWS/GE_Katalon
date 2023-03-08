@@ -26,14 +26,16 @@ import org.openqa.selenium.Keys as Keys
 //Runtime.runtime.exec("start C:\\Users\\Lenovo UTH-UK\\Desktop\\driver.bat")
 
 'https://docs.katalon.com/docs/create-tests/keywords/using-keywords-in-katalon-studio/windows-testing/execute-windows-commands-in-katalon-studio'
-import com.kms.katalon.core.configuration.RunConfiguration
+//import com.kms.katalon.core.configuration.RunConfiguration
 /**
  * Execute a batch file situated in the KS project directory.
  * @param batchFile (String) e.g. "myfile.bat"
  */
 
-  String bf = "C:/Users/Lenovo UTH-UK/Desktop" + '/' + "driver.bat"
+  //String bf = "C:/Users/Lenovo UTH-UK/Desktop" + '/' + "driver.bat"
   //comment("Running batch file: " + bf)
-  Runtime.runtime.exec(bf)
+ // Runtime.runtime.exec(bf)
 
 //Windows.startApplication("C:\\Program Files (x86)\\Micro Focus\\UFT One\\samples\\Flights Application\\FlightsGUI.exe")
+
+
