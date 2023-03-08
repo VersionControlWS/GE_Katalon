@@ -1,9 +1,21 @@
 {
-  "keywordFileContentHash": "3AA1D259FEB1F7E916FFAB4947563615",
+  "keywordFileContentHash": "C44731B747D47ADEB35F162ECA7539C9",
   "keywordClasses": [
     {
       "name": "common.WinAppDriver.WindowsFunction",
       "keywordMethods": [
+        {
+          "name": "ifStatement",
+          "parameters": []
+        },
+        {
+          "name": "checkAppFormat",
+          "parameters": []
+        },
+        {
+          "name": "getCurrentActiveWindowTitle",
+          "parameters": []
+        },
         {
           "name": "findAndClickWindowsElementByName",
           "parameters": [
@@ -20,8 +32,7 @@
                 "errorOnParsing": false
               }
             }
-          ],
-          "javadoc": ""
+          ]
         },
         {
           "name": "findAndDoubleClickWindowsElementByName",
@@ -39,8 +50,7 @@
                 "errorOnParsing": false
               }
             }
-          ],
-          "javadoc": ""
+          ]
         },
         {
           "name": "DoubleClickWindowsElementByName",
@@ -58,8 +68,7 @@
                 "errorOnParsing": false
               }
             }
-          ],
-          "javadoc": ""
+          ]
         },
         {
           "name": "findAndClickWindowsElementByXpath",
@@ -77,8 +86,7 @@
                 "errorOnParsing": false
               }
             }
-          ],
-          "javadoc": ""
+          ]
         },
         {
           "name": "checkboxisSelected",
@@ -96,8 +104,7 @@
                 "errorOnParsing": false
               }
             }
-          ],
-          "javadoc": ""
+          ]
         },
         {
           "name": "selectCheckbox",
@@ -115,8 +122,7 @@
                 "errorOnParsing": false
               }
             }
-          ],
-          "javadoc": ""
+          ]
         },
         {
           "name": "unSelectCheckbox",
@@ -134,18 +140,15 @@
                 "errorOnParsing": false
               }
             }
-          ],
-          "javadoc": ""
+          ]
         },
         {
           "name": "closeTab",
-          "parameters": [],
-          "javadoc": ""
+          "parameters": []
         },
         {
           "name": "Navigate_to_Menu_Server_UserAndPrevilidges",
-          "parameters": [],
-          "javadoc": ""
+          "parameters": []
         },
         {
           "name": "findAndsendKeysWindowsElementByName",
@@ -176,8 +179,7 @@
                 "errorOnParsing": false
               }
             }
-          ],
-          "javadoc": ""
+          ]
         },
         {
           "name": "findAndsendKeysWindowsElementByXpath",
@@ -208,8 +210,7 @@
                 "errorOnParsing": false
               }
             }
-          ],
-          "javadoc": ""
+          ]
         },
         {
           "name": "findAndsendKeysWindowsElementByXpathLogin",
@@ -227,8 +228,7 @@
                 "errorOnParsing": false
               }
             }
-          ],
-          "javadoc": ""
+          ]
         },
         {
           "name": "selectElementValueByXpath",
@@ -259,8 +259,7 @@
                 "errorOnParsing": false
               }
             }
-          ],
-          "javadoc": ""
+          ]
         },
         {
           "name": "convertWebElementToTestObjectByXpath",
@@ -278,8 +277,7 @@
                 "errorOnParsing": false
               }
             }
-          ],
-          "javadoc": ""
+          ]
         },
         {
           "name": "makeTO",
@@ -297,8 +295,7 @@
                 "errorOnParsing": false
               }
             }
-          ],
-          "javadoc": "/**\r\n\t * Construct a Katalon-compatible TestObject in memory.\r\n\t * @param css (String) The CSS selector used to find the target element.\r\n\t * @return (TestObject) The constructed TestObject.\r\n\t */"
+          ]
         },
         {
           "name": "generateXpath",
@@ -316,8 +313,11 @@
                 "errorOnParsing": false
               }
             }
-          ],
-          "javadoc": ""
+          ]
+        },
+        {
+          "name": "returnElementExistance",
+          "parameters": []
         }
       ]
     },
@@ -326,11 +326,10 @@
       "keywordMethods": [
         {
           "name": "toGenerateADriverInstance",
-          "parameters": [],
-          "javadoc": ""
+          "parameters": []
         }
       ]
     }
   ],
-  "javadocParsed": true
+  "javadocParsed": false
 }

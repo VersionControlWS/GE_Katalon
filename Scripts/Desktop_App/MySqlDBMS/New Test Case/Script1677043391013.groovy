@@ -16,8 +16,23 @@ import com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords as WebUI
 import com.kms.katalon.core.windows.keyword.WindowsBuiltinKeywords as Windows
 import internal.GlobalVariable as GlobalVariable
 import org.openqa.selenium.Keys as Keys
+import com.kms.katalon.core.util.KeywordUtil
+import org.openqa.selenium.By as By
 
-WebUI.convertWebElementToTestObject(null)
+public String returnElementExistance() {
+	if(Windows.verifyElementPresent(findWindowsObject('Object Repository/DesktopApps/WinObj/Tree_2'),1)) { return "Tree_2"}
+	else if(Windows.verifyElementPresent(findWindowsObject('Object Repository/DesktopApps/WinObj/Tree_4'),1)) { return "Tree_4"}
+	else if(Windows.verifyElementPresent(findWindowsObject('Object Repository/DesktopApps/WinObj/Tree_5'),1)) { return "Tree_5"}
+	else if(Windows.verifyElementPresent(findWindowsObject('Object Repository/DesktopApps/WinObj/Tree_3'),1)) { return "Tree_3"}
+	else if(Windows.verifyElementPresent(findWindowsObject('Object Repository/DesktopApps/WinObj/Tree_1'),1)) { return "Tree_1"}
+	else {return null}
+}
 
-WebUI.doubleClick(findTestObject(null))
 
+Windows.startApplication('C:/Users/Lenovo UTH-UK/Downloads/WindowsFormsApp3/WindowsFormsApp3.exe')
+CustomKeywords.'common.WinAppDriver.WindowsFunction.findAndClickWindowsElementByName'('Search Employee Record')
+
+String presenceOfElement = returnElementExistance()
+println("Object present on screen is : "+presenceOfElement)
+
+Windows.closeApplication()

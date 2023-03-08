@@ -31,6 +31,7 @@ import org.openqa.selenium.Keys as Keys
 import org.openqa.selenium.interactions.Actions;
 
 import com.kms.katalon.core.testobject.WindowsTestObject.LocatorStrategy;
+import com.kms.katalon.core.util.KeywordUtil
 
 class WindowsFunction{
 
@@ -45,15 +46,55 @@ class WindowsFunction{
 	}
 
 	@Keyword
+	String ifStatement(){
+
+		//		String value1 = _Windows.findElement(By.xpath("//Window/Tree")).isDisplayed()
+		//		String value2 = _Windows.findElement(By.xpath("//Window/*/Tree")).isDisplayed()
+		String value3 = _Windows.findElement(By.xpath("//Window/*/*/Tree")).isDisplayed()
+		//		String value4 = _Windows.findElement(By.xpath("//Window/*/*/*/Tree")).isDisplayed()
+		//		String value5 = _Windows.findElement(By.xpath("//Window/*/*/*/*/Tree")).isDisplayed()
+		//		println(value1)
+		//		println(value2)
+		println(value3)
+		//		println(value3)
+		//		println(value4)
+	}
+
+	@Keyword
+	void checkAppFormat(){
+		System.out.println("")
+		System.out.println("###################################################################################################")
+		System.out.println("###                                                                                          ######")
+		System.out.println("###	There are several Desktop application format such as Universal Windows Platform (UWP), \n###	Windows Forms (WinForms), Windows Presentation Foundation (WPF), Classic Windows, Win32")
+		System.out.println("###\n### 	This Desktop-App is of format : "+"                                                      ######")
+		System.out.println("### 	"+_Windows.findElement(By.xpath("//Window")).getAttribute("FrameworkId")+"       		   	                          				####");
+		System.out.println("###                                                                                          ######")
+		System.out.println("###################################################################################################")
+	}
+
+	@Keyword
+	void getCurrentActiveWindowTitle(){
+		try {
+			// Get attribute of current active element
+			String attr = _Windows.switchTo().activeElement().getAttribute("title");
+			System.out.println(attr);
+		}catch (Exception e) {
+			String attr = _Windows.switchTo().activeElement().getAttribute("Title");
+			System.out.println(attr);
+		}
+	}
+
+
+	@Keyword
 	void findAndClickWindowsElementByName(Name){
 		String xpath = generateXpath(Name)
-		println(xpath)
+		//println(xpath)
 		try {
 			WebElement ele = _Windows.findElement(By.xpath(xpath))
-			ele.click()	
+			ele.click()
 		}catch(Exception e){
 			WebElement ele = _Windows.findElement(By.name(Name))
-			ele.click()		
+			ele.click()
 		}
 	}
 
@@ -104,6 +145,14 @@ class WindowsFunction{
 		if(isSelected == "unchecked") {
 			checkBoxElement.click();
 		}
+		else if (checkBoxElement.isSelected()) {
+			KeywordUtil.logInfo(checkBoxElement.getAttribute("Name")+" element is checked.")
+		}
+		else {
+			checkBoxElement.click();
+			KeywordUtil.logInfo("Element was not checked. Now handled and checked")
+		}
+
 	}
 
 	@Keyword
@@ -209,24 +258,35 @@ class WindowsFunction{
 		updatedTestObject.addProperty("xpath", ConditionType.EQUALS, locator)
 		return updatedTestObject
 	}
-	
+
 	/**
 	 * Construct a Katalon-compatible TestObject in memory.
 	 * @param css (String) The CSS selector used to find the target element.
 	 * @return (TestObject) The constructed TestObject.
 	 */
-	 @Keyword
-	 static TestObject makeTO(String css) {
-		 TestObject testobj = new TestObject()
-		 //testobj.addProperty("css", ConditionType.EQUALS, css)
-		 return testobj
-	 }
-	 
+	@Keyword
+	static TestObject makeTO(String css) {
+		TestObject testobj = new TestObject()
+		//testobj.addProperty("css", ConditionType.EQUALS, css)
+		return testobj
+	}
+
 	@Keyword
 	public static String generateXpath(String name) {
 		String Xpath;
 		return Xpath =  "//*[@Name='"+name+"']"
 	}
+	
+	@Keyword
+	public String returnElementExistance() {
+		if(Windows.verifyElementPresent(findWindowsObject('Object Repository/DesktopApps/WinObj/Tree_2'),1)) { return "B"}
+		else if(Windows.verifyElementPresent(findWindowsObject('Object Repository/DesktopApps/WinObj/Tree_4'),1)) { return "D"}
+		else if(Windows.verifyElementPresent(findWindowsObject('Object Repository/DesktopApps/WinObj/Tree_5'),1)) { return "E"}
+		else if(Windows.verifyElementPresent(findWindowsObject('Object Repository/DesktopApps/WinObj/Tree_3'),1)) { return "C"}
+		else if(Windows.verifyElementPresent(findWindowsObject('Object Repository/DesktopApps/WinObj/Tree_1'),1)) { return "A"}
+		else {return null}
+	}
+	
 }
 
 class WinInstance{
