@@ -276,7 +276,7 @@ class WindowsFunction{
 		String Xpath;
 		return Xpath =  "//*[@Name='"+name+"']"
 	}
-	
+
 	@Keyword
 	public String returnElementExistance() {
 		if(Windows.verifyElementPresent(findWindowsObject('Object Repository/DesktopApps/WinObj/Tree_2'),1)) { return "B"}
@@ -286,7 +286,7 @@ class WindowsFunction{
 		else if(Windows.verifyElementPresent(findWindowsObject('Object Repository/DesktopApps/WinObj/Tree_1'),1)) { return "A"}
 		else {return null}
 	}
-	
+
 }
 
 class WinInstance{

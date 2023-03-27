@@ -87,15 +87,15 @@ class CommonUtils {
 		List<WebElement> selectedRows = mailList.findElements(By.xpath("./" + outerTagName + "/tr"))
 		return selectedRows
 	}
-	
+
 	//Method to set up the browser and open the dummy website
 	//https://www.lambdatest.com/blog/selenium-getattribute/
 	@Keyword
 	public void RunChromeDriver(driver_path) {
-		   
-		   System.setProperty("webdriver.chrome.driver", driver_path);
-		   driver = new ChromeDriver();
-		   driver.get("https://phptravels.com/demo/");
-		   driver.manage().window().maximize();
+
+		System.setProperty("webdriver.chrome.driver", driver_path);
+		driver = new ChromeDriver();
+		driver.get("https://phptravels.com/demo/");
+		driver.manage().window().maximize();
 	}
 }
