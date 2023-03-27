@@ -33,6 +33,8 @@ import org.openqa.selenium.interactions.Actions;
 import com.kms.katalon.core.testobject.WindowsTestObject.LocatorStrategy;
 import com.kms.katalon.core.util.KeywordUtil
 
+import java.text.SimpleDateFormat
+
 class WindowsFunction{
 
 	WebDriver _Windows;
@@ -287,6 +289,156 @@ class WindowsFunction{
 		else {return null}
 	}
 
+
+	@Keyword
+	public void datePicker(tstObject, input_date) {
+
+		String Date_Format = input_date
+		String Compare_InputDate_Format=""
+		String secondOuptputisValidFormat = ""
+
+		if(Date_Format.contains(":") | Date_Format.contains("_") | Date_Format.contains("-"))  {
+			Date_Format = Date_Format.replace(":", " ").replace("-", " ").replace("_", " ")
+			Compare_InputDate_Format = String.valueOf(Date_Format.replace(":", " ").replace("-", " ").replace("_", " ").toLowerCase().replace(" ",""))
+		}
+
+		boolean isValidFormat = Date_Format.matches("(0[1-9]|[12]\\d|3[01]) ([a-zA-Z_\\-\\.]+)\\ ([0-9]{4})");
+		//println(isValidFormat)
+		try {
+			if (isValidFormat == true) {
+
+				String[] strArray = null;
+				//println(Date_Format.split(" "))
+				strArray = Date_Format.split(" ")
+				Date date = new SimpleDateFormat("MMMM", Locale.ENGLISH).parse(String.valueOf(strArray[1]));
+				Calendar cal = Calendar.getInstance();
+				cal.setTime(date);
+				//println(cal.get(Calendar.MONTH)+1);
+
+				"First Trial to send date in Date-Box"
+				Windows.clickElementOffset(findWindowsObject(tstObject), 10, 10)
+				Windows.sendKeys(findWindowsObject(tstObject), input_date)
+
+				String textFromDateTab1 =  Windows.getText(findWindowsObject(tstObject))
+				//println(textFromDateTab1.replace(" ","").toLowerCase())
+				String String_populated_in_DateBox = textFromDateTab1.replace(" ","").toLowerCase()
+				//println(String_populated_in_DateBox)
+				boolean firstOutputisValidFormat = String_populated_in_DateBox.matches(Compare_InputDate_Format)
+				//println(firstOutputisValidFormat)
+
+				"Second Trial to send date in Date-Box"
+				if (firstOutputisValidFormat == false) {
+					Windows.clickElementOffset(findWindowsObject(tstObject), 10, 10)
+					Windows.sendKeys(findWindowsObject(tstObject), strArray[0])
+					Windows.sendKeys(findWindowsObject(tstObject),Keys.chord(Keys.SPACE))
+					Windows.sendKeys(findWindowsObject(tstObject), String.valueOf(cal.get(Calendar.MONTH)+1))
+					Windows.sendKeys(findWindowsObject(tstObject),Keys.chord(Keys.SPACE))
+					Windows.sendKeys(findWindowsObject(tstObject), strArray[2])
+					Windows.delay(1.5)
+					String textFromDateTab2 =  Windows.getText(findWindowsObject(tstObject))
+					//println(textFromDateTab2.replace(" ","").toLowerCase())
+					String  Date_in_DateBox = textFromDateTab2.replace(" ","").toLowerCase()
+					secondOuptputisValidFormat = String_populated_in_DateBox.matches(Date_in_DateBox)
+
+				}
+
+				"Third Trial to send date in Date-Box"
+				if (secondOuptputisValidFormat == false) {
+					Windows.clickElementOffset(findWindowsObject(tstObject), 10, 10)
+					Windows.sendKeys(findWindowsObject(tstObject), strArray[0])
+					Windows.sendKeys(findWindowsObject(tstObject),Keys.chord(Keys.TAB))
+					Windows.sendKeys(findWindowsObject(tstObject), String.valueOf(cal.get(Calendar.MONTH)+1))
+					Windows.sendKeys(findWindowsObject(tstObject),Keys.chord(Keys.TAB))
+					Windows.sendKeys(findWindowsObject(tstObject), strArray[2])
+				}
+			}
+		}catch (Exception  e) {
+			println("Enter a valid Date-Format")
+			this.println(e)
+		}
+
+	}
+
+	@Keyword
+	public void selectDateFromCalender(tstObject, given_date, attrib) {
+
+		'Maximize Window'
+		//Windows.click(findWindowsObject('Object Repository/DesktopApps/UTH_InHouseApp/DatePicker/Button_Maximize'))
+
+		//Windows.clickElementOffset(findWindowsObject(tstObject), 15, 25)
+		//Windows.clickElementOffset(findWindowsObject(tstObject), 140, 25)
+		//Windows.clickElementOffset(findWindowsObject(tstObject), 270, 25)
+		Windows.clickElementOffset(findWindowsObject(tstObject), 150, 185)
+
+		def attributeValue = ""
+		def classValue = ""
+		def nameValue = ""
+		def idValue = ""
+		def xpathValue = ""
+
+		try {
+			attributeValue = Windows.getAttribute(findWindowsObject("Object Repository/DesktopApps/UTH_InHouseApp/DatePicker/monthCalendar"), 'AutomationId')
+			classValue = Windows.getAttribute(findWindowsObject("Object Repository/DesktopApps/UTH_InHouseApp/DatePicker/monthCalendar"), 'class')
+			nameValue = Windows.getAttribute(findWindowsObject("Object Repository/DesktopApps/UTH_InHouseApp/DatePicker/monthCalendar"), 'name')
+			idValue = Windows.getAttribute(findWindowsObject("Object Repository/DesktopApps/UTH_InHouseApp/DatePicker/monthCalendar"), 'id')
+			xpathValue = Windows.getAttribute(findWindowsObject("Object Repository/DesktopApps/UTH_InHouseApp/DatePicker/monthCalendar"), attrib)
+
+			//println(attributeValue)
+			//println(classValue)
+			//println(nameValue)
+			//println(idValue)
+			//println(xpathValue)
+		}catch (Exception  e) {
+			println("There is no locators with basic values")
+			this.println(e)
+		}
+		int set_Val = 0
+		WebElement ele;
+		if (attributeValue != null && set_Val == 0) {
+			ele = _Windows.findElement(By.xpath("//*[@AutomationId='"+attributeValue+"']"));
+			//System.out.println("The current date is : "+ele.getAttribute("Value.Value"));
+			set_Val = 1
+		}
+		if (classValue != null && set_Val == 0) {
+			ele = _Windows.findElement(By.xpath("//*[@class='"+classValue+"']"));
+			//System.out.println("The current date is : "+ele.getAttribute("Value.Value"));
+			set_Val = 1
+		}
+		if (nameValue != null && set_Val == 0) {
+			ele = _Windows.findElement(By.xpath("//*[@name='"+nameValue+"']"));
+			//System.out.println("The current date is : "+ele.getAttribute("Value.Value"));
+			set_Val = 1
+		}
+		if (idValue != null && set_Val == 0) {
+			ele = _Windows.findElement(By.xpath("//*[@id='"+idValue+"']"));
+			//System.out.println("The current date is : "+ele.getAttribute("Value.Value"));
+			set_Val = 1
+		}
+		if (xpathValue != null && set_Val == 0) {
+			ele = _Windows.findElement(By.xpath("//*[@"+attrib+"='"+attributeValue+"']"));
+			//System.out.println("The current date is : "+ele.getAttribute("Value.Value"));
+			set_Val = 1
+		}
+
+		SimpleDateFormat formatter = new SimpleDateFormat("dd MMMM yyyy");
+		Date date = new Date();
+		//System.out.println(formatter.format(date));
+		//Date current_date = formatter.format(date)
+		//given_date = "01 March 2023"
+
+		if(formatter.parse(formatter.format(date)).after(formatter.parse(given_date)))
+		{
+			//System.out.println(String.valueOf(current_date)+" is greater than "+String.valueOf(given_date));
+			while( String.valueOf(ele.getAttribute("Value.Value")) != String.valueOf(given_date) ) {
+				Windows.sendKeys(findWindowsObject(tstObject),Keys.chord(Keys.ARROW_LEFT))
+			}
+		}else{
+			//System.out.println(String.valueOf(current_date)+" is lesser than "+String.valueOf(given_date));
+			while( String.valueOf(ele.getAttribute("Value.Value")) != String.valueOf(given_date) ) {
+				Windows.sendKeys(findWindowsObject(tstObject),Keys.chord(Keys.ARROW_RIGHT))
+			}
+		}
+	}
 }
 
 class WinInstance{
