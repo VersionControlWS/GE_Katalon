@@ -377,11 +377,11 @@ class WindowsFunction{
 		def xpathValue = ""
 
 		try {
-			attributeValue = Windows.getAttribute(findWindowsObject("Object Repository/DesktopApps/UTH_InHouseApp/DatePicker/monthCalendar"), 'AutomationId')
-			classValue = Windows.getAttribute(findWindowsObject("Object Repository/DesktopApps/UTH_InHouseApp/DatePicker/monthCalendar"), 'class')
-			nameValue = Windows.getAttribute(findWindowsObject("Object Repository/DesktopApps/UTH_InHouseApp/DatePicker/monthCalendar"), 'name')
-			idValue = Windows.getAttribute(findWindowsObject("Object Repository/DesktopApps/UTH_InHouseApp/DatePicker/monthCalendar"), 'id')
-			xpathValue = Windows.getAttribute(findWindowsObject("Object Repository/DesktopApps/UTH_InHouseApp/DatePicker/monthCalendar"), attrib)
+			attributeValue = Windows.getAttribute(findWindowsObject(tstObject), 'AutomationId')
+			classValue = Windows.getAttribute(findWindowsObject(tstObject), 'class')
+			nameValue = Windows.getAttribute(findWindowsObject(tstObject), 'name')
+			idValue = Windows.getAttribute(findWindowsObject(tstObject), 'id')
+			xpathValue = Windows.getAttribute(findWindowsObject(tstObject), attrib)
 
 			//println(attributeValue)
 			//println(classValue)
