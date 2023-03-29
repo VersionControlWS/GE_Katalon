@@ -439,6 +439,82 @@ class WindowsFunction{
 			}
 		}
 	}
+
+	@Keyword
+	public void valuePresentInDataGrid(tstObject, strValue, updatedString) {
+		String rownumber = Windows.getAttribute(findWindowsObject(tstObject), "Grid.RowCount")
+
+		String rowNo;
+		boolean FlagFoundA = false
+		//strValue = "EmpName1"
+
+		WindowsTestObject dataGridObject = new WindowsTestObject('')
+		WindowsTestObject EmpdataGridObject = new WindowsTestObject('')
+
+		for(int i = 1;i < rownumber ;i++){
+
+			if (strValue != "" && strValue != " " && strValue != null) {
+
+				dataGridObject.setLocatorStrategy(LocatorStrategy.NAME)
+				EmpdataGridObject.setLocatorStrategy(LocatorStrategy.NAME)
+				String value = "Row " + (i-1)
+				String Empvalue = "EmpName Row " + (i-1)
+				dataGridObject.setLocator(value)
+				EmpdataGridObject.setLocator(Empvalue)
+				String strRowValues = Windows.getAttribute(dataGridObject, "LegacyValue")
+				println(strRowValues)
+				println(strValue)
+				if (strRowValues.contains(strValue)){
+					println('A')
+					rowNo = i
+					FlagFoundA = true
+					break
+				}
+			}else {
+				FlagFoundA = false
+			}
+		}
+
+		if (FlagFoundA == true ){
+			System.out.println(strValue + " is present in row " + rowNo)
+			Windows.click(EmpdataGridObject)
+			Windows.sendKeys(EmpdataGridObject, updatedString)
+			Windows.comment(strValue + " is present in row " + rowNo)
+		}else{
+			System.out.println(strValue + " is not present in the table")
+			Windows.comment(strValue + " is not present in the table")
+		}
+	}
+
+	@Keyword
+	public void slideElementOffset(testObject, offset) {
+
+		WindowsTestObject slider_locator_testObject= findWindowsObject(testObject)
+		WindowsTestObject.LocatorStrategy slider_locator_selectedLocator = slider_locator_testObject.getLocatorStrategy();
+		String slider_locator = slider_locator_testObject.getLocator();
+		//print(slider_locator)
+
+		_Windows = Windows.getDriver()
+		Actions action = new Actions(_Windows);
+		WebElement horizontal_scroll = _Windows.findElement(By.name(slider_locator));
+		action.clickAndHold(horizontal_scroll).moveByOffset(offset, 0).release().perform();
+	}
+
+	@Keyword
+	public void scrollClickAndHold(testObject, timeOut){
+
+		WindowsTestObject scroll_testObject= findWindowsObject(testObject)
+		WindowsTestObject.LocatorStrategy selectedLocator = scroll_testObject.getLocatorStrategy();
+		String locator = scroll_testObject.getLocator();
+		//print(locator)
+
+		_Windows = Windows.getDriver()
+		Actions action = new Actions(_Windows);
+		WebElement scroll = _Windows.findElement(By.name(locator));
+		action.clickAndHold(scroll).build().perform()
+		Windows.delay(timeOut)
+		action.release()
+	}
 }
 
 class WinInstance{
